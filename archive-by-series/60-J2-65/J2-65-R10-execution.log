@@ -1,0 +1,130 @@
+J2-65 R10 EXECUTION LOG
+=======================
+R9_ACTUAL_REPORT_READ=PASS
+R1_ACTUAL_REPORT_READ=PASS
+R6_CONCEPTUAL_REGRESSION_READ=PASS
+PRIME_BY_PRIME_CAMPAIGN_USED=FALSE
+FIXED_Q_CAMPAIGN_USED=FALSE
+BIT_LADDER_USED=FALSE
+
+===== J2-65-R10-GaussianSNF.py =====
+GAUSSIAN_RING=Z[i]
+GAUSSIAN_RING_PID=TRUE (Euclidean norm)
+MATRIX_CONTENT=UNIT
+DETERMINANT_IDEAL=(2)=(1+i)^2
+GAUSSIAN_SNF=diag(1,2) up to Gaussian units
+PROOF=d1 is gcd of entries = unit; d1*d2 is determinant up to unit = -2
+WARNING=Smith equivalence UHV is NOT Hermitian congruence U*HU
+
+===== J2-65-R10-HermitianMatrix.py =====
+GAUSSIAN_NORM_TO_INTEGRAL_SUM2=PROVED_BY_STANDARD_GAUSSIAN_UFD_THEOREM
+HERMITIAN_MATRIX=[[DPLUS,z],[zbar,DMINUS]]
+DETERMINANT_SYMBOLIC= Dminus*Dplus - x_G**2 - y_G**2
+HERMITIAN_DETERMINANT_MINUS_2=PASS under DPLUS*DMINUS=N-2 and x_G^2+y_G^2=N
+HERMITIAN_EQUIVALENT_TO_GAUSSIAN_NORM_SPLITTING=PROVED
+HERMITIAN_CONTENT_PRIMITIVE=PROVED: any common Gaussian prime divides det=-2; only (1+i) is possible, but D± are odd
+HERMITIAN_SIGNATURE=(1,1): DPLUS>0 and det<0
+
+===== J2-65-R10-HermitianReduction.py =====
+HERMITIAN_CLASS_NUMBER_DET_MINUS2=1 (primitive classes)
+ODD_PRIMITIVE_CLASS_COUNT=1
+GENUS_COUNT=1
+SPINOR_GENUS_COUNT=1
+ISOTROPIC_CLASS_COUNT=1
+H0_UNIVERSAL_REPRESENTATIVE=PROVED
+FINITE_CLASSIFICATION=PASS
+CANONICAL_PRIMITIVE_REP=[[0,1+i],[1-i,1]]
+H0_REP=[[1,1],[1,-1]]
+DIAGONAL_REP=diag(1,-2)
+EXPLICIT_H0_TO_CAN_U= [[1, 1], [-I, 0]]
+PROOF_STEP_1=For H=[[a,z],[zbar,c]], det=-2 gives a*h(x,y)=Norm(a*x+z*y)-2*Norm(y).
+PROOF_STEP_2=If a!=0, e=(1+i-z,a) is integral isotropic; if a=0, e=(1,0). Divide by Gaussian gcd to primitive e.
+PROOF_STEP_3=Extend primitive e to a Gaussian unimodular basis. Gram becomes [[0,beta],[betabar,c0]] with Norm(beta)=2.
+PROOF_STEP_4=Normalize beta to 1+i by a unit. Replacing f by f+n*e shifts c0 by 2n.
+PROOF_STEP_5=If c0 even then every entry is divisible by 1+i, contradicting primitive. Thus c0 odd and reduce to c0=1.
+EVEN_DET_MINUS2_FORM=exists only imprimitive, e.g. [[0,1+i],[1-i,0]] has content (1+i)
+
+===== J2-65-R10-NeighbouringNorm.py =====
+M_EQUALS_GA_PLUS_1=PASS
+M_EQUALS_uB=PASS
+N_EQUALS_S2_MINUS_M2_PLUS_2=PASS
+N_EQUALS_2_PLUS_u2_TIMES_FACTOR=PASS
+CPLUS_CMINUS_FACTOR=PASS
+N_CONGRUENT_2_MOD_u2=PASS
+N_MOD_G2_TANGENT=PASS
+N_EXACT= 4*G**2*K**2*u**2 - 4*G**2*u**2 - 4*G**2*u - G**2 - 4*G*u - 2*G + 1
+N_MINUS_2_FACTOR= (2*G*K*u - 2*G*u - G - 1)*(2*G*K*u + 2*G*u + G + 1)
+G2_QUOTIENT= (2*K*u - 2*u - 1)*(2*K*u + 2*u + 1)
+
+===== J2-65-R10-NormOneCongruence.py =====
+GCD_G_u=1: uq=G+1
+U_SIDE=N≡2 mod u^2; z_u=1+i gives Norm(z_u)=2 exactly; theta_u=z_u/(1+i)=1 has norm one
+G_SIDE=N≡1-2AG mod G^2; z_G=1-AG (real) gives Norm(z_G)=(1-AG)^2≡1-2AG mod G^2
+CRT=Because gcd(G^2,u^2)=1, Gaussian CRT combines z_u and z_G modulo G^2 u^2
+COMPOSITE_NORM_CONGRUENCE_OBSTRUCTION=FALSE
+COMPOSITE_SECTION=AUTOMATICALLY_SOLVABLE
+
+===== J2-65-R10-PowerTenDiagonalSection.py =====
+DPLUS=u(2KG+B), DMINUS=u(2KG-B)
+CPLUS_PLUS_CMINUS=4KG
+CPLUS_MINUS_CMINUS=2B
+GCD_CPLUS_CMINUS=1
+RELATIVE_GAP=(C+-C-)/(C++C-)=B/(2KG)
+BOUND: q<=G+1, K>=10, G>=10 => B/(2KG)<=31/200<1/6
+POWER_TEN_SECTION=one toric/complementary-divisor family; no bounded (g,k) scan used
+
+===== J2-65-R10-PrimitiveDiagonalPair.py =====
+ASSUMPTIONS=G=10^g>=10,K=10^k>=10,uq=G+1,q>1, gcd(q,10)=1
+u_ODD=PROVED: G+1 and q are odd
+B_TEN_UNIT=PROVED: B=2G+q is odd and B≡q (mod 5)
+GCD_B_G=1_PASS: gcd(2G+q,G)=gcd(q,G)=1 since q|(G+1)
+GCD_B_K=1_PASS: B is coprime to 10 and K is a power of 10
+CPLUS_POSITIVE=PASS
+CMINUS_POSITIVE=PASS: 2KG-B >= 2G(K-1)-q >= 17G-1 > 0
+CPLUS_TEN_UNIT=PASS: odd and C+≡B (mod 5)
+CMINUS_TEN_UNIT=PASS: odd and C-≡-B (mod 5)
+GCD_CPLUS_CMINUS=1_PASS: odd common d divides 4KG and 2B, hence gcd(KG,B)=1
+GCD_DPLUS_DMINUS_EQUALS_u=PASS: D±=uC± and gcd(C+,C-)=1
+GCD_N_DPLUS=1_PASS: N≡2 (mod D+), D+ odd
+GCD_N_DMINUS=1_PASS: N≡2 (mod D-), D- odd
+RELATIVE_GAP_BOUND=0 < B/(2KG) < 1/6
+
+===== J2-65-R10-Regression.py =====
+R9_GAUSSIAN_TARGET_REGRESSION=PASS_FROM_ACTUAL_R9_REPORT
+R1_BEZOUT_REGRESSION=PASS_FROM_ACTUAL_R1_REPORT
+R1_TO_R9_BRIDGE=M=GA+1=uB=PASS
+R6_TO_R10_DIRECT_INVARIANT_MAP=NOT_FOUND
+OLD_FINE_GEOMETRY_REOPENED=FALSE
+PRIME_BY_PRIME_CAMPAIGN_USED=FALSE
+FIXED_Q_CAMPAIGN_USED=FALSE
+BIT_LADDER_USED=FALSE
+
+===== J2-65-R10-UnitaryOrbit.py =====
+PRIMITIVE_DET_MINUS2_ORBIT_COUNT=1
+ORBIT_REPRESENTATIVE=H0
+ORBIT_CONDITION=H_actual=U^* H0 U for some U in GL2(Z[i])
+DIAGONAL_VALUES=H0(v_plus,v_plus), H0(v_minus,v_minus)
+UNIMODULAR_BASIS_CONDITION=det(v_plus,v_minus) is a Gaussian unit
+PARABOLIC_SUBGROUP= P_n=[[1,n(1-i)],[0,1]], n in Z, in Aut(Hcan)
+PARABOLIC_VERIFICATION=PASS
+CUSP_RIGIDITY_THEOREM=OPEN: no proof that every large-close prescribed diagonal basis lies in one parabolic family
+FULL_AUTOMORPHISM_GROUP_GENERATORS=NOT_CLASSIFIED_THIS_ROUND
+
+===== SHA256 =====
+38d8a376e5b0449245d9d45c5bc8bf8d4f394438514ccb65ece8bb3873bc3961  J2-65-R10-Gaussian-Hermitian-Det2-Report.md
+6b61ae4557d19d19a7ae9ac41ba3346c26aab11add79e61f3863b9a98943e5eb  J2-65-R10-GaussianSNF.py
+2149818097cc126321792555de2b6c5864395ca02089beee4f405c5affa7f600  J2-65-R10-HermitianClasses.tsv
+aa9cc6c98f7a555465cbc3dbf6a6266f2a063022c8181d72a1ecc049d6891cc5  J2-65-R10-HermitianInvariantDictionary.tsv
+12cba778146414cb8f8ecdf58ac342c0cbcea1e3cb04d477526fa4fb4c24c7b2  J2-65-R10-HermitianMatrix.py
+cb3bc0d13ab0b05184a1e7003389d7dc48fe91a115884a8c58838e63d87eebbd  J2-65-R10-HermitianReduction.py
+8e39e53998f0112f927bdba925d6f77798b3c9ffd9df83edbe6789165c0ce855  J2-65-R10-NeighbouringNorm.py
+c7ca22c61273a664875d919c015096e619b49519f3cd67882d3e93fd27c7a19f  J2-65-R10-NormOneCongruence.py
+0945cfe0c21855d36275bd600289ff52e1e096253f72d617a4d61a07df3e46ac  J2-65-R10-NormOneCongruence.tsv
+8b6455903afcc9c19b84e68b705740c25d6b50f21e89d5768da19a20811313d9  J2-65-R10-PowerTenDiagonalSection.py
+7e346330e4939be7d4b0106cd95d885ca1fb74028014a550074e06dfa76d0f43  J2-65-R10-PowerTenDiagonalSection.tsv
+04c790ce090d55f0f009e04ddcf1436eb09aceaaaf69901300b3f6d1c8c34e00  J2-65-R10-PrimitiveDiagonalPair.py
+af064e6fd538c64986e747133433a6ff49b0b1d03edfbae216816f7a4aa53119  J2-65-R10-ReducedHermitianForms.tsv
+8c8d65565431596f609768b80239238701e4215cbd28452c6a807542b195bcc2  J2-65-R10-Regression.py
+4451b4dff45a152708285ea934cf51cca86a6eed439ac4295f686ff6ffccb734  J2-65-R10-UnitaryOrbit.py
+b68986b0648db62551db44db45fac5571b80d35fc0ee84047efa0bcda3cd61b3  J2-65-R10-UnitaryOrbitStructure.tsv
+46c5d13b08988d1c4617d31919eda9fa61b75de82074a3be375119832a3348b9  J2-65-R10-certificate.txt

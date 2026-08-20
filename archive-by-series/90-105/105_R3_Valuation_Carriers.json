@@ -1,0 +1,87 @@
+{
+  "schema": "105-R3-valuation-carriers-v1",
+  "primary_carrier": [
+    {
+      "name": "DEPTH_FACE",
+      "values": [
+        "g=0",
+        "g>0"
+      ],
+      "reason": "decimal depth face"
+    },
+    {
+      "name": "RESONANCE_FACE",
+      "values": [
+        "R=0",
+        "R!=0"
+      ],
+      "reason": "exact denominator resonance"
+    },
+    {
+      "name": "D_CHAMBER",
+      "values": [
+        "d<=-1",
+        "d=0",
+        "d=1",
+        "d>=2"
+      ],
+      "reason": "finite initial/dominance chambers"
+    },
+    {
+      "name": "H_SIGN",
+      "values": [
+        "negative",
+        "positive",
+        "secondary/not-needed"
+      ],
+      "reason": "finite dominance data"
+    },
+    {
+      "name": "R_SIGN",
+      "values": [
+        "negative",
+        "positive",
+        "zero"
+      ],
+      "reason": "finite dominance data"
+    }
+  ],
+  "secondary_decorations": [
+    {
+      "name": "J_SATURATION",
+      "numeric_depth_splits_cell": false,
+      "schema": "[Sat_v(D_x):D_x]"
+    },
+    {
+      "name": "Q1_SOURCE_SUBLATTICE",
+      "numeric_index_splits_cell": false,
+      "schema": "U0+h_U Z"
+    },
+    {
+      "name": "ARCH_ACTIVE_FACES",
+      "numeric_endpoints_split_cell": false,
+      "max_types": 49
+    },
+    {
+      "name": "SOURCE_LATTICE",
+      "types": [
+        "rank1 full",
+        "rank1 finite-index affine refinement"
+      ]
+    }
+  ],
+  "excluded_from_minimal_state": [
+    "v2(U)",
+    "v5(U)",
+    "raw v_p(C_i) tuples",
+    "v2(R),v5(R) for R!=0",
+    "separate v2(J),v5(J)"
+  ],
+  "power10_variables": {
+    "G": "10^g",
+    "K": "10^k",
+    "X": "10^m2",
+    "Y": "10^n3"
+  },
+  "depth_vs_type": "numeric depth is not combinatorial type"
+}

@@ -1,0 +1,159 @@
+J2-55 R5 Linearized Residual / Predicted Root theorem certificate
+SCOPE=Strict A1-only; Exact Resonance R=0; J=2 only
+VERDICT_J2=OPEN
+VERDICT_DELTA_POSITIVE=OPEN
+VERDICT_DELTA_ZERO=OPEN
+VERDICT_DELTA_NEGATIVE=OPEN_NONZERO_TAIL
+VERDICT_REVERSE_ZERO_TAIL=CLOSED
+
+FROZEN_LIVE=J=2,S_R<0,g>=4,u>1,ell>=6
+DEFINITIONS=G=10^g;K=10^k;L=10^ell;ell=2g-k;uq=G+1;A=2u+1
+MDEC=L/8; MBIG=A*MDEC; Mq=q(q+4)
+EUCLIDEAN=uD2=MBIG*mu+varrho, 0<varrho<MBIG
+DEFECT=x=mu-s
+B=292*L^2*u^2/(A*G^3)
+
+LRR-1_A_DECIMAL_DIVISIBILITY=PROVED
+If x satisfies primitive A-root Kx+Z=0 mod A and decimal root uD2*x=Omega mod MDEC, then
+A | Omega-x*varrho and MDEC | Omega-x*varrho. Since gcd(A,MDEC)=1,
+MBIG | Omega-x*varrho.
+
+LRR-2_THETA=PROVED
+Theta=(Omega-x*varrho)/MBIG is an integer on every A+decimal synchronized candidate.
+Theta is a forced residual quotient, not a root quotient.
+
+LRR-3_LINEARIZED_ROOT=PROVED
+Rscr=MBIG*x^2-uD2*x+Omega=MBIG*(Theta-s*x).
+Hence actual quadratic root iff Theta=s*x.
+Equivalent raw product: Omega=(mu-s)(varrho+MBIG*s).
+
+LRR-4_DESCENDED_QUANTUM=PROVED
+Q=2K*MBIG*DeltaLin, DeltaLin=Theta-s*x.
+A^2 gate => A | DeltaLin.
+A^3 gate => A^2 | DeltaLin.
+U-SQ => u | DeltaLin.
+A^3+U-SQ => A^2*u | DeltaLin.
+
+EDM-1_BASE_MISMATCH=PROVED
+E0=Omega-mu*varrho.
+On an actual root: E0=s(MBIG*x-varrho).
+Thus E0>=0; E0=0 iff s=0; s>0 => E0>0.
+
+EDM-2_HIGH_ZERO_MISMATCH=PROVED_AS_ROOT_NECESSITY
+For delta>=1, frozen R4 gives s=0, hence high root requires E0=0 and Omega=mu*varrho.
+No global theorem E0!=0 for every high structural profile was proved.
+
+PDR-1_NORMALIZED_PREDICTED_ROOT=PROVED
+DiscNorm=u^2*D2^2-4*MBIG*Omega.
+R_s=MBIG*mu-varrho-2*MBIG*s.
+DiscNorm-R_s^2=-4*MBIG^2*(Theta-s*x).
+Thus actual root iff DiscNorm=R_s^2 after A+decimal synchronization.
+
+PDR-2_STANDARD_AND_CQLRC_SCALE=PROVED
+Delta_std=4*K^2*DiscNorm.
+With a_delta=10^max(delta,0), Psi_delta=4*a_delta^2*DiscNorm.
+Hence actual root requires Psi_delta=(2*a_delta*R_s)^2.
+
+PDR-3_FIXED_SIGN=PROVED_FOR_k>=2
+s/x < 730/K^2.
+For k>=2 this is <0.073; x>AG/10>=5000 gives x-s>1.
+R_s=MBIG*(x-s)-varrho>0.
+Therefore sqrt(DiscNorm)=R_s with fixed positive sign for k>=2.
+
+OUT-1=PROVED
+With R=At-2N, Y=R+uNMq, E=uq((G-1)t-qN)+GY, Fnum=A Y^2+2RE,
+D2=E/(2Mq), Omega=Fnum/(8K Mq^2), sigma=8Mq*varrho:
+4uE=A L Mq*mu+sigma, 0<sigma<A L Mq.
+
+OUT-2=PROVED
+Actual root iff Fnum=K Mq (mu-s)(sigma+A L Mq*s).
+
+OUT-3=PROVED
+A G^2 Mq^2*Theta=Fnum-K Mq*x*sigma.
+A G^2 Mq^2*(Theta-sx)=Fnum-K Mq*x(sigma+A L Mq*s).
+
+BOUND-1=PROVED
+B/MDEC < [1168/(qK)](1+1/G).
+The exact positive gap after uq=G+1, KL=G^2, A=2u+1 is
+1168*u/(A G K)>0.
+Thus qK>=1169 => B<MDEC because G>=10000.
+
+BOUND-2=PROVED
+B/A < 73G/K^2.
+The exact positive gap is 73G(4u+1)/(K^2(2u+1)^2)>0.
+Thus K^2>73G => B<A; sufficient exponent criterion: 2k>=g+2.
+
+BOUNDARY-DUAL-SINGLETON=PROVED
+For delta=0, K=G. Hence qK>=G>=10000 and K^2=G^2>73G.
+Therefore B<MDEC and B<A globally.
+Any boundary actual defect is simultaneously the least A-residue sA and the least decimal residue sM:
+s=sA=sM.
+For q>1, frozen B<21 gives s in {0,...,20}.
+This removes CRT interaction from boundary uniqueness globally, but does not prove boundary extinction.
+
+REV-1_DECIMAL_SINGLETON=PROVED
+For reverse qK>=1169, B<MDEC, so an actual defect is exactly
+s=(mu-x10) mod MDEC in [0,MDEC). No A-modulus is needed for uniqueness.
+
+REV-2_LOW_qK_CLASSIFICATION=PROVED
+If q>1 and qK<=1168, then k<=2.
+k=2: q in {7,11}.
+k=1: q in {7,11,13,17,19,23,29,47,49,59,61,73,77,89,91,97,101,103,109,113}.
+If q=1 and qK<=1168, then k in {1,2,3}.
+These are finite low-k/bounded-q TYPES; exponent fibres are not claimed finite.
+
+REV-3_FIXED_LOW_k_TAIL_SCALE=PROVED
+In the active reverse quotient chamber k>b=v5(q+4),
+G/d_r=K/(2*5^b).
+Thus k=1 forces b=0 and G/d_r=5, so CN-Bt=5 alpha.
+For k=2: G/d_r=50 if b=0 and 10 if b=1.
+This removes the growing 10^r scale from the exceptional tail equation.
+
+ZERO-TAIL-DIG3=PROVED
+For q>1, q>=7 and B(q)>0. Let c=C/q=q^3+10q^2+12q+8 and d=gcd(C,B)|7.
+If CN-Bt=0, write C=dC0, B=dB0. Then t=C0*m,N=B0*m,m>=1.
+Since B/c<1,
+a3=m[(G-1)C0-qB0]/[2(q+4)] > C0(G-2)/[2(q+4)].
+Also C0>=C/7>3(q+4) for q>=7, hence a3>3(G-2)/2>G because G>=10^4.
+This contradicts DIG3 a3<G.
+Therefore every q>1 zero-tail state is impossible. In particular the entire reverse zero-tail ray is CLOSED.
+
+COMPUTATIONAL_REGRESSION_BOUNDARY=PASS
+79 DCDC states re-enumerated exactly: 4 primitive fail; 75 primitive-pass all have sA>=B AND sM>=B separately.
+No historical boundary death requires CRT interaction.
+
+COMPUTATIONAL_REGRESSION_REVERSE_R1=PASS
+50 genuine DCDC states re-enumerated exactly: 6 primitive fail; 44 primitive-pass all have sA>=B AND sM>=B separately.
+
+COMPUTATIONAL_REGRESSION_Q11_FIXED_FIBRE=PASS
+For g=471,13077,50895,63501,101319,126531 in (q,delta,alpha,t)=(11,1,152510,31):
+all 6 pass DCDC; all 6 fail primitive gcd; all 6 also have forced-high s=0 incompatible with nonzero canonical defect; E0<0; predicted exact root mismatch.
+At g=63501, Psi-(20 R_0)^2 mod {3,7,11,13,73,383} is {3:0,7:2,11:0,13:1,73:5,383:210}.
+Thus the old all-structural-local-square pseudo-survivor already fails the NEW predicted-root equality mod 7.
+First logical death remains primitive gcd=13.
+
+PREDICTED_ROOT_QUOTIENT_LIFT=PARTIAL
+Exact fixed-root synchronization is proved and is strictly stronger in the critical regression.
+A global degree/next-Hensel-digit theorem H(z)=0 mod p was NOT proved: the Euclidean quotient/remainder digit has not yet been expressed uniformly in the old CQLRC next-index coordinate for all variable-q fibres.
+
+SUCCESS_A=YES
+SUCCESS_B=YES
+SUCCESS_C_FULL_TAIL_CHAMBER=NO
+SUCCESS_D_DELTA_GE_0=NO
+SUCCESS_E_STYLE_REVERSE_EXCEPTIONAL_COMPRESSION=YES
+SUCCESS_F_J2_CLOSED=NO
+
+EXACT_OPEN_FRONTIER_DELTA_POSITIVE=
+q>1 nonzero-tail only; s=0; must have sA=sM=0 and then E0=0 (equiv Theta=0, predicted root exact).
+
+EXACT_OPEN_FRONTIER_DELTA_ZERO=
+B<A and B<MDEC; one small integer s=sA=sM (q>1: 0<=s<=20); must satisfy Theta=s(mu-s).
+
+EXACT_OPEN_FRONTIER_DELTA_NEGATIVE=
+q>1 zero-tail CLOSED. Nonzero reverse splits into:
+(1) qK>=1169: one decimal-selected defect s=sM, then Theta=sx;
+(2) low-qK finite types listed in REV-2, with fixed low-k tail scale from REV-3;
+plus q=1 k<=3 exceptional types when qK<=1168.
+
+FULL_ROOT_SURVIVE_IN_R5_EXACT_REGRESSIONS=0
+J2_RESONANCE_CLOSURE_CERTIFICATE=NOT_GENERATED_BECAUSE_OPEN

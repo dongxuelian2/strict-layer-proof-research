@@ -1,0 +1,127 @@
+A1 J2 GRFC9 — Global Root-Factor Quotient Equivalence Certificate
+=================================================================
+
+Scope: Strict Layer A1-only, Exact Resonance R=0, J=2, current ell>=6 frontier.
+The algebraic equivalence itself is sign-unified in delta and does not require
+CQRF/nonzero-tail hypotheses.
+
+FROZEN DATA
+-----------
+G=10^g, H=G/2, K=10^k, delta=k-g,
+a=10^max(delta,0), b=10^max(-delta,0),
+K=G a/b, 10^ell=G b/a.
+
+Ftilde=A Xcal^2+Z D2 > 0.
+Root polynomial:
+    Q(T)=A H^2 T^2 - 2u K D2 T + Ftilde.
+Unified square kernel:
+    Psi=(2u a D2)^2 - A b^2 Ftilde.
+
+Layer S: Psi=s^2, s>=0 integer.
+Layer R: AGb | 2(2u a D2 +/- s) for at least one sign,
+         with positive reconstructed root.
+
+THEOREM (corrected GRFQE)
+-------------------------
+Layer S + Layer R is equivalent to existence of kappa in Z_{>0} such that
+
+    A H^2 kappa^2 - 2u K D2 kappa + Ftilde = 0.          (E1)
+
+Equivalently, after multiplying by 4,
+
+    A G^2 kappa^2 - 8u K D2 kappa + 4Ftilde = 0.         (E2)
+
+If Omega_hat:=Ftilde/(2K) is retained as a rational quotient, (E2) is also
+algebraically equivalent to
+
+    A 10^ell kappa^2 - 8uD2 kappa + 8Omega_hat = 0.       (GRFQ)
+
+FORWARD
+-------
+Assume Layer S + Layer R.  Choose eps in {+1,-1} for which Layer R holds and set
+
+    kappa := 2(2u a D2 + eps s)/(AGb).
+
+The frozen root formula is exactly
+
+    a1 = 2(2u a D2 + eps s)/(AGb),
+
+hence kappa=a1 is a positive integer and Q(kappa)=0.  Thus (E1)/(E2)/GRFQ hold.
+
+REVERSE
+-------
+Assume kappa>0 satisfies (E1).  Put
+
+    X := 2u a D2,
+    D := AGb/2,
+    F1 := D kappa,
+    F2 := 2X-F1.
+
+Because G b is even, D is an integer.  Using K=G a/b and Q(kappa)=0 gives
+
+    F1 F2 = A b^2 Ftilde.
+
+Since Ftilde>0 and F1>0, F2>0.  Define
+
+    s := |F1-X| = |F1-F2|/2.
+
+This is an integer and
+
+    s^2 = X^2-F1F2
+        = X^2-A b^2 Ftilde
+        = Psi.
+
+Hence Layer S holds.  Also F1=X+eps s for one eps, and
+
+    2F1 = AGb kappa,
+
+so AGb | 2(X+eps s): Layer R holds.  The reconstructed positive root is kappa.
+
+PARITY
+------
+No independent parity hypothesis is required in the reverse direction:
+D=AGb/2 and X are integers, so s=|D kappa-X| is automatically integral.
+
+ZERO-SQUARE CASE
+----------------
+If s=0 then F1=F2=X.  The two root signs coincide.  The same argument proves
+Layer S and Layer R without creating an exceptional extra branch.
+
+SIGN RECONSTRUCTION
+-------------------
+The sign eps is recovered from whether F1>=X or F1<=X.  Both possible root signs
+are therefore covered.
+
+CRITICAL IDENTIFICATION
+-----------------------
+The GRFC9 variable kappa is NOT a new small quotient.  For every genuine root,
+
+    kappa = a1.
+
+Consequently GRFQ is a square-root-free re-expression of the inherited integral
+root quadratic, not a new dimension reduction.  Symbolically,
+
+    A G^2 kappa^2 - 8uKD2 kappa + 4Ftilde
+      = 4( A H^2 kappa^2 - 2uKD2 kappa + Ftilde ).
+
+OMEGA / DCDC PROVENANCE
+-----------------------
+Omega_hat=Ftilde/(2K) is always a rational pre-root quotient.  The statement
+Omega in Z (equivalently 2K|Ftilde for ell>=3) is root-necessary and was derived
+from the integral-root decimal core.  Therefore no proof of root existence may
+assume Omega integrality as an independent pre-root theorem.
+
+When Omega is integral, GRFQ implies the exact normalized factor identity
+
+    uD2*kappa - Omega = (A 10^ell/8) kappa^2,
+
+hence RQDC.  Under kappa=a1 and Omega=a1 lambda0 this is exactly the old
+normalized complementary-root equation multiplied by a1.
+
+VERDICT
+-------
+GRFQE_STATUS=PROVED_CORRECTED
+KAPPA_EQUALS_A1=PROVED
+NEW_SMALL_QUOTIENT_INTERPRETATION=DISPROVED
+SQUARE_ROOT_VARIABLE_CAN_BE_ELIMINATED_SYNTACTICALLY=YES
+MATHEMATICAL_DIMENSION_REDUCTION_FROM_KAPPA=NO

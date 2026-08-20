@@ -1,0 +1,46 @@
+J2-65 R8 EXACT NORM FORMS
+FIELD F = Q(q,X,lambda)
+r=T/alpha, y=Y/alpha
+
+A(r)=A+B*r+C*r^2
+L(r)=E+F*r
+z=2*D*y+lambda*L(r)
+
+z^2=a*r^2+b*r+c
+a=lambda^2*F^2-4*D*C
+b=2*lambda^2*E*F-4*D*B
+c=lambda^2*E^2-4*D*A
+
+w=2*a*r+b
+Delta_B=b^2-4*a*c
+w^2-4*a*z^2=Delta_B
+
+MOVING NORM PRESENTATION:
+E_moving=F(sqrt(a))
+N(w+2*z*sqrt(a))=Delta_B
+[Delta_B]=[-Xi]
+
+FIXED TORUS PRESENTATION:
+H=4*A*C-B^2=[2*q*(X+1)*(q+4)*c]^2*R
+J_A=2*A*F-B*E
+V=2*A*alpha+B*T+lambda*E*Y
+W=H*T+lambda*J_A*Y
+W^2+H*V^2=-16*A*det(M_P+lambda*M_S)*Y^2
+
+For actual q>1, Y!=0:
+E_fixed=F(sqrt(-H))=F(sqrt(-R))
+N(W/Y+(V/Y)*sqrt(-H))=-16*A*det(M)
+
+A=X*A1, h=2*X+q+2
+beta=(-R,-A1*h*Xi)
+
+Cyclotomic pullback X=u*q-1, lambda=K/X:
+R=q^2*rho
+A1=q*sigma
+h=q*(2u+1)
+Xi=q^2*Phi
+beta_act=(-rho,-sigma*(2u+1)*Phi)
+
+rho = 4*q**2*u**4 + 4*q**2*u**3 + q**2*u**2 - 8*q*u**3 - 4*q*u**2 + 4*u**2 - 2
+sigma = 2*q**4*u**3 + q**4*u**2 + 16*q**3*u**3 + 4*q**3*u**2 + 32*q**2*u**3 - 8*q**2*u**2 + 4*q**2*u - 32*q*u**2 + 8*q*u + 8*u - 4
+Phi = -4*K**2*q**2*u**4 + 8*K**2*q*u**3 - 4*K**2*u**2 + 4*q**2*u**4 + 4*q**2*u**3 + q**2*u**2 - 8*q*u**3 - 4*q*u**2 + 4*u**2 - 2

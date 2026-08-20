@@ -1,0 +1,43 @@
+J2-65-R12 MINIMAL INCIDENCE PRESENTATION
+========================================
+
+Variables:
+  base: (q,G,K,u), with u*q=G+1
+  source projective: (r,y)
+  radial lift: s>0
+
+Frozen conic:
+  C_{q,G,K}(r,y)=0
+
+Radial reconstruction:
+  alpha=d*s
+  t=s*r
+  x=s*y
+  Ntail=s*Nhat(r)
+  Z=s*Zhat(r)
+  a3=s*a3hat(r)
+  Xrad=s*Xhat(r)
+  D2=s*Dhat(r)
+
+Primitive/integral incidence:
+  t=s*r in Z
+  x=s*y in Z
+  Z=s*Zhat(r) in Z
+  gcd(s*y,u)=1
+  gcd(s*Zhat(r),u)=1
+
+Global digit/real sector:
+  s>0
+  y>0
+  r>1/c(q)
+  s*y > A*G/10
+  A*L*y < 8*u*Dhat(r)
+
+Optional birational auxiliary:
+  z_Q=Psi(r,y) in Q(i), Norm(z_Q)=N.
+
+Do not quotient z_Q to an arbitrary z_Z in Z[i] unless the
+norm-one integralization choice epsilon is retained.
+
+NEXT_UNIQUE_OBJECT=
+PRIMITIVE_RADIAL_CONIC_SOURCE_INCIDENCE_X_GLOBAL_DIGIT_SECTOR

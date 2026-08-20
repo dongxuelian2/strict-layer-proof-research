@@ -1,0 +1,21 @@
+{
+  "main_report": "105_R4_Source_Completed_Fixed_Incidence_Extraction.md",
+  "companions": [
+    "105_R4_Projection_Ledger.csv",
+    "105_R4_Moving_Data_Quotient_Table.csv",
+    "105_R4_Global_Rigidity_Candidates.csv",
+    "105_R4_Fixedness_Ledger.csv",
+    "105_R4_Elimination_Registry.json",
+    "105_R4_Cellwise_Rigidity_Test.csv",
+    "105_R4_Arithmetic_Eligibility.csv",
+    "105_R4_scripts/verify_r4_fixed_incidence.py",
+    "105_R4_scripts/verify_r4_fixed_incidence.log",
+    "105_R4_scripts/README.md"
+  ],
+  "terminal_verdict": "FIXED_INCIDENCE_EXTRACTED_OFF_EXCEPTIONAL_CELLS",
+  "exceptional_cells": [
+    "S3",
+    "S4"
+  ],
+  "r5_route": "Route C — Exceptional Fixedness Repair"
+}

@@ -1,0 +1,15 @@
+{
+  "round": "105-R6",
+  "object": "essential sphere-master square locus",
+  "normalized_master": "A*Q0 - B*P1 = C",
+  "sphere": "Q0^2 - P1^2 = N, N=P2^2+P3^2",
+  "essential_discriminant": "D_ess=C^2+(B^2-A^2)*N",
+  "square_cover": "W^2=D_ess",
+  "factor_pair_form": "(W-C)(W+C)=(B^2-A^2)*N",
+  "rational_reconstruction": {
+    "Q0": "(-A*C +/- B*W)/(B^2-A^2)",
+    "P1": "(-B*C +/- A*W)/(B^2-A^2)"
+  },
+  "source_intersection_status": "OPEN",
+  "r7_single_target": "Source intersection of the exceptional square cover/factor-pair incidence, followed by integral/primitive/DES/common-U audit"
+}

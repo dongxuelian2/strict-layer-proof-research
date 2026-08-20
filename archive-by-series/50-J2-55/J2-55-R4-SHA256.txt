@@ -1,0 +1,5 @@
+d5802b71a4d5a61ff35f491813bafd1e0effb08a85095401ce5b983503f16779  /mnt/data/J2-55-R4-Complementary-Factor-Euclidean-Report.md
+4aa388cb862a4fded76b3e55e0e2b5798ad9618c3f8fb364cdd7bcd15bd93518  /mnt/data/J2-55-R4-EuclideanDefect-symbolic.py
+6fabcc3ca17c72200eabe12f200dd5c2f66ccb8a2e45f0399376fb1920b93bf7  /mnt/data/J2-55-R4-EuclideanDefect-search.py
+97d51fc88ceda6b845a9798f5f691f5dd63d67fede504fbffa42dee3a3baba77  /mnt/data/J2-55-R4-EuclideanDefect-certificate.txt
+3607932d592c2bc00449c94c77692b5b2ab0177a31e1128e3e832185214c356b  /mnt/data/J2-55-R4-EuclideanDefect-survivors.tsv

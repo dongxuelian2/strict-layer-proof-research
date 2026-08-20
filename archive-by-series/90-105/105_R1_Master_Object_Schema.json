@@ -1,0 +1,63 @@
+{
+  "name": "Z_sem",
+  "type": "mixed arithmetic-semialgebraic incidence object",
+  "pre_J_core": {
+    "variables": [
+      "P1",
+      "P2",
+      "P3",
+      "Q0",
+      "U",
+      "V",
+      "n1",
+      "n2",
+      "n3",
+      "m1",
+      "m2",
+      "m3",
+      "g",
+      "k",
+      "G",
+      "K"
+    ],
+    "relations": [
+      "P1^2+P2^2+P3^2=Q0^2",
+      "gcd(P1,P2,P3,Q0)=1",
+      "gcd(U,V)=1",
+      "gi=gcd(V,Pi)",
+      "Ci=Pi/gi",
+      "ai=U*Ci",
+      "bi=V/gi",
+      "digit windows for ai and bi",
+      "A1 exponent relations",
+      "G=10^g",
+      "K=10^k",
+      "V*A_sharp=Q0*B"
+    ]
+  },
+  "power_torus": {
+    "Gamma_10": "<(10,1),(1,10)> in G_m^2",
+    "source_part": "(G,K)=(10^g,10^k), g,k>=0"
+  },
+  "source_section": {
+    "general_chart": [
+      "U in positive integers",
+      "gcd(U,V)=1",
+      "U*Ci in exact digit windows",
+      "actual cuts/word placement"
+    ],
+    "q1_specialized_chart": [
+      "affine source lattice/coset",
+      "rho congruence",
+      "rho interval",
+      "primitive conditions"
+    ],
+    "principle": "source section is a first-class fibre, never a late pullback"
+  },
+  "derived_strata": {
+    "J": "Lambda_beta/delta_v",
+    "resonance": "J=G/gcd(G,beta)=2^(e2+)*5^(e5+)",
+    "J2": "(v2(J),v5(J))=(1,0)"
+  },
+  "promoted_information_object": "Source-Section Incidence Class kappa_src"
+}

@@ -1,0 +1,8 @@
+{
+  "canonical_uncompressed_sha256": "0612182b02a4e89b3af7d91cdebd3176f81a4026c1f1494f1dafa1700eca6f86",
+  "expanded_states_verified": 32255632,
+  "implementation": "independent_python_replay_v1",
+  "integral_C1_survivors": 0,
+  "rows_verified": 2691302,
+  "verifier_status": "PASS"
+}

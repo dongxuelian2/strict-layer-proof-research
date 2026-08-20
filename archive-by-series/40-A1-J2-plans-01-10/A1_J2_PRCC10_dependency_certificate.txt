@@ -1,0 +1,18 @@
+A1 J2 PRCC10 DEPENDENCY AUDIT
+STATUS=PASS
+
+condition	pre_root	integral_root_necessary	primitive_recovery	note
+A_ROOT: Kx == -Z (mod A)	False	True	True	From primitive C1 residue KC1==-z mod A, then a1=UC1,Z=Uz. No gcd cancellation needed.
+U_SQ: x^2 == Z^2 (mod u)	False	True	True	From primitive C1^2==z^2 mod u, then multiply by U^2. No gcd(Z,u)=1 needed.
+gcd(Z,u)=1	False	False	True	Needs primitive gcd gcd(C1,u)=1 plus U-SQ to get gcd(z,u)=1, and common-U gcd(U,u)=1 to pass to Z=Uz.
+DRL: x>AG/10	False	True	False	Uses actual second numerator digit window plus radial J2.5; it is root/digit necessary, not pre-root.
+Upper root interval x<8uD2/(A*10^ell)	False	True	False	Uses positivity of complementary factor Lambda=2uKD2-AH^2x.
+A2 lift	False	True	True	Uses Q(x)=0 together with primitive A-root residue to choose canonical rA; composite-modulus elementary linear lifting.
+
+DIAGNOSTIC_GCD_D2_A_DISTRIBUTION={1: 53, 7: 4, 3: 21, 11: 1}
+GLOBAL_GCD_D2_A_EQ_1_CONJECTURE=FALSE
+U_SQ_INDEPENDENCE=NO; algebraically it is Q(x)=0 reduced modulo u in the reconstructed chart
+A_ROOT_INDEPENDENCE=NONDEGENERATE_NO; if gcd(D2,A)=1 it is the canonical Q mod A root; degenerate case primitive A_ROOT is stronger
+CRT_USAGE=LEGAL_AS_COPRIME_MODULUS_COMBINATION_NOT_AS_PROBABILISTIC_INDEPENDENCE
+X_LT_AG_FROZEN_THEOREM=NOT_FOUND
+ROOT_UPPER_REPLACEMENT=8uD2/(A*10^ell) from complementary-factor positivity

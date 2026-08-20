@@ -1,0 +1,20 @@
+# 105-R31 SHA-256 manifest
+# Paths relative to /mnt/data/105-R31. All entries below are bytewise hashes computed in the active runtime.
+6e180a2ee6837eeef6058b07c3db75f0e9769c4e84daf543f1b40ceeb6f22f5b  105-R31-N30-POSITIVE-SATURATION-CERTIFICATE.md
+ac3ade9284a0c18b80cbbf5c1dfd8bc4ea33c65a561612b23a929b525762d85b  105-R31-N30-positive-analysis.md
+1719cd1c79fed110c582e722acfc211dedad819858e38d637ab2a080497f484b  105-R31-N30-positive-registry.csv
+4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945  105-R31-active-search-survivors.json
+552a7f9a457dfb8d0b8b700b92424cfe0a9fa13b8efbdb2b54ae8ecbcf9f227e  105-R31-exceptional-branch-registry.csv
+dfda2c1c76f60ed72558b7e95909cf3350acc181866b7136697e268e03ea436d  105-R31-execution.log
+8a9e688fe8c85ecbceb3d3079a8be1ee5cb01ffe4aea87295f257269cbf91322  105-R31-minimal-q-descent.md
+f12f1b5eef6cc74e3f8f7521260d38b195b5cae5e7e26218ac253947d94ff02c  105-R31-minimal-q-registry.csv
+34fce0674c9b2d039b4026e62093355dba0cb2315a9e746a544a095c859bd2a8  105-R31-q1-candidate-registry.csv
+5dce481eb346bd2e67f4f46129248d1bfb9dc9f450c81f23ae4b033b7a7483ad  105-R31-q1-forced-scale-derivation.md
+48c1cda935c07fe02afbe761ec49448c8f44dd5421e60eb05ebeac11105df8e1  105-R31-reconstruction-audit.md
+ab4c72558404af9c65b435aa2b5bc45f0f2ca038c6aae687d663fcf69e5ed0ba  105-R31-reconstruction-registry.csv
+75bd234ce09eaef3efab3109ed73ebc865afdb7b3ffa0cfe93f4a7c9125adcd1  105-R31-scripts/build_r31_reports.py
+92e4e6c59850dc43268aa01a6a6e7417aec3ae6fd0df8e79379e0561a760f80b  105-R31-scripts/r31_unit_denominator.py
+1a345245dc8535e0c8874f81e9924dba51fed2619d78d903cef16b7e4b6210b7  105-R31-search-summary.json
+4bcbe12605a46e69051b0bff435aa88637411bbb63ac9d644f7671254884804d  105-R31-stage-archive.md
+f072f65975bbfe79b680d129e1c13c58549bb441737a70e1d93f45ffbe8b697b  105-R31-stage-archive.sha256.txt
+82ae502ca6832247b61a7770a6803667eb2385ec90dd0aa4774e06c462ee895d  r31-script-stdout.log

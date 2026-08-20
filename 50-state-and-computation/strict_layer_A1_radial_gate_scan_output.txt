@@ -1,0 +1,154 @@
+State 1: b=(1, 6, 8), P=(24, 52, 159, 169)
+  master: True
+  sphere: True
+  primitive: True
+  gcd_profile: True
+  tail: True
+  V: 24
+  g: (24, 4, 3)
+  C: (1, 13, 53)
+  D: 71
+  H: 304
+  K3: 8
+  face: A
+  RU: -517
+  GU: -400
+  I23: (Fraction(10, 13), Fraction(10, 53))
+  raw: []
+  N_raw: 0
+  N_V: 0
+  RU_bridge: True
+  gap_bridge: True
+
+State 2: b=(1, 6, 8), P=(48, 436, 75, 445)
+  master: True
+  sphere: True
+  primitive: True
+  gcd_profile: True
+  tail: True
+  V: 24
+  g: (24, 4, 3)
+  C: (2, 109, 25)
+  D: 35
+  H: 2320
+  K3: 296
+  face: A
+  RU: -141
+  GU: 840
+  I23: (Fraction(10, 109), Fraction(2, 5))
+  raw: []
+  N_raw: 0
+  N_V: 0
+  RU_bridge: True
+  gap_bridge: True
+
+State 3: b=(1, 6, 8), P=(456, 292, 2907, 2957)
+  master: True
+  sphere: True
+  primitive: True
+  gcd_profile: True
+  tail: True
+  V: 24
+  g: (24, 4, 3)
+  C: (19, 73, 969)
+  D: 1603
+  H: 1712
+  K3: 40
+  face: A
+  RU: -9617
+  GU: -8960
+  I23: (Fraction(10, 73), Fraction(10, 969))
+  raw: []
+  N_raw: 0
+  N_V: 0
+  RU_bridge: True
+  gap_bridge: True
+
+State 4: b=(1, 6, 8), P=(552, 3796, 2847, 4777)
+  master: True
+  sphere: True
+  primitive: True
+  gcd_profile: True
+  tail: True
+  V: 24
+  g: (24, 4, 3)
+  C: (23, 949, 949)
+  D: 743
+  H: 21232
+  K3: 1544
+  face: A
+  RU: -8541
+  GU: 0
+  I23: (Fraction(10, 949), Fraction(10, 949))
+  raw: []
+  N_raw: 0
+  N_V: 0
+  RU_bridge: True
+  gap_bridge: True
+
+State 5: b=(5, 5, 1), P=(298, 2514, 1485, 2935)
+  master: True
+  sphere: True
+  primitive: True
+  gcd_profile: True
+  tail: True
+  V: 5
+  g: (1, 1, 5)
+  C: (298, 2514, 297)
+  D: 45
+  H: 12425
+  K3: 145
+  face: A
+  RU: -456
+  GU: 22170
+  I23: (Fraction(5, 1257), Fraction(10, 297))
+  raw: []
+  N_raw: 0
+  N_V: 0
+  RU_bridge: True
+  gap_bridge: True
+
+State 6: b=(5, 5, 10), P=(32, 264, 123, 293)
+  master: True
+  sphere: True
+  primitive: True
+  gcd_profile: True
+  tail: True
+  V: 10
+  g: (2, 2, 1)
+  C: (16, 132, 123)
+  D: 27
+  H: 115
+  K3: 170
+  face: A
+  RU: -12168
+  GU: -10980
+  I23: (Fraction(25, 33), Fraction(10, 123))
+  raw: []
+  N_raw: 0
+  N_V: 0
+  RU_bridge: True
+  gap_bridge: True
+
+State 7: b=(7, 7, 14), P=(32, 264, 123, 293)
+  master: True
+  sphere: True
+  primitive: True
+  gcd_profile: True
+  tail: True
+  V: 14
+  g: (2, 2, 1)
+  C: (16, 132, 123)
+  D: 27
+  H: 161
+  K3: 238
+  face: A
+  RU: -12168
+  GU: -10980
+  I23: (Fraction(25, 33), Fraction(10, 123))
+  raw: []
+  N_raw: 0
+  N_V: 0
+  RU_bridge: True
+  gap_bridge: True
+

@@ -1,0 +1,52 @@
+105-R34 execution log
+=====================
+INPUT MODE:
+- Historical File Library artifacts were not mounted as raw bytes.
+- R33 hashes therefore use LEDGER-CROSSCHECK only; no bytewise rehash was claimed.
+- New R34 files are bytewise hashed in this runtime.
+
+AUTHORITATIVE RELATIONS RECOVERED:
+m2=m
+m3=n+g
+n2=m+g+k
+n3=n
+P2=u0*W*C2
+P3=u0*A*C3
+V0=Lambda*u0*A*W
+(U,V0)=1 on q1 source fibre
+V(q)=q*V0 on general residual q
+
+SYMBOLIC RESULTS:
+1. F3 exact residual:
+   V0*X3-U*b3*Q0 = -10^n3*U*J3.
+2. F2 exact residual:
+   V0*X2-U*A2 = -10^n2*b1*U*P1.
+3. Cross semantic remainder:
+   S=A3*C2-A2*C3
+    =10^n3*J3*C2-10^n2*b1*P1*C3.
+4. r=min(n2,n3) => 10^r | S.
+5. Therefore nonzero |R|=U|S| >= 10^r >= Mr.
+6. Requested 0<|R|<Mr certificate cannot come from this route.
+7. General q has the same exact residual identities before modular reduction.
+
+MACHINE REPLAY:
+R34 symbolic/seven-hit replay PASS; checks=77
+F2_INFORMATION_GAIN=ZERO
+F3_INFORMATION_GAIN=ZERO
+CROSS_REMAINDER_HAS_FULL_10^r_FACTOR=YES
+REQUESTED_0_LT_ABS_R_LT_MR_CERTIFICATE=STRUCTURALLY_IMPOSSIBLE
+
+SEARCH DISCIPLINE:
+- No new generic raw-MASTER census was run.
+- Reason: the symbolic dependency theorem proves F2/F3 cannot delete a source U that already satisfies Xi=CiU.
+- The inherited R33 bounded search still has no genuine q1 MASTER+room pass.
+- No global no-hit inference is made from that bounded corpus.
+
+TERMINAL:
+R34_TERMINAL_ATTACK_FAILED
+R34_SOURCE_WORD_SATURATION_CERTIFICATE=PROVED
+MASTER_SOURCE_WORD_UNIT_EXTINCTION=NOT_PROVED
+MASTER_SOURCE_WORD_ALLQ_EXTINCTION=NOT_PROVED
+DECIMAL_SOURCE_WORD_COLLISION=NO__REQUESTED_SIZE_PATTERN_STRUCTURALLY_IMPOSSIBLE
+UNIT_BRANCH_DEAD=NO
+PRIME_BRANCH_DEAD=NO

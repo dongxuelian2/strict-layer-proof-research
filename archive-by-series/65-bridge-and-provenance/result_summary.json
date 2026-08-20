@@ -1,0 +1,10 @@
+{
+  "J2_status": "OPEN",
+  "global_fixed_object_extracted": false,
+  "global_dimension_drop": false,
+  "qgt1_sparse_elimination": "OLD_N0_SQUARECLASS_RETURNS",
+  "q1_new_result": "DECIMAL_DEFECT_VALUATION_SIGNATURE",
+  "q1_valuation_branches": 4,
+  "information_gain": "STRUCTURAL",
+  "verdict": "VALUATION_SIGNATURE_FINITE_BRANCHING_ACHIEVED"
+}

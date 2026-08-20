@@ -1,0 +1,11 @@
+A1 J2 DCDC5 deficiency-2 exact closure certificate
+STATUS=ELL2_CLOSED
+UNIFORM_RANGE_REDUCTION=q=1 => g<=6; q>1 => g<=6
+TOTALS={'outer': 8, 'N_cells': 2086, 'congruence': 1468, 'reconstructed': 656, 'digit_legal': 214, 'dcdc': 0, 'disc_nonnegative': 0, 'disc_square': 0, 'integral_a1_roots': 0, 'full_radial_survivors': 0}
+g=4 {'q_values': [137, 1], 'outer': 2, 'N_cells': 522, 'congruence': 476, 'reconstructed': 212, 'digit_legal': 69, 'dcdc': 0, 'disc_nonnegative': 0, 'disc_square': 0, 'integral_a1_roots': 0, 'full_radial_survivors': 0}
+g=5 {'q_values': [9091, 11, 1], 'outer': 3, 'N_cells': 782, 'congruence': 515, 'reconstructed': 231, 'digit_legal': 76, 'dcdc': 0, 'disc_nonnegative': 0, 'disc_square': 0, 'integral_a1_roots': 0, 'full_radial_survivors': 0}
+g=6 {'q_values': [9901, 101, 1], 'outer': 3, 'N_cells': 782, 'congruence': 477, 'reconstructed': 213, 'digit_legal': 69, 'dcdc': 0, 'disc_nonnegative': 0, 'disc_square': 0, 'integral_a1_roots': 0, 'full_radial_survivors': 0}
+DCDC_SURVIVORS=0
+INTEGRAL_A1_ROOTS=0
+FULL_RADIAL_SURVIVORS=0
+CERTIFICATE_STATUS=PASS

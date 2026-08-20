@@ -1,0 +1,206 @@
+J2-65 R18 EXECUTION LOG
+================================
+
+===== SYNTAX AUDIT =====
+SYNTAX_PASS=J2-65-R18-CompositionAdapted.py
+SYNTAX_PASS=J2-65-R18-CyclotomicSaturation.py
+SYNTAX_PASS=J2-65-R18-DigitShellPullback.py
+SYNTAX_PASS=J2-65-R18-EmbeddedSourceLattice.py
+SYNTAX_PASS=J2-65-R18-FinitePacket.py
+SYNTAX_PASS=J2-65-R18-PowerTenAmbient.py
+SYNTAX_PASS=J2-65-R18-QFreeAmbient.py
+SYNTAX_PASS=J2-65-R18-Regression.py
+SYNTAX_PASS=J2-65-R18-SaturationSchur.py
+SYNTAX_PASS=J2-65-R18-SourcePacket.py
+SYNTAX_PASS=J2-65-R18-SplitSpecialization.py
+
+===== SCRIPT EXECUTION =====
+===== J2-65-R18-CompositionAdapted.py =====
+CAS_IDENTITY=PASS
+R^2+(J0*V)^2=N0*(W0*V^2+F0*H^2)
+Q_AUX=W0*V^2+F0*H^2
+Q_AUX_CONTENT=gcd(W0,F0)
+Q_AUX_DISCRIMINANT=-4*W0*F0
+Q_AUX_POSITIVE=TRUE
+COMPOSITION_ADAPTED_SOURCE_COORDINATES=NOT_FOUND
+RETURN_CODE=0
+
+===== J2-65-R18-CyclotomicSaturation.py =====
+CYCLOTOMIC_SOURCE_SATURATION=PROVED
+DEFINITION=legal row-equivalence/saturation inside the fixed boundary coordinate lattice
+OLD_CONGRUENCE=G | d*(hZ*Z+ha*a)
+NEW_EQUIVALENT_CONGRUENCE=G | 2*d*(1+4u)*(Z+u*(1+2u)^3*a)
+WHY_EQUIVALENT=multiply the congruence row by u^5, a unit modulo G
+delta_old=gcd(G,2*d*(q+4))
+delta0=gcd(G,2*d*(1+4u))
+delta_old=delta0 because gcd(u,G)=1 and u*(q+4)=G+1+4u
+SATURATION_QUOTIENT=0
+SATURATION_QUOTIENT_ORDER=1
+PRIME_FACTORIZATION_USED=FALSE
+RETURN_CODE=0
+
+===== J2-65-R18-DigitShellPullback.py =====
+R16_exact: Rpartial=2*d0*a+d1*h
+d0=400*q^10*D0
+R=r0=Rpartial/(800*q^5)
+lambda_h=d1/(800*q^5)  # exact R16 normalized h-row coefficient
+therefore R=q^5*D0*a+lambda_h*h
+H=MU0*h, MU0=20*G^2*q^4*(G+1)
+CONTACT_HEIGHT_IN_AMBIENT_COORDINATES=h=H/MU0
+DIGIT_HEIGHT_IN_AMBIENT_COORDINATES=a=(R-lambda_h*H/MU0)/(q^5*D0)
+DIGIT_HEIGHT_FUNCTIONAL_q_DEPENDENCE=SCALAR_ONLY
+Q_FREE_DIGIT_SHELL=PARTIAL
+REASON=ambient quadratic coefficients are q-free, but the legal integral height section retains recovered q-scales
+PRIMITIVE_MOD_u_GATE_REOPENED=FALSE
+JACOBSTHAL_CAMPAIGN_REOPENED=FALSE
+RETURN_CODE=0
+
+===== J2-65-R18-EmbeddedSourceLattice.py =====
+BOUNDARY_QFREE_BASIS_COLUMNS:
+(M0,0,0),(rho0,1,-A),(0,0,10)
+M0=G/gcd(G,2*d*(1+4u))
+rho0 == -u*(1+2u)^3 (mod M0)
+R16_PRE_EXTRA_ROWS: r0=r_a*a+r_h*h; v0=v_Z*Z+v_a*a+v_h*h
+QFREE_EMBEDDING_MATRIX_ROWS:
+[0, r_a-A*r_h, 10*r_h]
+[q^2*v_Z*M0, q^2*(v_Z*rho0+v_a-A*v_h), 10*q^2*v_h]
+[0, -A*MU0, 10*MU0]
+CONTACT_HEIGHT_LINE=MU0*Z inside the chosen ambient lattice
+UNIVERSAL_ORDER_PACKET=Z/q^2Z
+DECIMAL_AMBIENT_SOURCE_PACKET=Z/M0Z direct_sum Z/q^2Z
+gcd(M0,q)=1 => DECIMAL_AMBIENT_SOURCE_PACKET ~= Z/(M0*q^2)Z
+RETURN_CODE=0
+
+===== J2-65-R18-FinitePacket.py =====
+CANONICAL_AMBIENT=retain the fixed decimal chart and the contact-height line
+SOURCE_CONGRUENCE_PACKET=Z/M0Z
+SCHUR_CONDUCTOR_PACKET=Z/q^2Z
+gcd(M0,q)=1 because M0|G and gcd(q,G)=1
+FINITE_SOURCE_PACKET=Z/M0Z direct_sum Z/q^2Z ~= Z/(M0*q^2)Z
+FINITE_PACKET_RANK=0
+FINITE_PACKET_INVARIANT_FACTORS=(M0*q^2)
+FINITE_PACKET_ORDER=M0*q^2
+FINITE_PACKET_AUTOMATIC_ON_AMBIENT_ISOTROPIC_LOCUS=UNRESOLVED
+SOURCE_PACKET_IS_CURRENT_J2_OBSTRUCTION=TRUE
+RAW_Z3_LEDGER: with g10=gcd(M0,10), boundary SNF=(1,g10,10*M0/g10)
+adding coprime q^2 conductor gives raw invariant factors=(1,g10,q^2*10*M0/g10)
+RETURN_CODE=0
+
+===== J2-65-R18-PowerTenAmbient.py =====
+TORIC_BASE=G=10^g,K=10^k,0<k<2g,u|(G+1),q=(G+1)/u>1
+deg_G(F0)=2; deg_K(F0)=0
+deg_G(N0)=2; deg_K(N0)=2
+deg_G(W0)=4; deg_K(W0)=0
+deg_G(S0)=3; deg_K(S0)=1
+deg_G(D0)=6; deg_K(D0)=2
+deg_G(F0*N0)=4; deg_K(F0*N0)=2
+Q0_COEFFICIENT_GCD=1 because coefficient of R^2 is 1
+UNIVERSAL_TEN_POWER_CONTENT=1
+Q10_PRIM=Q0
+FURTHER_SOURCE_LEGAL_TEN_SQUARE_DESCENT=NONE
+RETURN_CODE=0
+
+===== J2-65-R18-QFreeAmbient.py =====
+MU0= 20*G**2*q**4*(G + 1)
+MU0_INTEGRAL=TRUE
+AMBIENT_COORDINATES=R=r0; V=q^2*v0; H=MU0*h
+Q_FREE_AMBIENT_FORM=R^2-D0*V^2-F0*N0*H^2
+Q_FREE_AMBIENT_COEFFICIENTS_DEPEND_ONLY_ON_G_u_K=TRUE
+NOTE=C_extra is avoided by using the pre-extra R16 coordinates (r0,v0)
+RETURN_CODE=0
+
+===== J2-65-R18-Regression.py =====
+R18_REGRESSION=PASS
+SOURCE_ROW_CYCLOTOMIC_REDUCTION=PASS
+MASTER_COMPOSITION_REGRESSION=PASS
+QFREE_AMBIENT_ALGEBRA=PASS
+PRIME_FACTORIZATION_USED=FALSE
+PELL_UNIT_PHASE_REOPENED=FALSE
+q1_REOPENED=FALSE
+GENERAL_J_REOPENED=FALSE
+RETURN_CODE=0
+
+===== J2-65-R18-SaturationSchur.py =====
+SATURATION_BEFORE_SCHUR:
+pre-Schur cyclotomic row saturation is trivial: C_cyc=0
+Schur then lands in the q-free order with second norm coordinate V=q^2*v0
+SCHUR_BEFORE_SATURATION:
+Schur first gives Z[q^2*sqrt(D0)] inside Z[sqrt(D0)]
+post-Schur q-free order saturation enlarges exactly the sqrt-coordinate by index q^2
+SATURATION_SCHUR_COMMUTATION=FINITE_INDEX
+COMMUTATION_DEFECT_MODULE=Z/q^2Z
+COMMUTATION_DEFECT_ORDER=q^2
+INDEX_CONDUCTOR_CORRESPONDENCE=PROVED_FOR_THE_UNIVERSAL_q_PART
+INTERPRETATION=the R17 order index and the universal source norm-coordinate q-packet are the same cokernel
+RETURN_CODE=0
+
+===== J2-65-R18-SourcePacket.py =====
+SOURCE_PACKET_CYCLOTOMIC_ROW_REDUCTION=PASS
+u^5*q^4*(q+4) == 1+4u (mod G)
+u^5*(q+2)^3*(q+4) == u*(1+2u)^3*(1+4u) (mod G)
+PRE_SCHUR_Q_FREE_CONGRUENCE:
+G | 2*d*(1+4*u)*(Z+u*(1+2*u)^3*a)
+delta0=gcd(G,2*d*(1+4*u)); M0=G/delta0
+q_INDEPENDENT_BASE_COORDINATE_RETIRED=TRUE
+RETURN_CODE=0
+
+===== J2-65-R18-SplitSpecialization.py =====
+SPLIT_LOCUS=D0=Y^2
+Q0_FACTORIZATION=(R-Y*V)*(R+Y*V)=F0*N0*H^2
+SOURCE_LATTICE_SATURATION_SPECIALIZES_WITHOUT_RANK_CHANGE=TRUE
+q_CONDUCTOR_PACKET_PERSISTS_AS_COORDINATE_INCIDENCE=TRUE
+SPLIT_SOURCE_PACKET=SPECIAL
+FACTOR_ALLOCATION_ENUMERATION_USED=FALSE
+RETURN_CODE=0
+
+===== ARTIFACT AUDIT =====
+PRESENT J2-65-R18-CompositionAdapted.py
+PRESENT J2-65-R18-CompositionAdapted.tsv
+PRESENT J2-65-R18-CyclotomicSaturation.py
+PRESENT J2-65-R18-CyclotomicSaturation.tsv
+PRESENT J2-65-R18-DigitShell.tsv
+PRESENT J2-65-R18-DigitShellPullback.py
+PRESENT J2-65-R18-EmbeddedSourceLattice.py
+PRESENT J2-65-R18-EmbeddedSourceLatticeBasis.txt
+PRESENT J2-65-R18-EmbeddedSourceLatticeSmith.tsv
+PRESENT J2-65-R18-FinitePacket.py
+PRESENT J2-65-R18-FinitePacket.tsv
+PRESENT J2-65-R18-Integral-Descent-Commutation-Report.md
+PRESENT J2-65-R18-PowerTenAmbient.py
+PRESENT J2-65-R18-PowerTenAmbient.tsv
+PRESENT J2-65-R18-QFreeAmbient.py
+PRESENT J2-65-R18-QFreeAmbientForm.txt
+PRESENT J2-65-R18-Regression.py
+PRESENT J2-65-R18-SaturationSchur.py
+PRESENT J2-65-R18-SaturationSchur.tsv
+PRESENT J2-65-R18-SourcePacket.py
+PRESENT J2-65-R18-SourcePacketLedger.tsv
+PRESENT J2-65-R18-SplitSpecialization.py
+PRESENT J2-65-R18-certificate.txt
+
+===== SHA256 =====
+15bfdcaf896c2aa3d7fcf164cc36035048d9b748b7a3b0e3f887b01edca17b94  J2-65-R18-CompositionAdapted.py
+25e50d50d3a41013db561168ef31ff0281b01527d268cbc02437b06f06528753  J2-65-R18-CompositionAdapted.tsv
+824bff4262168df01eae271724b324a4d2dab66328bdcd6caea94ce057e28268  J2-65-R18-CyclotomicSaturation.py
+3ae72501b19ae992f4e25e06abc7770a2722279c72a6d238ad5572dee604e033  J2-65-R18-CyclotomicSaturation.tsv
+e5c8a85822f21f86ca0dd4f5e3cfb1867ca84095c39bfd0c556387a68bf99178  J2-65-R18-DigitShell.tsv
+7eac4c6adc58abd1e93b1806e3548b203036f9d6c03dedb0f3e40e568b08099a  J2-65-R18-DigitShellPullback.py
+f2a904d8ea198ad30f336583cacd326d47de4c45c144a05e600b1500088d41d5  J2-65-R18-EmbeddedSourceLattice.py
+04628c738a047737359676a0a6a3456f075820865d37276241b007b0016b783f  J2-65-R18-EmbeddedSourceLatticeBasis.txt
+eaa97921c42cb0873447afa2f4fe2fcb5e18f82754bea034ad5730078bff5284  J2-65-R18-EmbeddedSourceLatticeSmith.tsv
+33f683eecddd7eb1ca1b13ff4faf3f944e422ae3bec3a5630d2ac0990a2a2896  J2-65-R18-FinitePacket.py
+67aff2387201b19e8e4f306f8f60c503301ac571c3842e872332d318ef5851df  J2-65-R18-FinitePacket.tsv
+9d6e9984ab4aa9e3ef797d789d3d6f18f743ee85b1c90e88d718823385ea16f0  J2-65-R18-Integral-Descent-Commutation-Report.md
+a29eb8bd2ddca29d9112d94c6063587da436bda9f52db907e87cdaeaa6ef35f6  J2-65-R18-PowerTenAmbient.py
+48ac0e194944aeda824f3c1ff19bb936a9978b069d68ca4ecca00f588f8d092d  J2-65-R18-PowerTenAmbient.tsv
+fd98858427739060352e26ea8a18f3bba92ad943d7512dc8d41cd7a3a9deb930  J2-65-R18-QFreeAmbient.py
+03be00a62daa2908de40c87274c09cb50c482abe3f28bbd78343555563d61242  J2-65-R18-QFreeAmbientForm.txt
+1bc41e0b58aede4c5af32ff76f8d5955c1192f86e73b53c178adaed733a5bb50  J2-65-R18-Regression.py
+6d17e507e479f9bd1ca26f76ce5ce8e3da14c4bb3761a92fde9a26f0f7cd0a0e  J2-65-R18-SaturationSchur.py
+8ace182da9f6b0f4bf65b5246488f3394ec24ce657e770e14d954cbf64ef40ac  J2-65-R18-SaturationSchur.tsv
+e5b60a32c5395c674c144ceda50aaadfa0a3726ed3d5fa7bfbbc71a88752f599  J2-65-R18-SourcePacket.py
+5186ebc4cb13bbce2e7ab3ef70daa197e99c78555d96cdd74accdc3d4f92f3e3  J2-65-R18-SourcePacketLedger.tsv
+9f83636a859b9fc39b3c978a3f52fb74e2bf69f491e3221d4abd721790969bad  J2-65-R18-SplitSpecialization.py
+4bf096b71554c89e2375700250b05f6135cf64e68a9ba33e17fb5ce1c8fa546b  J2-65-R18-certificate.txt
+J2_STATUS=OPEN
+EXECUTION_LOG_SELF_HASH=OMITTED_BY_DESIGN

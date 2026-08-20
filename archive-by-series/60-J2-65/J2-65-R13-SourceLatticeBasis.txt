@@ -1,0 +1,44 @@
+J2-65-R13 SOURCE LATTICE BASIS — SYMBOLIC WHOLE-MODULUS FORM
+
+A=2u+1, c=q^3+10q^2+12q+8, B=(q+2)(q^2-4q-4), uq=G+1.
+
+Take source integer coordinates (Z,a3,x). Then exactly
+  N = q(G-1) Z - 2 A a3
+  t = q^2 Z - 4 a3
+  G s = q c N - B t = hZ Z + ha a3
+where
+  hZ = q^2(c(G-1)-B)
+  ha = 4B - 2 q c A.
+
+The only remaining independent radial source-integrality constraint is
+  alpha=d s in Z
+equivalently
+  G | d(hZ Z + ha a3).
+
+Put
+  delta = gcd(G,d hZ,d ha).
+On the live power-of-ten J2 locus this collapses to
+  delta = gcd(G,2 d (q+4)).
+Put M=G/delta,
+  a' = d hZ/delta,
+  b' = d ha/delta.
+Then gcd(a',M)=1 and define the whole-composite residue
+  rho = -b'*(a')^{-1} mod M.
+
+The congruence lattice has canonical basis
+  Z  = M w1 + rho w2
+  a3 = w2
+  x  = w3.
+
+Let
+  alpha1 = d hZ/delta,
+  alpha2 = d(hZ rho+ha)/G  (an integer by construction).
+Then a basis of Lambda_src in (s,t,x) is the columns of
+
+  B_Lambda =
+  [ alpha1/d,          alpha2/d,       0 ]
+  [ q^2 M,             q^2 rho - 4,    0 ]
+  [ 0,                 0,              1 ].
+
+det(B_Lambda)=2 q^2 (q+4)c / delta.
+No denominator case split and no prime decomposition is used.

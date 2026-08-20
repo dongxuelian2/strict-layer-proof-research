@@ -1,0 +1,725 @@
+# J2-65-R10 — Gaussian Hermitian Determinant-(-2) Global Integral Geometry Report
+
+**Scope:** Strict Layer — A1-only — Exact Resonance R=0 — J=2 — q>1 rational/Brauer layer only  
+**Round:** 65 第十轮 / A1 统一终端线第三十五轮  
+**Status:** **J2 OPEN**
+
+## 1. Executive verdict
+
+R10 achieves the requested global recompression without returning to prime-by-prime sum-of-two-squares analysis.
+
+The R9 Gaussian target and the R1 unimodular skeleton meet exactly:
+
+\[
+A=2u+1,\qquad B=2G+q,\qquad uq=G+1,
+\]
+\[
+M:=GA+1=uB.
+\]
+
+With R9's
+\[
+S=2KuG,\qquad \rho+2=(GA+1)^2,\qquad N=S^2-\rho,
+\]
+one obtains
+\[
+\boxed{N=S^2-M^2+2}
+\]
+and hence
+\[
+\boxed{N=2+u^2(4K^2G^2-B^2)}
+\]
+\[
+\boxed{N-2=u^2C_+C_-},\qquad C_\pm=2KG\pm B.
+\]
+
+The complementary pair is positive, odd, ten-unit and primitive:
+\[
+\boxed{\gcd(C_+,C_-)=1}.
+\]
+Consequently
+\[
+D_\pm:=uC_\pm,\qquad \gcd(D_+,D_-)=u,
+\]
+\[
+D_+D_-=N-2,
+\qquad
+\gcd(N,D_+)=\gcd(N,D_-)=1.
+\]
+
+Two global congruence upgrades are exact:
+\[
+\boxed{N\equiv2\pmod{u^2}},
+\qquad
+\boxed{N\equiv1-2AG\pmod{G^2}}.
+\]
+
+If the R9 Gaussian class splits, write
+\[
+z=x_G+iy_G\in\mathbb Z[i],\qquad z\bar z=N.
+\]
+Then
+\[
+\mathcal H=
+\begin{pmatrix}
+D_+&z\\
+\bar z&D_-
+\end{pmatrix}
+\]
+has
+\[
+\boxed{\det\mathcal H=-2}.
+\]
+Conversely such a matrix immediately gives a Gaussian norm representation of N. Thus the R9 rational/Brauer obstruction is exactly a prescribed-diagonal determinant-(-2) Gaussian Hermitian existence problem.
+
+The strongest new theorem of this round is:
+
+\[
+\boxed{
+\text{There is exactly one primitive }GL_2(\mathbb Z[i])\text{-Hermitian congruence class of determinant }-2.
+}
+\]
+
+A canonical representative is
+\[
+H_{\rm can}=\begin{pmatrix}0&1+i\\1-i&1\end{pmatrix},
+\]
+and the prompt's candidate
+\[
+H_0=\begin{pmatrix}1&1\\1&-1\end{pmatrix}
+\]
+is indeed a universal primitive representative. Therefore every split actual candidate lies in one fixed Hermitian congruence orbit.
+
+The Gaussian Smith normal form is also fixed:
+\[
+\boxed{\operatorname{SNF}_{\mathbb Z[i]}(\mathcal H)\sim\operatorname{diag}(1,2)}.
+\]
+
+However, unique Hermitian class does **not** imply that every prescribed diagonal pair occurs. The remaining arithmetic condition is exactly the intersection
+\[
+\boxed{
+GL_2(\mathbb Z[i])\cdot_{\!*} H_0
+\ \cap\ 
+\mathscr D_{10},
+}
+\]
+i.e. one determinant-(-2) Hermitian congruence orbit against the power-of-ten prescribed diagonal section.
+
+The composite norm-one congruence section gives no further obstruction: it is automatically solvable by explicit Gaussian CRT sections. Hence that route is retired.
+
+---
+
+## 2. R9 actual regression and R1 bridge
+
+R9 actual data used here are only the already-certified identities
+\[
+N=S^2-\rho,
+\qquad
+S=2KuG,
+\qquad
+\rho+2=[G(2u+1)+1]^2.
+\]
+R1 actual J2 gives
+\[
+A=2u+1,\qquad B=2G+q,
+\]
+\[
+qA-B=2,
+\qquad
+uB-GA=1.
+\]
+Thus
+\[
+GA+1=uB.
+\]
+No general-J extrapolation is used.
+
+This is the exact R1-to-R9 bridge:
+\[
+\boxed{
+\text{unimodular Bézout skeleton}
+\longrightarrow
+M=uB=GA+1
+\longrightarrow
+N=S^2-M^2+2
+\longrightarrow
+\det\mathcal H=-2.
+}
+\]
+
+---
+
+## 3. Neighbouring-Norm Difference-of-Squares Theorem
+
+Put
+\[
+M:=GA+1=uB.
+\]
+Because \(\rho=M^2-2\),
+\[
+N=S^2-\rho=S^2-M^2+2.
+\]
+Substitute \(S=2KuG\) and \(M=uB\):
+\[
+\boxed{N=2+u^2(4K^2G^2-B^2)}.
+\]
+With
+\[
+C_+=2KG+B,
+\qquad
+C_-=2KG-B,
+\]
+we get
+\[
+\boxed{N-2=u^2C_+C_-}.
+\]
+All identities are exact-certified in `J2-65-R10-NeighbouringNorm.py`.
+
+### 3.1 Congruence consequences
+
+Immediately,
+\[
+\boxed{N\equiv2\pmod{u^2}}.
+\]
+This permanently strengthens the R9 first-order congruence \(N\equiv2\pmod u\).
+
+Also the R9 closed form
+\[
+N=1+G\{G(4K^2u^2-A^2)-2A\}
+\]
+gives
+\[
+\boxed{N\equiv1-2AG\pmod{G^2}}.
+\]
+The quotient is explicitly
+\[
+\frac{N-(1-2AG)}{G^2}=4K^2u^2-A^2.
+\]
+No digit ladder is opened.
+
+---
+
+## 4. Primitive complementary factor pair
+
+Because \(G=10^g\ge10\), \(K=10^k\ge10\), \(q\mid G+1\), and \(q\) is a ten-unit:
+
+- \(q\) and \(u=(G+1)/q\) are odd;
+- \(B=2G+q\) is odd and coprime to 10;
+- \(C_\pm\) are odd and \(C_\pm\equiv\pm B\pmod5\), hence ten-units.
+
+Positivity is uniform:
+\[
+C_-\ge2G(K-1)-q\ge18G-(G+1)=17G-1>0,
+\]
+so \(C_+>C_->0\).
+
+Furthermore
+\[
+\gcd(B,G)=\gcd(q,G)=1,
+\qquad
+\gcd(B,K)=1.
+\]
+If an odd integer d divides both \(C_+\) and \(C_-\), then d divides \(4KG\) and \(2B\), hence d divides \(\gcd(KG,B)=1\). Therefore
+\[
+\boxed{\gcd(C_+,C_-)=1}.
+\]
+
+Define
+\[
+D_+=S+M=uC_+,
+\qquad
+D_-=S-M=uC_-.
+\]
+Then
+\[
+\boxed{\gcd(D_+,D_-)=u},
+\qquad
+\boxed{D_+D_-=N-2}.
+\]
+Since \(N\equiv2\pmod{D_\pm}\) and \(D_\pm\) are odd,
+\[
+\boxed{\gcd(N,D_+)=\gcd(N,D_-)=1}.
+\]
+
+---
+
+## 5. Rational Gaussian norm = integral sum of two squares
+
+For a positive integer N,
+\[
+N\in N_{\mathbb Q(i)/\mathbb Q}(\mathbb Q(i)^\times)
+\iff
+\exists x_G,y_G\in\mathbb Z:\ N=x_G^2+y_G^2.
+\]
+
+A short global proof uses only unique factorization in \(\mathbb Z[i]\): factor the fractional principal ideal generated by a rational norm witness \(\zeta\). The equation \(\zeta\bar\zeta=N\in\mathbb Z_{>0}\) forces the conjugation-paired exponents to have the same integral total exponents as \((N)\). Reallocate each conjugate pair to nonnegative exponents while preserving the sum; self-conjugate factors necessarily occur with even total exponent. The resulting integral Gaussian element \(z\) has \(z\bar z=N\). The reverse implication is immediate. This is exactly the Gaussian-UFD form of the two-squares theorem, used only as a correctness theorem; no inert-prime list is introduced into the frontier.
+
+The coordinates \(x_G,y_G\) are Gaussian representation coordinates only; they are not the original root variable.
+
+---
+
+## 6. Hermitian determinant-(-2) equivalence
+
+Assume \(z=x_G+iy_G\in\mathbb Z[i]\) with \(z\bar z=N\). Define
+\[
+\mathcal H=
+\begin{pmatrix}
+D_+&z\\
+\bar z&D_-
+\end{pmatrix}.
+\]
+Then
+\[
+\det\mathcal H=D_+D_--z\bar z=(N-2)-N=-2.
+\]
+Conversely any such integral matrix has \(z\bar z=N\). Therefore
+\[
+\boxed{
+(-1,N)=0
+\iff
+\mathscr H_{-2}(D_+,D_-)\ne\varnothing.
+}
+\]
+This is the Hermitian Determinant-(2) Compression Lemma specialized to the actual R10 pair.
+
+### 6.1 Primitive content
+
+Any common Gaussian prime dividing all entries of \(\mathcal H\) must have its square dividing \(\det\mathcal H=-2\). Thus only a prime associated to \(1+i\) could occur. But \(D_\pm\) are odd rational integers, hence are not divisible by \(1+i\). Therefore
+\[
+\boxed{\operatorname{content}_{\mathbb Z[i]}(\mathcal H)=1}.
+\]
+This is stronger and cleaner than a split-prime support argument.
+
+Because \(D_+>0\) and \(\det\mathcal H<0\), the real signature is
+\[
+\boxed{(1,1)}.
+\]
+
+---
+
+## 7. Gaussian Smith normal form
+
+The Gaussian integers are a Euclidean PID. For a primitive 2x2 matrix the first Smith divisor is a unit. Since the determinant is -2,
+\[
+d_1\sim1,
+\qquad
+d_1d_2\sim-2.
+\]
+Hence
+\[
+\boxed{\operatorname{SNF}_{\mathbb Z[i]}(\mathcal H)\sim\operatorname{diag}(1,2)}.
+\]
+Here \((2)=(1+i)^2\) as ideals up to a unit.
+
+This is **left-right Smith equivalence**, not Hermitian congruence. The elementary-divisor layer is therefore completely fixed, while the prescribed-diagonal arithmetic remains in the Hermitian-congruence orbit.
+
+---
+
+## 8. Exact primitive determinant-(-2) Hermitian classification
+
+This round does not need an external class-number black box. There is a direct Euclidean reduction.
+
+Let
+\[
+H=\begin{pmatrix}a&z\\\bar z&c\end{pmatrix},
+\qquad ac-z\bar z=-2.
+\]
+For a vector \(v=(x,y)\), one has the exact identity
+\[
+a\,H(v,v)=N_{\mathbb Q(i)/\mathbb Q}(ax+zy)-2N(y).
+\]
+If \(a\ne0\), take
+\[
+e=(1+i-z,a).
+\]
+Then \(a e_1+z e_2=a(1+i)\), so \(H(e,e)=0\). If \(a=0\), \((1,0)\) is already isotropic. Divide by the Gaussian gcd of the two coordinates to obtain a primitive integral isotropic vector.
+
+Because \(\mathbb Z[i]\) is a PID, extend this primitive isotropic vector to a unimodular basis \((e,f)\). In that basis
+\[
+H\sim
+\begin{pmatrix}
+0&\beta\\
+\bar\beta&c_0
+\end{pmatrix}.
+\]
+The determinant condition gives
+\[
+N(\beta)=2.
+\]
+Thus \(\beta\) is associated to \(1+i\), and a unit change normalizes
+\[
+\beta=1+i.
+\]
+Replacing \(f\) by \(f+n e\), \(n\in\mathbb Z\), changes \(c_0\) by \(2n\). Therefore only the parity of \(c_0\) remains.
+
+If \(c_0\) is even, every entry is divisible by \(1+i\), so the form is imprimitive. Hence a primitive determinant-(-2) form forces \(c_0\) odd, and then an integer shear reduces it to \(c_0=1\).
+
+Therefore
+\[
+\boxed{
+H\sim_{\rm Herm}
+H_{\rm can}:=
+\begin{pmatrix}0&1+i\\1-i&1\end{pmatrix}
+}
+\]
+for every primitive determinant-(-2) integral Gaussian Hermitian form.
+
+Consequences:
+
+\[
+\boxed{h_{\rm Herm}^{\rm primitive}(-2)=1},
+\]
+\[
+\boxed{\text{ODD_PRIMITIVE_CLASS_COUNT}=1},
+\]
+\[
+\boxed{\text{GENUS_COUNT}=\text{SPINOR_GENUS_COUNT}=1}.
+\]
+Every primitive class is integrally isotropic.
+
+The even determinant-(-2) model
+\[
+\begin{pmatrix}0&1+i\\1-i&0\end{pmatrix}
+\]
+is not a competing primitive class: its content is \((1+i)\).
+
+### 8.1 The prompt's H0 is universal
+
+Let
+\[
+H_0=\begin{pmatrix}1&1\\1&-1\end{pmatrix},
+\qquad
+U_0=\begin{pmatrix}1&1\\-i&0\end{pmatrix}.
+\]
+Then \(\det U_0=i\) is a Gaussian unit and exact multiplication gives
+\[
+\boxed{U_0^*H_0U_0=H_{\rm can}}.
+\]
+Thus
+\[
+\boxed{H_0\text{ is a universal representative of the unique primitive class}.}
+\]
+Also, with
+\[
+L=\begin{pmatrix}1&1\\0&1\end{pmatrix},
+\]
+\[
+\boxed{L^*\operatorname{diag}(1,-2)L=H_0}.
+\]
+So the unique class has an exact difference-of-Gaussian-norms model.
+
+---
+
+## 9. One fixed congruence orbit and prescribed diagonal representation
+
+Conditional on splitting, every actual matrix lies in the unique orbit:
+\[
+\boxed{\mathcal H=U^*H_0U},\qquad U\in GL_2(\mathbb Z[i]).
+\]
+Let the columns of U be \(v_+,v_-\). Then
+\[
+\boxed{D_+=H_0(v_+,v_+)},
+\qquad
+\boxed{D_-=H_0(v_-,v_-)},
+\]
+and
+\[
+\boxed{\det(v_+,v_-)\in\{\pm1,\pm i\}}.
+\]
+Thus the Gaussian norm obstruction is now exactly:
+
+> Can the fixed form \(H_0\) take the two prescribed positive values \(uC_+\) and \(uC_-\) on the two vectors of one Gaussian unimodular basis?
+
+This is a single fixed-orbit formulation, independent of g,k,q,u at the class level.
+
+---
+
+## 10. Special geometry of the prescribed pair
+
+The primitive factors obey
+\[
+C_++C_-=4KG,
+\qquad
+C_+-C_-=2B,
+\qquad
+\gcd(C_+,C_-)=1.
+\]
+Their exact relative gap is
+\[
+\frac{C_+-C_-}{C_++C_-}=\frac{B}{2KG}.
+\]
+Since \(q\le G+1\), \(K\ge10\), \(G\ge10\),
+\[
+0<\frac{B}{2KG}
+\le\frac{3G+1}{20G}
+\le\frac{31}{200}
+<\frac16.
+\]
+Thus the section consists of two coprime ten-unit primitive factors with uniformly close positive values, scaled by the common odd factor u.
+
+This is the exact power-of-ten diagonal section \(\mathscr D_{10}\); no bounded scan in g or k is used.
+
+---
+
+## 11. Isotropy and cusp audit
+
+The unique primitive class is integrally isotropic. In the canonical isotropic basis
+\[
+H_{\rm can}=\begin{pmatrix}0&1+i\\1-i&1\end{pmatrix}.
+\]
+Its automorphism group contains the exact parabolic family
+\[
+\boxed{
+P_n=
+\begin{pmatrix}
+1&n(1-i)\\
+0&1
+\end{pmatrix},\quad n\in\mathbb Z,
+}
+\]
+with
+\[
+P_n^*H_{\rm can}P_n=H_{\rm can}.
+\]
+So a genuine Gaussian cusp exists.
+
+However, R10 does **not** prove that every unimodular basis realizing two large close positive values can be reduced into one explicit parabolic family with a single parameter. The missing statement is an exact reduction/fundamental-domain theorem controlling the chosen basis under the automorphism group while retaining the prescribed diagonal section.
+
+Therefore:
+
+`CUSP_RIGIDITY_THEOREM=OPEN`.
+
+This is the main remaining global-geometric gap after the class-number collapse.
+
+---
+
+## 12. Composite norm-one congruence section — negative audit
+
+The congruence layer is automatically soluble and therefore carries no obstruction.
+
+### u-side
+
+From
+\[
+N\equiv2\pmod{u^2}
+\]
+choose simply
+\[
+z_u=1+i.
+\]
+Then \(z_u\bar z_u=2\) exactly and
+\[
+\theta_u=z_u(1+i)^{-1}=1
+\]
+has norm one modulo \(u^2\).
+
+### G-side
+
+From
+\[
+N\equiv1-2AG\pmod{G^2}
+\]
+choose the real Gaussian integer
+\[
+z_G=1-AG.
+\]
+Then
+\[
+z_G\bar z_G=(1-AG)^2\equiv1-2AG\pmod{G^2}.
+\]
+
+### Composite CRT
+
+Because \(\gcd(G,u)=1\), the ideals \((G^2)\) and \((u^2)\) are comaximal in \(\mathbb Z[i]\). Let
+\[
+e_u=G^2(G^2)^{-1}\!\!\pmod{u^2},
+\qquad
+e_G=u^2(u^2)^{-1}\!\!\pmod{G^2}.
+\]
+Then the canonical Gaussian CRT class
+\[
+\boxed{
+z_0=e_u(1+i)+e_G(1-AG)\pmod{G^2u^2}
+}
+\]
+simultaneously satisfies the two norm congruences.
+
+Hence
+\[
+\boxed{\texttt{COMPOSITE_NORM_CONGRUENCE_OBSTRUCTION=FALSE}}.
+\]
+This route is retired.
+
+---
+
+## 13. R6 conceptual regression
+
+R6's global invariant is a primitive ten-power ratio of two quartic row values plus resultant/coefficient-image geometry. R10's invariant is a fixed determinant-(-2) Gaussian Hermitian congruence class with a prescribed diagonal section.
+
+No source-legal direct invariant map from the R6 primitive row ratio to the R10 Hermitian determinant/class was found without reopening the intervening Veronese/conic/Brauer constructions.
+
+\[
+\boxed{\texttt{R6_TO_R10_DIRECT_INVARIANT_MAP=NOT_FOUND}}.
+\]
+This is recorded as a conceptual regression only; R6 coefficients are not reopened.
+
+---
+
+## 14. What the unique class theorem does and does not solve
+
+It solves the entire classification layer:
+
+- no multiple primitive genera;
+- no multiple primitive Hermitian classes;
+- no elementary-divisor ambiguity;
+- no anisotropic primitive class;
+- no class-number growth with the parameters.
+
+But it does **not** make N automatically a Gaussian norm. Existence still asks whether the unique congruence orbit contains a matrix with the prescribed diagonal pair. Equivalently, it asks whether a Gaussian unimodular basis of \(H_0\) can have those two norms.
+
+Therefore the rational/Brauer layer is **not retired** in R10, and the original primitive source lattice remains deferred.
+
+---
+
+## 15. Direct answers to the fourteen required questions
+
+### Q1
+Yes.
+\[
+\boxed{N=S^2-M^2+2}.
+\]
+
+### Q2
+Yes.
+\[
+\boxed{N=2+u^2C_+C_-}.
+\]
+
+### Q3
+Yes. \(C_+,C_-\) are positive ten-units and
+\[
+\boxed{\gcd(C_+,C_-)=1}.
+\]
+
+### Q4
+Yes. R9 strengthens to
+\[
+\boxed{N\equiv2\pmod{u^2}}.
+\]
+
+### Q5
+The exact first tangent is
+\[
+\boxed{N\equiv1-2AG\pmod{G^2}}.
+\]
+
+### Q6
+Yes.
+\[
+(-1,N)=0
+\iff
+\exists z\in\mathbb Z[i]:
+\det\begin{pmatrix}uC_+&z\\\bar z&uC_-\end{pmatrix}=-2.
+\]
+
+### Q7
+Yes. Every actual split matrix is primitive over \(\mathbb Z[i]\).
+
+### Q8
+Yes.
+\[
+\boxed{\operatorname{SNF}\sim\operatorname{diag}(1,2)}.
+\]
+
+### Q9
+Exactly one primitive Hermitian congruence class:
+\[
+\boxed{h_{\rm Herm}^{\rm primitive}(-2)=1}.
+\]
+
+### Q10
+Every actual split form can fall into only that one primitive class. Non-split states produce no matrix at all.
+
+### Q11
+Yes. The whole split locus is one fixed congruence orbit of \(H_0\).
+
+### Q12
+Partially. It is exactly the simultaneous representation problem
+\[
+H_0(v_+,v_+)=u(2KG+B),
+\quad
+H_0(v_-,v_-)=u(2KG-B),
+\]
+with \(\det(v_+,v_-)\) a Gaussian unit. A full one-parameter cusp description is not yet proved.
+
+### Q13
+It is automatic, not obstructive:
+\[
+\boxed{\texttt{COMPOSITE_NORM_CONGRUENCE_OBSTRUCTION=FALSE}}.
+\]
+
+### Q14
+Yes, and more strongly the finite family has cardinality one:
+\[
+\boxed{
+\textbf{one primitive determinant-(-2) Gaussian Hermitian congruence orbit}
+\cap
+\textbf{one power-of-ten prescribed diagonal section}.
+}
+\]
+No prime list is needed.
+
+---
+
+## 16. Success audit
+
+- **Success A:** ACHIEVED — neighbouring-norm identity and primitive factor pair.
+- **Success B:** ACHIEVED — \(N\equiv2\pmod{u^2}\).
+- **Success C:** ACHIEVED — Hermitian determinant-(-2) equivalence.
+- **Success D:** ACHIEVED — Gaussian SNF fixed.
+- **Success E:** ACHIEVED — finite Hermitian class theorem.
+- **Success F:** ACHIEVED — unique primitive class.
+- **Success G:** ACHIEVED at formulation level — one fixed orbit with exact simultaneous diagonal representation; full parameterization remains open.
+- **Success H:** PARTIAL — explicit integral isotropic cusp and parabolic subgroup found; rigidity theorem not proved.
+- **Success I:** ACHIEVED NEGATIVELY — composite congruence is automatic and retired.
+- **Success J:** NOT ACHIEVED — rational layer not universally split.
+- **Success K:** NOT ACHIEVED — q>1 not globally closed.
+
+---
+
+## 17. New exact frontier
+
+\[
+\boxed{\textbf{J2 OPEN}.}
+\]
+
+But the q>1 rational frontier is now strictly sharper than R9:
+
+\[
+\boxed{
+\left\{U^*H_0U:U\in GL_2(\mathbb Z[i])\right\}
+\cap
+\mathscr D_{10}
+}
+\]
+with
+\[
+H_0=\begin{pmatrix}1&1\\1&-1\end{pmatrix},
+\]
+\[
+\mathscr D_{10}=
+\left\{
+\bigl(u(2KG+B),u(2KG-B)\bigr):
+G=10^g,K=10^k,uq=G+1,B=2G+q
+\right\}.
+\]
+
+The unique unresolved global step is no longer Hermitian class number, genus, SNF, or composite congruence. It is:
+
+\[
+\boxed{
+\textbf{exact reduction/parameterization of the unique indefinite Gaussian Hermitian orbit}
+\ \textbf{along the power-of-ten diagonal section}.}
+\]
+
+The next round should therefore attack a genuine reduction/fundamental-domain or cusp-normal-form theorem for this single orbit, without reintroducing prime-by-prime factorization.

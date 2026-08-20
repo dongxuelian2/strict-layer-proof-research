@@ -1,0 +1,22 @@
+Q1_DEFECT_SIGNATURE=PASS
+DEFECT=rho=a-tau*G/10
+NEGATIVE_M_EQUIV=rho>0 (under historical q=1 negative fixed-case shell)
+DCDC_DEFECT=31*rho+tau == 0 (mod 2K)
+COEFF_MIN (1, 2, [6, 4, 1, 0, 2, 2])
+COEFF_MIN (1, 5, [3, 2, 1, 0, 0, 1])
+COEFF_MIN (2, 2, [8, 5, 1, 0, 2, 2])
+COEFF_MIN (2, 5, [5, 4, 1, 0, 0, 1])
+COEFF_MIN (3, 2, [10, 6, 1, 0, 2, 2])
+COEFF_MIN (3, 5, [7, 5, 1, 0, 0, 1])
+DIFF_V2=g+2k+2
+DIFF_V5=g+2k-1
+Y0_V2=k+1
+Y0_V5=k
+Y0=2K*y, y ten-unit
+V2(y^2-rho^2)=g
+V5(y^2-rho^2)=g-1
+FACTOR=(y-rho)(y+rho)=(G/5)*eta
+ETA_TEN_UNIT=TRUE
+ETA_MOD10=rho*tau
+VALUATION_ORIENTATION_BRANCHES=4
+VERDICT=NEW_STRUCTURAL_FINITE_BRANCHING_NOT_DIMENSION_DROP

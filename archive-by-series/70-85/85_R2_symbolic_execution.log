@@ -1,0 +1,16 @@
+SYMBOLIC_HIGH_DIVISION=PASS
+SYMBOLIC_REVERSE_DIVISION=PASS
+D_FL= 2*d0*q**2*(q + 4)*(q**3 + 10*q**2 + 12*q + 8)
+D_R= 2*R**2*d0*q**2*(q + 4)*(q**3 + 10*q**2 + 12*q + 8)
+P_H= -H*(-4*G**2*alpha*q - 16*G**2*alpha + 2*G*alpha*q**2 + 8*G*alpha*q - 8*G*alpha - 8*G*d0*q**4*t - 56*G*d0*q**3*t - 48*G*d0*q**2*t + 96*G*d0*q*t + 64*G*d0*t - alpha*q**3 - 6*alpha*q**2 + 4*d0*q**5*t + 24*d0*q**4*t - 32*d0*q**3*t - 160*d0*q**2*t - 64*d0*q*t)/(2*d0*q**2*(q + 4)*(q**3 + 10*q**2 + 12*q + 8))
+r_H= H*(-G*alpha*q**3 - 8*G*alpha*q**2 - 12*G*alpha*q - 8*G*alpha + 4*G*d0*q**5*t + 32*G*d0*q**4*t + 8*G*d0*q**3*t - 176*G*d0*q**2*t - 160*G*d0*q*t - 64*G*d0*t - 16*d0*q**3*t - 64*d0*q**2*t)/(2*G*d0*q*(q + 4)*(2*G + q + 2)*(q**3 + 10*q**2 + 12*q + 8))
+P_R= -(-4*G**2*alpha*q - 16*G**2*alpha - 8*G*R*d0*q**4*t - 56*G*R*d0*q**3*t - 48*G*R*d0*q**2*t + 96*G*R*d0*q*t + 64*G*R*d0*t + 2*G*alpha*q**2 + 8*G*alpha*q - 8*G*alpha + 4*R*d0*q**5*t + 24*R*d0*q**4*t - 32*R*d0*q**3*t - 160*R*d0*q**2*t - 64*R*d0*q*t - alpha*q**3 - 6*alpha*q**2)/(2*R**2*d0*q**2*(q + 4)*(q**3 + 10*q**2 + 12*q + 8))
+r_R= (4*G*R*d0*q**5*t + 32*G*R*d0*q**4*t + 8*G*R*d0*q**3*t - 176*G*R*d0*q**2*t - 160*G*R*d0*q*t - 64*G*R*d0*t - G*alpha*q**3 - 8*G*alpha*q**2 - 12*G*alpha*q - 8*G*alpha - 16*R*d0*q**3*t - 64*R*d0*q**2*t)/(2*G*R**2*d0*q*(q + 4)*(2*G + q + 2)*(q**3 + 10*q**2 + 12*q + 8))
+BOUNDARY_DCDC_TOTAL= 79
+BOUNDARY_CHI_DIV_Q=79/79
+Q 7 STATES 28 DISTINCT_EPS 1 EPS_MIN -7153/12950 EPS_MAX -7153/12950
+Q 11 STATES 44 DISTINCT_EPS 44 EPS_MIN -58255/58982 EPS_MAX -1801/58982
+Q 17 STATES 5 DISTINCT_EPS 5 EPS_MIN -33709/38930 EPS_MAX -42701/272510
+Q 19 STATES 2 DISTINCT_EPS 2 EPS_MIN -78775/81358 EPS_MAX -68997/81358
+BOUNDARY_DISTINCT_EPS_TOTAL= 52
+CARRY_SPECTRUM_FILE=/mnt/data/85_R2_CarrySpectrum.tsv

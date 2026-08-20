@@ -1,0 +1,37 @@
+J2-55 R4 EuclideanDefect exact search certificate
+EXACT_ARITHMETIC=PASS
+HISTORICAL_BOUNDARY_DCDC=79
+H0_Q7={'tail_integral_rce': 2900, 'reconstructed': 2900, 'linear_legal': 370, 'dcdc': 28}
+H0_Q11={'tail_integral_rce': 264156, 'reconstructed': 264156, 'linear_legal': 10214, 'dcdc': 44}
+H0_Q17={'tail_integral_rce': 1164, 'reconstructed': 1164, 'linear_legal': 32, 'dcdc': 5}
+H0_Q19={'tail_integral_rce': 969, 'reconstructed': 969, 'linear_legal': 21, 'dcdc': 2}
+H0_UNIFIED_FIRST_FAILURE={'DEFECT_BOUND_FAIL': 75, 'PRIMITIVE_GCD_FAIL': 4}
+H0_CONTENT_DISTRIBUTION_AFTER_PRIMITIVE={1: 50, 7: 4, 3: 20, 11: 1}
+H0_SINGULAR_OLD_G=259,359,435,481,669,1025
+H0_OLD_SINGULAR_UNIFIED {'g': 259, 'd': 3, 'e_digits': 258, 'Dsharp_digits': 776, 'mu_digits': 518, 'rho_digits': 516, 'sstar_digits': 517, 'B_float': 13.272727272727273, 'first_failure': 'DEFECT_BOUND_FAIL'}
+H0_OLD_SINGULAR_UNIFIED {'g': 359, 'd': 3, 'e_digits': 358, 'Dsharp_digits': 1076, 'mu_digits': 718, 'rho_digits': 716, 'sstar_digits': 716, 'B_float': 13.272727272727273, 'first_failure': 'DEFECT_BOUND_FAIL'}
+H0_OLD_SINGULAR_UNIFIED {'g': 435, 'd': 3, 'e_digits': 434, 'Dsharp_digits': 1304, 'mu_digits': 870, 'rho_digits': 868, 'sstar_digits': 868, 'B_float': 13.272727272727273, 'first_failure': 'DEFECT_BOUND_FAIL'}
+H0_OLD_SINGULAR_UNIFIED {'g': 481, 'd': 3, 'e_digits': 480, 'Dsharp_digits': 1442, 'mu_digits': 962, 'rho_digits': 960, 'sstar_digits': 961, 'B_float': 13.272727272727273, 'first_failure': 'DEFECT_BOUND_FAIL'}
+H0_OLD_SINGULAR_UNIFIED {'g': 669, 'd': 3, 'e_digits': 668, 'Dsharp_digits': 2006, 'mu_digits': 1338, 'rho_digits': 1336, 'sstar_digits': 1337, 'B_float': 13.272727272727273, 'first_failure': 'DEFECT_BOUND_FAIL'}
+H0_OLD_SINGULAR_UNIFIED {'g': 1025, 'd': 3, 'e_digits': 1024, 'Dsharp_digits': 3074, 'mu_digits': 2050, 'rho_digits': 2047, 'sstar_digits': 2048, 'B_float': 13.272727272727273, 'first_failure': 'DEFECT_BOUND_FAIL'}
+HIGH_DELTA1_DCDC=1
+H1_Q7={'tail_integral_rce': 142, 'reconstructed': 142, 'linear_legal': 29}
+H1_Q11={'tail_integral_rce': 10760, 'reconstructed': 10760, 'linear_legal': 1096, 'dcdc': 1}
+H1_Q17={'tail_integral_rce': 43, 'reconstructed': 43, 'linear_legal': 3}
+H1_Q19={'tail_integral_rce': 26, 'reconstructed': 26, 'linear_legal': 3}
+HIGH_DELTA1_S0_FIRST_DEATH={'PRIMITIVE_GCD_FAIL': 1}
+REVERSE_R1_SCOPE=g<=12 (diagnostic, chosen to reach genuine post-DCDC states)
+REVERSE_R1_DCDC=50
+REVERSE_R1_Q7={'tail_integral_rce': 18058, 'reconstructed': 18058, 'linear_legal': 111, 'dcdc': 14}
+REVERSE_R1_Q11={'tail_integral_rce': 1339079, 'reconstructed': 1339079, 'linear_legal': 5103, 'dcdc': 26}
+REVERSE_R1_Q17={'tail_integral_rce': 15711, 'reconstructed': 15711, 'linear_legal': 45, 'dcdc': 4}
+REVERSE_R1_Q19={'tail_integral_rce': 14999, 'reconstructed': 14999, 'linear_legal': 37, 'dcdc': 6}
+REVERSE_R1_UNIFIED_FIRST_FAILURE={'PRIMITIVE_GCD_FAIL': 6, 'DEFECT_BOUND_FAIL': 44}
+REVERSE_ZERO_TAIL_DCDC=0
+REVERSE_ZERO_Q7=(1, {})
+REVERSE_ZERO_Q11=(2, {})
+REVERSE_ZERO_Q17=(2, {})
+REVERSE_ZERO_Q19=(3, {})
+REVERSE_ZERO_UNIFIED_FIRST_FAILURE={}
+GLOBAL_ONE_S_IMPLEMENTATION=one CRT residue modulo A*M per profile; no A2 fibre enumeration
+FULL_ROOT_SURVIVE=0

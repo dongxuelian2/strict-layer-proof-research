@@ -1,0 +1,27 @@
+{
+  "phase_I": {
+    "polynomial_gcd_all_one": true,
+    "specialization_sharpened_minimal_uniform_gcd_constants": {
+      "10": 456601819827466846,
+      "100": 5822435852033633542331975248275187065334,
+      "1000": 361690910889592488261208717961027874646954
+    },
+    "common_h_bridge_to_F": false,
+    "failure_mode": "Failure C",
+    "verdict": "SUPPORT_COLLISION_ARCHITECTURE_DEAD"
+  },
+  "phase_II": {
+    "source_cases": 24,
+    "coefficient_templates": 12,
+    "fixed_field_across_g": false,
+    "fixed_order_across_g": false,
+    "fixed_fundamental_unit_across_g": false,
+    "fixed_recurrence_across_g": false,
+    "verdict": "FIXED_TAU_PELL_AS_FIXED_OBJECT_ARCHITECTURE_DEAD"
+  },
+  "q1_branch_closed": false,
+  "fixed_S_support_achieved": false,
+  "fixed_norm_orbit_extracted": false,
+  "power10_orbit_incidence_dimension_drop": false,
+  "overall_verdict": "R3_DUAL_ARCHITECTURE_DEAD"
+}

@@ -1,0 +1,148 @@
+J2-55 R14 certificate
+J2_STATUS=OPEN
+
+===== J2-55-R14-FrozenRootPolynomials.py =====
+R12_HASH_B_MATCH=PASS
+R12_HASH_H_MATCH=PASS
+R12_HASH_R_MATCH=PASS
+R12_HASH_K1_MATCH=PASS
+DEGREES=4,4,7,7
+FULL_COEFFICIENT_ROWS=26
+FULL_COEFFICIENT_TABLE=PASS
+NOTE_PROMPT_24_COEFFICIENT_COUNT=CORRECTED_TO_26_(5+5+8+8)
+BOUNDARY_B0_GAMMA_DEGREE=1
+HIGH_H0_GAMMA_DEGREE=1
+BOUNDARY_B0_GAMMA_COEFF=16*q**4*t*(q + 4)
+HIGH_H0_GAMMA_COEFF=-16*H**2*q**4*t*(q + 4)
+BOUNDARY_B0_MOD_Q=-2097152*f**6*t**2*w**2
+HIGH_H0_MOD_Q=-2097152*f**6*t**2*w**2
+PROFILE=J2-55-R14-FullCoefficientProfile.tsv
+
+===== J2-55-R14-GammaNextBit.py =====
+R12_HASH_B_MATCH=PASS
+R12_HASH_H_MATCH=PASS
+R12_HASH_R_MATCH=PASS
+R12_HASH_K1_MATCH=PASS
+DEGREES=4,4,7,7
+FULL_COEFFICIENT_ROWS=26
+FULL_COEFFICIENT_TABLE=PASS
+NOTE_PROMPT_24_COEFFICIENT_COUNT=CORRECTED_TO_26_(5+5+8+8)
+BOUNDARY_B0_GAMMA_DEGREE=1
+HIGH_H0_GAMMA_DEGREE=1
+BOUNDARY_B0_GAMMA_COEFF=16*q**4*t*(q + 4)
+HIGH_H0_GAMMA_COEFF=-16*H**2*q**4*t*(q + 4)
+BOUNDARY_B0_MOD_Q=-2097152*f**6*t**2*w**2
+HIGH_H0_MOD_Q=-2097152*f**6*t**2*w**2
+PROFILE=J2-55-R14-FullCoefficientProfile.tsv
+GAMMA_R_EVEN=PASS
+D_R_V2=2r+2_EXACT
+REVERSE_TAIL_GAMMA_R_HAS_FACTOR_R=PASS
+REVERSE_TAIL_GAMMA_R_OVER_R= 16*K**2*R**2*f*q**5*t + 32*K**2*R**2*f*q**4*t - 320*K**2*R**2*f*q**3*t - 896*K**2*R**2*f*q**2*t - 512*K**2*R**2*f*q*t - 8*K**2*R*e*q**3 - 32*K**2*R*e*q**2 - 8*K*R*f*q**6*t + 16*K*R*f*q**5*t + 416*K*R*f*q**4*t + 576*K*R*f*q**3*t - 512*K*R*f*q**2*t - 512*K*R*f*q*t + 4*K*e*q**4 + 16*K*e*q**3 - 16*K*e*q**2 - 8*R**2*f*q**6*t - 88*R**2*f*q**5*t - 272*R**2*f*q**4*t - 416*R**2*f*q**3*t + 512*R**2*f*q*t + 256*R**2*f*t + R*e*q**4 + 10*R*e*q**3 + 12*R*e*q**2 + 8*R*e*q - 8*R*f*mu*q**7 - 112*R*f*mu*q**6 - 416*R*f*mu*q**5 - 448*R*f*mu*q**4 - 256*R*f*mu*q**3 + 8*R*f*q**7*s + 112*R*f*q**6*s + 416*R*f*q**5*s + 448*R*f*q**4*s + 256*R*f*q**3*s
+K1_E_EVEN=PASS
+K1_JR_MOD2=alpha=e=0
+K1_GAMMA_OVER2_MOD2=0 (indeed R|gamma and r>=3)
+K1_V2_GAMMA=>=r; NOT_EQUAL_1
+K2_Q7_V2_GAMMA=>=r; NOT_EQUAL_1
+K2_Q11_V2_GAMMA=>=r; NOT_EQUAL_1
+GENERIC_GAMMA_V2_LOWER=>=r+2-k
+GENERIC_DEEP_ZONE_NEXTBIT=SUPERSEDED_BY_GLOBAL_R_FACTOR
+GENERIC_SHALLOW_ZONE=SUPERSEDED_BY_GLOBAL_R_FACTOR
+BIT_LADDER=STOPPED_BY_EXPLICIT_UNBOUNDED_CANCELLATION_MECHANISM
+GAMMA_ZERO_GENERIC_LOWEST_J=1
+GAMMA_ZERO_GENERIC_C1=-1024*e*f**4*q**5*w**2*(q**2 + 4*q - 4)*(-K*e + 4*f*q**2*t + 16*f*q*t)
+GAMMA_ZERO_K1_LOWEST_J=1
+GAMMA_ZERO_K1_C1=640*e*q**5*(-5*e + 2*q**2*t + 8*q*t)*(q**2 + 4*q - 4)
+LEDGER=J2-55-R14-GammaBit.tsv
+
+===== J2-55-R14-ReverseBitClosure.py =====
+R12_HASH_B_MATCH=PASS
+R12_HASH_H_MATCH=PASS
+R12_HASH_R_MATCH=PASS
+R12_HASH_K1_MATCH=PASS
+DEGREES=4,4,7,7
+FULL_COEFFICIENT_ROWS=26
+FULL_COEFFICIENT_TABLE=PASS
+NOTE_PROMPT_24_COEFFICIENT_COUNT=CORRECTED_TO_26_(5+5+8+8)
+BOUNDARY_B0_GAMMA_DEGREE=1
+HIGH_H0_GAMMA_DEGREE=1
+BOUNDARY_B0_GAMMA_COEFF=16*q**4*t*(q + 4)
+HIGH_H0_GAMMA_COEFF=-16*H**2*q**4*t*(q + 4)
+BOUNDARY_B0_MOD_Q=-2097152*f**6*t**2*w**2
+HIGH_H0_MOD_Q=-2097152*f**6*t**2*w**2
+PROFILE=J2-55-R14-FullCoefficientProfile.tsv
+K1_Q7_CYCLOTOMIC: r mod 6 = 2
+K2_Q7_CYCLOTOMIC: r mod 6 = 1
+K2_Q11_CYCLOTOMIC: r mod 2 = 1
+LOW_K_NORMALIZER=1 for K1 special, K2 q=7, K2 q=11
+LOW_K_GAMMA_DIVISIBLE_BY_10^r=PASS
+FINITE_R_BOUND_FROM_GAMMA_BITS=FALSE
+K1_Q7_CLOSED=FALSE
+K2_Q7_CLOSED=FALSE
+K2_Q11_CLOSED=FALSE
+K1_CARRY_SPLICE_ROOT_ORDER=2
+K1_CARRY_SPLICE_C2=-16*q**4*(-5*e + 2*q**2*t + 8*q*t)*(q**3 + 10*q**2 + 12*q + 8)*(e - 8*mu*q**3 - 32*mu*q**2 + 8*q**3*s + 32*q**2*s)
+K2_Q7_CARRY_SPLICE_ROOT_ORDER=2; C2=14213920000*(-25*e + 77*t)*(e - 4312*mu + 4312*s)
+K2_Q11_CARRY_SPLICE_ROOT_ORDER=2; C2=6280403360000*(-e + 33*t)*(e - 72600*mu + 72600*s)
+CARRY_SPLICE_INTERPRETATION=P(R)|carry has an extra R^2 structural order; next independent gate is the displayed C2 divisibility
+GAMMA_ZERO_GENERIC_C1=-1024*e*f**4*q**5*w**2*(q**2 + 4*q - 4)*(-K*e + 4*f*q**2*t + 16*f*q*t)
+GAMMA_ZERO_K1_C1=640*e*q**5*(-5*e + 2*q**2*t + 8*q*t)*(q**2 + 4*q - 4)
+GAMMA_ZERO_LOCUS=REDUCED_TO_EXPLICIT_J1_DIVISIBILITY; NOT CLOSED
+REVERSE_FRONTIER=explicit 10^r|gamma cancellation locus + independent degree-7 root polynomial
+LEDGER=J2-55-R14-ReverseBitClosure.tsv
+
+===== J2-55-R14-q1-NegativeBranch.py =====
+PRIMITIVE_SCALE_PROVENANCE=a3=d*a,m=d*n,t=d*tau; gcd(a,n)=1; d,tau ten-units
+NEGATIVE_DT_BOUND=d*tau < 10+4/G-2/G^2 < 11
+NEGATIVE_FOUR_T_THEOREM=PASS:t in {1,3,7,9}
+NEGATIVE_EIGHT_PAIRS=PASS:((1, 1), (1, 3), (3, 1), (1, 7), (7, 1), (1, 9), (3, 3), (9, 1))
+NEGATIVE_DCDC_CELLS=12
+CELL {'K': 10, 't': 1, 'a3_mod_2K': 9, 'ten_unit_pass': 'PASS', 'possible_d_tau_factorizations': '(1,1)', 'status': 'NEGATIVE_FIXED_CELL_OPEN'}
+CELL {'K': 10, 't': 3, 'a3_mod_2K': 7, 'ten_unit_pass': 'PASS', 'possible_d_tau_factorizations': '(1,3),(3,1)', 'status': 'NEGATIVE_FIXED_CELL_OPEN'}
+CELL {'K': 10, 't': 7, 'a3_mod_2K': 3, 'ten_unit_pass': 'PASS', 'possible_d_tau_factorizations': '(1,7),(7,1)', 'status': 'NEGATIVE_FIXED_CELL_OPEN'}
+CELL {'K': 10, 't': 9, 'a3_mod_2K': 1, 'ten_unit_pass': 'PASS', 'possible_d_tau_factorizations': '(1,9),(3,3),(9,1)', 'status': 'NEGATIVE_FIXED_CELL_OPEN'}
+CELL {'K': 100, 't': 1, 'a3_mod_2K': 129, 'ten_unit_pass': 'PASS', 'possible_d_tau_factorizations': '(1,1)', 'status': 'NEGATIVE_FIXED_CELL_OPEN'}
+CELL {'K': 100, 't': 3, 'a3_mod_2K': 187, 'ten_unit_pass': 'PASS', 'possible_d_tau_factorizations': '(1,3),(3,1)', 'status': 'NEGATIVE_FIXED_CELL_OPEN'}
+CELL {'K': 100, 't': 7, 'a3_mod_2K': 103, 'ten_unit_pass': 'PASS', 'possible_d_tau_factorizations': '(1,7),(7,1)', 'status': 'NEGATIVE_FIXED_CELL_OPEN'}
+CELL {'K': 100, 't': 9, 'a3_mod_2K': 161, 'ten_unit_pass': 'PASS', 'possible_d_tau_factorizations': '(1,9),(3,3),(9,1)', 'status': 'NEGATIVE_FIXED_CELL_OPEN'}
+CELL {'K': 1000, 't': 1, 'a3_mod_2K': 129, 'ten_unit_pass': 'PASS', 'possible_d_tau_factorizations': '(1,1)', 'status': 'NEGATIVE_FIXED_CELL_OPEN'}
+CELL {'K': 1000, 't': 3, 'a3_mod_2K': 387, 'ten_unit_pass': 'PASS', 'possible_d_tau_factorizations': '(1,3),(3,1)', 'status': 'NEGATIVE_FIXED_CELL_OPEN'}
+CELL {'K': 1000, 't': 7, 'a3_mod_2K': 903, 'ten_unit_pass': 'PASS', 'possible_d_tau_factorizations': '(1,7),(7,1)', 'status': 'NEGATIVE_FIXED_CELL_OPEN'}
+CELL {'K': 1000, 't': 9, 'a3_mod_2K': 1161, 'ten_unit_pass': 'PASS', 'possible_d_tau_factorizations': '(1,9),(3,3),(9,1)', 'status': 'NEGATIVE_FIXED_CELL_OPEN'}
+NEGATIVE_FIXED_CASES=24 (3 K values x 8 (d,tau) pairs)
+NEGATIVE_GAUSSIAN_DIAGNOSTIC_G_LE_7_SQUARES=0
+NEGATIVE_BRANCH_GLOBAL_CLOSURE=OPEN
+
+===== J2-55-R14-q1-SecondSupportLift.py =====
+U1=G**2*tau - 10*G*a - G*tau + 6*a + tau
+U2=4*G**2*tau - 40*G*a - 6*G*tau + 44*a + 9*tau
+FIRST_SUPPORT_U1_MOD_P=4a PASS
+SECOND_SUPPORT_U2_MOD_P=-12a PASS
+EQ1_LIFT= v_p(M)>h iff tau-4aG == 0 mod p^(h+1) PASS
+EQ2_LIFT= v_p(M)>h iff 27tau+24aG+152a == 0 mod p^(h+1) PASS
+GAUSSIAN_EXPONENT_BUDGET=v_p(M)<=2h
+EQUAL_VALUATION_SECOND_LIFT=PASS
+GLOBAL_EQUAL_VALUATION_CLOSURE=OPEN
+LEDGER=J2-55-R14-q1-SecondSupportLift.tsv
+
+===== FINAL VERDICTS =====
+REVERSE_GAMMA_R_EVEN=PASS
+LOWK_GAMMA_ODD_BRANCHES=VACUOUS_RETIRED
+REVERSE_EXACT_R_FACTOR=PASS
+BIT_LADDER=RETIRED_BY_EXPLICIT_CANCELLATION_LOCUS
+FULL_COEFFICIENT_TABLE=PASS_26_ROWS
+BOUNDARY_B0_GAMMA_DEGREE=1
+HIGH_H0_GAMMA_DEGREE=1
+NEGATIVE_FOUR_T_THEOREM=PASS
+NEGATIVE_BRANCH_GLOBAL_CLOSURE=OPEN
+EQUAL_VALUATION_SECOND_LIFT=PASS
+J2_CLOSED=FALSE
+SHA256 d192ff185f59e5e71c8b669cf709f382eeed676d752d80cc280765f7debb0831  J2-55-R14-Carry-NextBit-Gaussian-SecondLift-Report.md
+SHA256 15a5b95337aa291362854e9446a9bdbcf856bf2f66b9c97d44b0c310b8d6d3d0  J2-55-R14-GammaNextBit.py
+SHA256 a3b1fc3069a828c387bacb0e108b711490051d23dc1889eab29b76914c2b49c6  J2-55-R14-GammaBit.tsv
+SHA256 b11df1bec91f0aa012f55d1b47b0a739723fb54af58f67d0b09c08ae7bb10c97  J2-55-R14-FrozenRootPolynomials.py
+SHA256 d8969759db292ad193381350beae23ab1d6009786e4f47ec2654a399f5775897  J2-55-R14-FullCoefficientProfile.tsv
+SHA256 66282a3f6f61375e42f105741b109b1fd039a440b151d8b20663a2e77a5d72af  J2-55-R14-ReverseBitClosure.py
+SHA256 a851f58d0df318deab6dce34bc09bbfd6662ad3b5b6f95f02c43f66c4669e497  J2-55-R14-q1-NegativeBranch.py
+SHA256 8f794f59cce6557cbde5cb5719eb1a3684dba627654ad035abc315a8701ff4c7  J2-55-R14-q1-SecondSupportLift.py
+SHA256 8a3a2e32c7d3900489b16cfcbf9b1c71f9ab17ddefd8d06ba331c2284d25b129  J2-55-R14-survivors.tsv
+SHA256 890fd63b5dc3c6491006f90a1f25a30efa274acc6d66b071fb164204631446a2  J2-55-R14-counterexamples.tsv

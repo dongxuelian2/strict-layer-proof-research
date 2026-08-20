@@ -1,0 +1,33 @@
+A1 J2 FQTR6 exact certificate
+EXACT_ARITHMETIC=PASS
+SYMBOLIC_FILE=A1_J2_FQTR6_symbolic.py
+NEW_Q1_TAIL: ell<g => G/10 | (31N+21t), with N+t=10r and G/100 | (31r-t); hence g<=ell+3.
+NEW_QGT1_VALUATION_TAIL: ell<g, q>1, b=v5(q+4)<g, C=q^4+10q^3+12q^2+8q, B=(q+2)(q^2-4q-4): G/(2*5^b) | C*N-B*t.
+NEW_FIXED_Q_BOUND: if g>b then G < 30*5^b*q^4*10^ell; for fixed q the exceptional g<=b are already finite, so fixed q is slope 1 asymptotically.
+NEW_UNIFORM_QGT1_WEDGE: b<g gives G < 40*10^(17ell/7); b>=g is even stronger by outer suppression; globally g<=ceil(17ell/7)+1.
+SMALL_Q_CLASSIFICATION={7:'g=3 mod 6',11:'g odd',17:'g=8 mod 16',19:'g=9 mod 18'}; q=13 excluded by 5|A.
+L5_TOTALS={'outer': 85, 'N_cells': 22083018, 'congruence': 4601553, 'tail': 981416, 'reconstructed': 486671, 'digit_legal': 155500, 'dcdc': 97, 'disc_nonnegative': 97, 'disc_square': 0, 'integral_a1_roots': 0, 'full_radial_survivors': 0}
+L5_g=4 {'outer': 2, 'N_cells': 519602, 'congruence': 471225, 'tail': 471225, 'reconstructed': 235595, 'digit_legal': 75551, 'dcdc': 95, 'disc_nonnegative': 95, 'disc_square': 0, 'integral_a1_roots': 0}
+L5_g=5 {'outer': 3, 'N_cells': 779402, 'congruence': 510168, 'tail': 510168, 'reconstructed': 251053, 'digit_legal': 79932, 'dcdc': 2, 'disc_nonnegative': 2, 'disc_square': 0, 'integral_a1_roots': 0}
+L5_g=6 {'outer': 3, 'N_cells': 779402, 'congruence': 472275, 'tail': 21, 'reconstructed': 21, 'digit_legal': 16}
+L5_g=7 {'outer': 3, 'N_cells': 779402, 'congruence': 510158, 'tail': 2, 'reconstructed': 2, 'digit_legal': 1}
+L5_g=8 {'outer': 2, 'N_cells': 519602, 'congruence': 495297}
+L5_g=9 {'outer': 23, 'N_cells': 5975402, 'congruence': 618898}
+L5_g=10 {'outer': 7, 'N_cells': 1818602, 'congruence': 472419}
+L5_g=11 {'outer': 17, 'N_cells': 4416602, 'congruence': 514081}
+L5_g=12 {'outer': 5, 'N_cells': 1299002, 'congruence': 471108}
+L5_g=13 {'outer': 6, 'N_cells': 1558800, 'congruence': 43111}
+L5_g=14 {'outer': 14, 'N_cells': 3637200, 'congruence': 22813}
+L5_DCDC_SURVIVORS=97
+ALL_RECORDED_DCDC_PSEUDO_SURVIVORS=98
+L5_DISC_SQUARE_SURVIVORS=0
+L5_INTEGRAL_ROOT_SURVIVORS=0
+VERDICT_ELL5=CLOSED
+Q11_LARGE_DCDC_PSEUDO=(g=471,ell=470,q=11,h=1,t=31,mu=152510); DISC_MOD_11=8 NONRESIDUE; DISC_SQUARE=False
+VERDICT_FIXED_Q_DCDC_ALONE=FALSE_AS_CLOSURE_ENGINE
+VERDICT_UNIFORM_SLOPE2=NOT_PROVED
+VERDICT_UNIFORM_QGT1_SLOPE=17/7
+VERDICT_FULL_J2=OPEN
+CERTIFICATE_STATUS=PASS
+SURVIVOR_FILE=A1_J2_FQTR6_survivors.tsv
+L5_SURVIVOR_FILE=A1_J2_FQTR6_L5_survivors.tsv

@@ -1,0 +1,17 @@
+A1 J2 CQLRC8 h01 diagnostic
+EXACT_ARITHMETIC=PASS
+GMAX=1200
+H0_Q7={'tail_int': 221288, 'recon': 2900, 'linear': 370, 'dcdc': 28, 'local_q_square': 28, 'stack_square': 28, 'global_square': 0}
+H0_Q11={'tail_int': 8713715, 'recon': 264156, 'linear': 10214, 'dcdc': 44, 'local_q_square': 20, 'stack_square': 20, 'global_square': 0}
+H0_Q17={'tail_int': 413750, 'recon': 1164, 'linear': 32, 'dcdc': 5, 'local_q_square': 3, 'stack_square': 2, 'global_square': 0}
+H0_Q19={'tail_int': 437896, 'recon': 969, 'linear': 21, 'dcdc': 2, 'local_q_square': 0, 'stack_square': 0, 'global_square': 0}
+H1_Q7={'tail_int': 11144, 'recon': 142, 'linear': 29}
+H1_Q11={'tail_int': 355643, 'recon': 10760, 'linear': 1096, 'dcdc': 1, 'local_q_square': 0, 'stack_square': 0, 'global_square': 0}
+H1_Q17={'tail_int': 15198, 'recon': 43, 'linear': 3}
+H1_Q19={'tail_int': 15454, 'recon': 26, 'linear': 3}
+H0_DCDC_TOTAL=79
+H0_GLOBAL_SQUARE=0
+H1_DCDC_TOTAL=1
+H1_Q11_G471_PSI_MOD11=8
+DIAGNOSTIC_ONLY=YES
+SURVIVOR_FILE=A1_J2_CQLRC8_survivors.tsv

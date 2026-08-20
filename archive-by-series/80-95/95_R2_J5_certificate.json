@@ -1,0 +1,123 @@
+{
+  "arithmetic": "integer-only; no floating point",
+  "canonical_order": "g ascending; u0 ascending divisors of 10^g+1; C3 ascending; W ascending; k encoded left-to-right from 1 to kmax",
+  "canonical_uncompressed_rejection_ledger_sha256": "0612182b02a4e89b3af7d91cdebd3176f81a4026c1f1494f1dafa1700eca6f86",
+  "conclusion": {
+    "H_5,2_intersect_SR_positive": "EMPTY",
+    "H_5,3_intersect_SR_positive": "EMPTY"
+  },
+  "coverage_basis": {
+    "H_5,2": "g=n3=2, d*=2, beta=40, u=u0|101; C3 in [1,99]; d2=u0*C3-50W>0; inherited k<=8",
+    "H_5,3": "g=n3=3, d*=4, beta=800, u=u0|1001; C3 in [1,999]; d2=u0*C3-250W>0; inherited k<=12",
+    "g1_derivation": "resonance t=1; u=u0 and gcd(u0,10)=1 imply gamma=1, v0=10^g, hence g1=beta*10^g.",
+    "s_projection_note": "For H_5,2, s in {1,2} is absent from the primitive discriminant/root necessary gate; both source s-cases project to the same replay state space."
+  },
+  "families": {
+    "2": {
+      "C3_range": [
+        1,
+        99
+      ],
+      "G": 100,
+      "J": 5,
+      "base_states": 9998,
+      "beta": 40,
+      "detail_counts": {
+        "NEGATIVE_DISCRIMINANT": 1170,
+        "NON_SQUARE_EXACT_ISQRT": 30,
+        "NON_SQUARE_MODULAR_CERTIFICATE": 78784
+      },
+      "dstar": 2,
+      "expanded_base_k_states": 79984,
+      "g1": 4000,
+      "integral_C1_survivors": 0,
+      "k_range": [
+        1,
+        8
+      ],
+      "reason_code_counts": {
+        "D": 1170,
+        "N": 78814
+      },
+      "u0_divisors": [
+        1,
+        101
+      ]
+    },
+    "3": {
+      "C3_range": [
+        1,
+        999
+      ],
+      "G": 1000,
+      "J": 5,
+      "base_states": 2681304,
+      "beta": 800,
+      "detail_counts": {
+        "NEGATIVE_DISCRIMINANT": 301650,
+        "NON_SQUARE_EXACT_ISQRT": 32108,
+        "NON_SQUARE_MODULAR_CERTIFICATE": 31841889,
+        "SQUARE_BUT_ROOT_DIVISIBILITY_FAIL": 1
+      },
+      "dstar": 4,
+      "expanded_base_k_states": 32175648,
+      "g1": 800000,
+      "integral_C1_survivors": 0,
+      "k_range": [
+        1,
+        12
+      ],
+      "reason_code_counts": {
+        "D": 301650,
+        "I": 1,
+        "N": 31873997
+      },
+      "u0_divisors": [
+        1,
+        7,
+        11,
+        13,
+        77,
+        91,
+        143,
+        1001
+      ]
+    }
+  },
+  "near_survivors": [
+    {
+      "C3": 737,
+      "W": 9,
+      "code": "I",
+      "d2": 2909,
+      "delta": 983278492816,
+      "denom": 31200000,
+      "detail": "SQUARE_BUT_ROOT_DIVISIBILITY_FAIL",
+      "g": 3,
+      "k": 1,
+      "numerators": [
+        2009754,
+        26546
+      ],
+      "sqrt": 991604,
+      "u0": 7
+    }
+  ],
+  "necessary_gate": {
+    "A0": "u0*J+dstar",
+    "DeltaPrime": "(d2*u0*J*10^k)^2 - A0^2*(d2^2+(u0*C3)^2) + 2*A0*d2*W",
+    "d2": "u0*C3-(10^g/dstar)*W > 0",
+    "root": "C1=(d2*u0*J*10^k ± sqrt(DeltaPrime))/(A0*g1) must be a positive integer"
+  },
+  "original_equation_replay": "VACUOUS: zero positive integral C1 survivors reach the original-equation replay stage.",
+  "project": "三项十进制拼接平方和问题 / Strict Layer A1 / 95-R2",
+  "reason_code_legend": {
+    "D": "negative discriminant",
+    "I": "square discriminant but both C1 root numerators fail positive integrality/divisibility",
+    "N": "exactly certified non-square discriminant",
+    "P": "positive integral C1 survivor (must be replayed against original equation)"
+  },
+  "scope": "J=5 positive exact-resonance residual families H_5,2 and H_5,3 only",
+  "status_after_replay": "REPLAY_CERTIFIED_CLOSED_POSITIVE_HALVES",
+  "status_before_replay": "CLAIMED_BUT_CERTIFICATE_NOT_RECOVERED"
+}

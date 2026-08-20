@@ -1,0 +1,124 @@
+===== J2-65-R11-AutomorphismGroup.py =====
+RETURN_CODE=0
+PHI_GENERAL= Matrix([[p/2 - I*q/2 + I*r/2 + s/2, (1 - I)*(I*p - q - r - I*s)/2], [(1 - I)*(p - I*q - I*r - s)/4, p/2 + I*q/2 - I*r/2 + s/2]])
+SL2_ZMOD4_SIZE=48
+LEVEL4_IMAGE_SIZE=8
+INDEX_IN_SL2Z=6
+GAMMA_STAR_GENERATORS_S= [[0, -1], [1, 0]]
+GAMMA_STAR_GENERATORS_E= [[2, -5], [1, -2]]
+GAMMA_STAR_GENERATORS_P= [[1, 4], [0, 1]]
+FULL_AUT_HCAN_GENERATOR_K= [[I, 0], [-2*I, 1]]
+FULL_AUT_HCAN_GENERATOR_L= [[1, -1 + I], [2*I, -2 - I]]
+CENTRAL_GENERATOR=iI
+PROJECTIVE_PRESENTATION=<K,L | K^4=L^4=1> = C4 * C4
+FULL_PRESENTATION=C4_central x (C4 * C4)
+NUMBER_OF_CUSPS=1
+CUSP_PARABOLIC=K*L=i*P_-1
+AUTOMORPHISM_PRESENTATION=PROVED
+
+===== J2-65-R11-GaussianReduction.py =====
+RETURN_CODE=0
+SHEAR_OFFDIAGONAL_FORMULA=PASS
+REDUCED_SECOND_DIAGONAL_FORMULA=PASS
+DETERMINANT_IDENTITY: if ac-|z|^2=-2 then c'=(|r|^2-2)/a
+CENTERED_SQUARE: |r|^2<=a^2/2
+FOR_a>2: c' > -1 and c' integer => c'>=0
+FOR_a>2: c'<=a/2-2/a<a/2
+REDUCED_SECOND_DIAGONAL_NONNEGATIVE=PASS
+REDUCED_SECOND_DIAGONAL_LT_HALF=PASS
+ONE_STEP_CUSP_ENTRANCE=PROVED
+TERMINAL_a=1: shear by n=z gives diag(1,-2)
+TERMINAL_a=2: centered |r|^2 in {0,2}; c' in {-1,0}
+REDUCTION_LENGTH_BOUND=nearest/swap stages <= ceil(log2(a)) including terminal stage
+GAUSSIAN_EUCLIDEAN_REDUCTION=PROVED_FOR_POSITIVE_PIVOT_SECTOR; ACTUAL_POWER_TEN_STATES_INCLUDED
+
+===== J2-65-R11-CuspCoordinate.py =====
+RETURN_CODE=0
+Q_INV= [[0, 1], [1, n]]
+ISOTROPIC_COORDINATE_UPDATE: xi=X/Y -> xi'=Y/(X+nY)=1/(xi+n)
+CUSP_COORDINATE=(1+i-z)/a before primitive scaling
+STANDARD_NEAREST_GAUSSIAN_CF_MATCH=PARTIAL
+REASON=digit n is nearest to z/a=(1+i)/a-xi, not to xi alone
+CORRECT_OBJECT=determinant-2 Hermitian continued-fraction word with exact Mobius update
+
+===== J2-65-R11-ContinuedFraction.py =====
+RETURN_CODE=0
+R(n)=[[-n,1],[1,0]]
+PRODUCT_3= [[-n0 - n2*(n0*n1 + 1), n0*n1 + 1], [n1*n2 + 1, -n1]]
+CONTINUANT_RECURRENCE:
+P_-1=0,P_0=1; R_-1=1,R_0=0
+P_{j+1}=-n_j P_j+P_{j-1}
+R_{j+1}=-n_j R_j+R_{j-1}
+M_j=[[P_j,P_{j-1}],[R_j,R_{j-1}]]
+GAUSSIAN_CF_MATCHES_REDUCTION=PROVED_AS_HERMITIAN_CF; STANDARD_NEAREST_CF=PARTIAL
+
+===== J2-65-R11-DiagonalMap.py =====
+RETURN_CODE=0
+DIAGONAL_1= -(re(p) - im(p) - im(r))*im(r) + I*((re(p) - im(p) - im(r))*re(r) - re(p)*re(r) + re(r)*im(p) + re(r)*im(r)) + 2*re(p)*re(r) - re(p)*im(r) + re(r)**2 + 2*re(r)*im(p) + im(p)*im(r)
+DIAGONAL_2= -(re(q) - im(q) - im(s))*im(s) + I*((re(q) - im(q) - im(s))*re(s) - re(q)*re(s) + re(s)*im(q) + re(s)*im(s)) + 2*re(q)*re(s) - re(q)*im(s) + re(s)**2 + 2*re(s)*im(q) + im(q)*im(s)
+EXACT_FORMULA:
+Phi(x,y)=|y|^2+2 Re((1+i) conjugate(x) y)
+If X=(reduction_word * terminal_normalizer)^(-1),
+Dplus=Phi(X11,X21), Dminus=Phi(X12,X22).
+The entries of X are Gaussian continuants by the two-term recurrence.
+DIAGONAL_MAP_IN_CONTINUANT_COORDINATES=PROVED
+
+===== J2-65-R11-LevelUIsotropy.py =====
+RETURN_CODE=0
+UNIVERSAL_BASIS_V= [[I, -I], [1, 1]]
+GRAM= [[0, -2 - 2*I], [-2 + 2*I, 0]]
+DET_V=2i
+For every odd u, 2i is a unit mod u.
+LEVEL_u_ISOTROPIC_BASIS_CONDITION=PROVED
+LEVEL_u_ISOTROPIC_BASIS_OBSTRUCTION=FALSE
+HECKE_INTERPRETATION=NOT_APPLICABLE
+
+===== J2-65-R11-PowerTenIntersection.py =====
+RETURN_CODE=0
+ACTUAL_RELATIVE_GAP_MAX=31/200
+ACTUAL_RATIO_MIN=169/231
+ACTUAL_CLOSE_RATIO_GT_5_OVER_7=PASS
+ACTUAL_CLOSE_RATIO_LT_1=PASS
+CUSP_ANNULUS_LOWER=PASS: |z/a|^2=c/a+2/a^2>5/7
+CUSP_ANNULUS_UPPER=PASS: a(a-c)=2*u^2*B*Cplus>2
+NEAREST_GAUSSIAN_n_NONZERO=PASS
+FIRST_DIGIT_EIGHT_SET=PASS
+FIRST_DIGIT_SYMMETRY_TYPES=2
+SHELLS=N(n)=1 and N(n)=2, each one Gaussian-unit orbit
+NORM1_SHELL_STATUS=OPEN
+NORM2_SHELL_STATUS=OPEN
+POWER_TEN_SECTION_FIRST_SHELL_TYPES=2
+RATIONAL_LAYER_RETIRED=FALSE
+q_GT_1_CLOSED=FALSE
+
+===== J2-65-R11-Regression.py =====
+RETURN_CODE=0
+R10_UNIQUE_CLASS_REGRESSION=PASS
+R10_HCAN_REGRESSION=PASS
+R10_H0_REGRESSION=PASS
+R10_POWER_TEN_CLOSE_BOUND_REGRESSION=PASS
+R10_COMPOSITE_NORM_CONGRUENCE_RETIRED=TRUE
+PRIME_BY_PRIME_CAMPAIGN_USED=FALSE
+FIXED_q_CAMPAIGN_USED=FALSE
+DECIMAL_DIGIT_LADDER_USED=FALSE
+ORIGINAL_SOURCE_LATTICE_REOPENED=FALSE
+
+===== SHA256 =====
+701f4a84fdafb948e17a302371046ad3daea50ab47228c3c87d71eac517b9688  J2-65-R11-AutomorphismGenerators.tsv
+221badac1266ce10a264d334b2f620bed1a32ec9951bd46c690e51f5cf677863  J2-65-R11-AutomorphismGroup.py
+0281618fca6d8a15fac6d02a4c458d307cb0866a1ca1cd862584919bf5b7caa2  J2-65-R11-ContinuantRecurrence.tsv
+bdf9ea64b00a1267725a5d0ebf7a28522702adf177ad492e390ab0c36cc10a73  J2-65-R11-ContinuedFraction.py
+b9f5e982a633d3fc1d62d286acbb2725197d575e45f014c5b30f3c6d0dc3c4ae  J2-65-R11-CuspCoordinate.py
+80efe3e30fc284afe2d963cbd84eaa7a4f28ff37fe06c73a8ef2823ba8fb8a48  J2-65-R11-CuspShells.tsv
+7d94bca0a4cf1acc0b001e16f43295ce4ec4020d669f4f929ae594bcf454d3b6  J2-65-R11-DiagonalMap.py
+6c3e322f7026fa0adc33986cefc1e036371c8b459458a232d395da61cbca5edc  J2-65-R11-DiagonalMap.tsv
+86adfb4b0fc2ca7eaa312844e7647a7d0646aa27ab9d7910bdc38a5c4be9c994  J2-65-R11-FundamentalDomain.tsv
+32dcc2b338797a24a2d921912a2a08a430d4443867d45b30cd9e0351aa4632b6  J2-65-R11-Gaussian-Modular-Reduction-Report.md
+ad4c289a32b1ee4f2393f2b647918ca7231d988d3d6679d2a18983407a8b244c  J2-65-R11-GaussianReduction.py
+f36bf3c22f05841af858cd0be0915271359befbe614722b2425ac50e68712285  J2-65-R11-LevelUIsotropy.py
+b2973e0b4670362059e0acefc6ae1415d4a3f6d8a62490633bef4585714100e7  J2-65-R11-LevelUIsotropy.tsv
+fd6d31450db74d25f72603cf1beac014dd93305ab81585ce23163a66b7b2cbeb  J2-65-R11-PowerTenIntersection.py
+36c6a08b46329552a27ffc793529e05ef9e89212d4d8ee3bbdb3e04d6ef7f1f7  J2-65-R11-PowerTenIntersection.tsv
+a0a770fc128d574845aa6d8fd600766a06bfbc9937ef6f6199bd31cb56c66307  J2-65-R11-ReductionStates.tsv
+1e60162d72b93b203da58b5e0662f5683e44f47be1180b4ea0bb28267cf5794d  J2-65-R11-Regression.py
+5728b5e55aec17dc05e9031b9e13ba80de5d22824b5462f1be2df9e31ec658c2  J2-65-R11-certificate.txt

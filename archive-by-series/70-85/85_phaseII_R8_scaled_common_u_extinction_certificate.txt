@@ -1,0 +1,25 @@
+R8 SCALED COMMON-U CERTIFICATE
+name=R7 deepest exact-root/source survivor
+Ulo=1
+Uhi=0
+c_gt_G=True
+C2_gt_G2K=True
+root=PASS
+lattice=PASS
+---
+name=PLCF t=0 double-box/root-independent control
+U=99999
+X=99999
+Y=15002149977
+N=0
+X_box=PASS
+Y_box=PASS
+content=PASS
+lattice=PASS
+gcd(U,uGH)=1
+full_root=FAIL
+root_residual=-24743075589166136354
+---
+scaled_exact_equivalence=PASS
+exact_content_all5=7
+---

@@ -1,0 +1,114 @@
+A1 J2 NRSEC exact targeted certificate
+ETA_MAJORANT=1299/500
+ETA_SQUARE_MARGIN=1869/400000
+SEARCH_G=2,3
+
+NEGATIVE_SECTION g=2 G=100
+ALLOWED_(u,q,A,B)= [(1, 101, 3, 301), (101, 1, 203, 201)]
+K_RANGE=1..5
+NEG_UK {'u': 1, 'q': 101, 'k': 1, 'z_bound': '1449/2500', 'zmax': 0, 'cz_cells': 0, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+NEG_UK {'u': 1, 'q': 101, 'k': 2, 'z_bound': '2799/25000', 'zmax': 0, 'cz_cells': 0, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+NEG_UK {'u': 1, 'q': 101, 'k': 3, 'z_bound': '16299/250000', 'zmax': 0, 'cz_cells': 0, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+NEG_UK {'u': 1, 'q': 101, 'k': 4, 'z_bound': '151299/2500000', 'zmax': 0, 'cz_cells': 0, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+NEG_UK {'u': 1, 'q': 101, 'k': 5, 'z_bound': '1501299/25000000', 'zmax': 0, 'cz_cells': 0, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+NEG_UK {'u': 101, 'q': 1, 'k': 1, 'z_bound': '1156349/2500', 'zmax': 462, 'cz_cells': 4120, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+NEG_UK {'u': 101, 'q': 1, 'k': 2, 'z_bound': '10382699/25000', 'zmax': 415, 'cz_cells': 3360, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+NEG_UK {'u': 101, 'q': 1, 'k': 3, 'z_bound': '102646199/250000', 'zmax': 410, 'cz_cells': 3280, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+NEG_UK {'u': 101, 'q': 1, 'k': 4, 'z_bound': '1025281199/2500000', 'zmax': 410, 'cz_cells': 3280, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+NEG_UK {'u': 101, 'q': 1, 'k': 5, 'z_bound': '10251631199/25000000', 'zmax': 410, 'cz_cells': 3280, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+NEG_TOTAL {'cz_cells': 17320, 'linear_positive': 17320, 'disc_nonnegative': 17320, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+NEG_SURVIVOR_LEDGER []
+
+POSITIVE_SECTION g=2 G=100
+ALLOWED_(u,q,A,B)= [(1, 101, 3, 301), (101, 1, 203, 201)]
+K_RANGE=3..5
+POS_UK {'u': 1, 'q': 101, 'k': 3, 'z_bound': '3/50', 'zmax': 0, 'cz_cells': 0, 'linear_positive': 0, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+POS_UK {'u': 1, 'q': 101, 'k': 4, 'z_bound': '3/50', 'zmax': 0, 'cz_cells': 0, 'linear_positive': 0, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+POS_UK {'u': 1, 'q': 101, 'k': 5, 'z_bound': '3/50', 'zmax': 0, 'cz_cells': 0, 'linear_positive': 0, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+POS_UK {'u': 101, 'q': 1, 'k': 3, 'z_bound': '20503/50', 'zmax': 410, 'cz_cells': 33, 'linear_positive': 0, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+POS_UK {'u': 101, 'q': 1, 'k': 4, 'z_bound': '20503/50', 'zmax': 410, 'cz_cells': 33, 'linear_positive': 0, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+POS_UK {'u': 101, 'q': 1, 'k': 5, 'z_bound': '20503/50', 'zmax': 410, 'cz_cells': 33, 'linear_positive': 0, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+POS_TOTAL {'cz_cells': 99, 'linear_positive': 0, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+POS_SURVIVOR_LEDGER []
+
+NEGATIVE_SECTION g=3 G=1000
+ALLOWED_(u,q,A,B)= [(1, 1001, 3, 3001), (11, 91, 23, 2091), (13, 77, 27, 2077), (91, 11, 183, 2011), (143, 7, 287, 2007), (1001, 1, 2003, 2001)]
+K_RANGE=1..7
+NEG_UK {'u': 1, 'q': 1001, 'k': 1, 'z_bound': '657/1250', 'zmax': 0, 'cz_cells': 0, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+NEG_UK {'u': 1, 'q': 1001, 'k': 2, 'z_bound': '1449/25000', 'zmax': 0, 'cz_cells': 0, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+NEG_UK {'u': 1, 'q': 1001, 'k': 3, 'z_bound': '2799/250000', 'zmax': 0, 'cz_cells': 0, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+NEG_UK {'u': 1, 'q': 1001, 'k': 4, 'z_bound': '16299/2500000', 'zmax': 0, 'cz_cells': 0, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+NEG_UK {'u': 1, 'q': 1001, 'k': 5, 'z_bound': '151299/25000000', 'zmax': 0, 'cz_cells': 0, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+NEG_UK {'u': 1, 'q': 1001, 'k': 6, 'z_bound': '1501299/250000000', 'zmax': 0, 'cz_cells': 0, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+NEG_UK {'u': 1, 'q': 1001, 'k': 7, 'z_bound': '15001299/2500000000', 'zmax': 0, 'cz_cells': 0, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+NEG_UK {'u': 11, 'q': 91, 'k': 1, 'z_bound': '7777/1250', 'zmax': 6, 'cz_cells': 800, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+NEG_UK {'u': 11, 'q': 91, 'k': 2, 'z_bound': '26939/25000', 'zmax': 1, 'cz_cells': 400, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+NEG_UK {'u': 11, 'q': 91, 'k': 3, 'z_bound': '140789/250000', 'zmax': 0, 'cz_cells': 0, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+NEG_UK {'u': 11, 'q': 91, 'k': 4, 'z_bound': '1279289/2500000', 'zmax': 0, 'cz_cells': 0, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+NEG_UK {'u': 11, 'q': 91, 'k': 5, 'z_bound': '12664289/25000000', 'zmax': 0, 'cz_cells': 0, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+NEG_UK {'u': 11, 'q': 91, 'k': 6, 'z_bound': '126514289/250000000', 'zmax': 0, 'cz_cells': 0, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+NEG_UK {'u': 11, 'q': 91, 'k': 7, 'z_bound': '1265014289/2500000000', 'zmax': 0, 'cz_cells': 0, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+NEG_UK {'u': 13, 'q': 77, 'k': 1, 'z_bound': '9321/1250', 'zmax': 7, 'cz_cells': 1200, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+NEG_UK {'u': 13, 'q': 77, 'k': 2, 'z_bound': '34437/25000', 'zmax': 1, 'cz_cells': 400, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+NEG_UK {'u': 13, 'q': 77, 'k': 3, 'z_bound': '192387/250000', 'zmax': 0, 'cz_cells': 0, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+NEG_UK {'u': 13, 'q': 77, 'k': 4, 'z_bound': '1771887/2500000', 'zmax': 0, 'cz_cells': 0, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+NEG_UK {'u': 13, 'q': 77, 'k': 5, 'z_bound': '17566887/25000000', 'zmax': 0, 'cz_cells': 0, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+NEG_UK {'u': 13, 'q': 77, 'k': 6, 'z_bound': '175516887/250000000', 'zmax': 0, 'cz_cells': 0, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+NEG_UK {'u': 13, 'q': 77, 'k': 7, 'z_bound': '1755016887/2500000000', 'zmax': 0, 'cz_cells': 0, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+NEG_UK {'u': 91, 'q': 11, 'k': 1, 'z_bound': '100737/1250', 'zmax': 80, 'cz_cells': 10128, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+NEG_UK {'u': 91, 'q': 11, 'k': 2, 'z_bound': '950859/25000', 'zmax': 38, 'cz_cells': 3328, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+NEG_UK {'u': 91, 'q': 11, 'k': 3, 'z_bound': '8444709/250000', 'zmax': 33, 'cz_cells': 2928, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+NEG_UK {'u': 91, 'q': 11, 'k': 4, 'z_bound': '83383209/2500000', 'zmax': 33, 'cz_cells': 2928, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+NEG_UK {'u': 91, 'q': 11, 'k': 5, 'z_bound': '832768209/25000000', 'zmax': 33, 'cz_cells': 2928, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+NEG_UK {'u': 91, 'q': 11, 'k': 6, 'z_bound': '8326618209/250000000', 'zmax': 33, 'cz_cells': 2928, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+NEG_UK {'u': 91, 'q': 11, 'k': 7, 'z_bound': '83265118209/2500000000', 'zmax': 33, 'cz_cells': 2928, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+NEG_UK {'u': 143, 'q': 7, 'k': 1, 'z_bound': '195481/1250', 'zmax': 156, 'cz_cells': 18231, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+NEG_UK {'u': 143, 'q': 7, 'k': 2, 'z_bound': '2237807/25000', 'zmax': 89, 'cz_cells': 7831, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+NEG_UK {'u': 143, 'q': 7, 'k': 3, 'z_bound': '20706257/250000', 'zmax': 82, 'cz_cells': 6631, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+NEG_UK {'u': 143, 'q': 7, 'k': 4, 'z_bound': '205390757/2500000', 'zmax': 82, 'cz_cells': 6631, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+NEG_UK {'u': 143, 'q': 7, 'k': 5, 'z_bound': '2052235757/25000000', 'zmax': 82, 'cz_cells': 6631, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+NEG_UK {'u': 143, 'q': 7, 'k': 6, 'z_bound': '20520685757/250000000', 'zmax': 82, 'cz_cells': 6631, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+NEG_UK {'u': 143, 'q': 7, 'k': 7, 'z_bound': '205205185757/2500000000', 'zmax': 82, 'cz_cells': 6631, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+NEG_UK {'u': 1001, 'q': 1, 'k': 1, 'z_bound': '5662657/1250', 'zmax': 4530, 'cz_cells': 404000, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+NEG_UK {'u': 1001, 'q': 1, 'k': 2, 'z_bound': '101550449/25000', 'zmax': 4062, 'cz_cells': 329200, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+NEG_UK {'u': 1001, 'q': 1, 'k': 3, 'z_bound': '1003801799/250000', 'zmax': 4015, 'cz_cells': 321600, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+NEG_UK {'u': 1001, 'q': 1, 'k': 4, 'z_bound': '10026315299/2500000', 'zmax': 4010, 'cz_cells': 320800, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+NEG_UK {'u': 1001, 'q': 1, 'k': 5, 'z_bound': '100251450299/25000000', 'zmax': 4010, 'cz_cells': 320800, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+NEG_UK {'u': 1001, 'q': 1, 'k': 6, 'z_bound': '1002502800299/250000000', 'zmax': 4010, 'cz_cells': 320800, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+NEG_UK {'u': 1001, 'q': 1, 'k': 7, 'z_bound': '10025016300299/2500000000', 'zmax': 4010, 'cz_cells': 320800, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+NEG_TOTAL {'cz_cells': 2428113, 'linear_positive': 2428113, 'disc_nonnegative': 2428113, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+NEG_SURVIVOR_LEDGER []
+
+POSITIVE_SECTION g=3 G=1000
+ALLOWED_(u,q,A,B)= [(1, 1001, 3, 3001), (11, 91, 23, 2091), (13, 77, 27, 2077), (91, 11, 183, 2011), (143, 7, 287, 2007), (1001, 1, 2003, 2001)]
+K_RANGE=5..8
+POS_UK {'u': 1, 'q': 1001, 'k': 5, 'z_bound': '3/500', 'zmax': 0, 'cz_cells': 0, 'linear_positive': 0, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+POS_UK {'u': 1, 'q': 1001, 'k': 6, 'z_bound': '3/500', 'zmax': 0, 'cz_cells': 0, 'linear_positive': 0, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+POS_UK {'u': 1, 'q': 1001, 'k': 7, 'z_bound': '3/500', 'zmax': 0, 'cz_cells': 0, 'linear_positive': 0, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+POS_UK {'u': 1, 'q': 1001, 'k': 8, 'z_bound': '3/500', 'zmax': 0, 'cz_cells': 0, 'linear_positive': 0, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+POS_UK {'u': 11, 'q': 91, 'k': 5, 'z_bound': '253/500', 'zmax': 0, 'cz_cells': 0, 'linear_positive': 0, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+POS_UK {'u': 11, 'q': 91, 'k': 6, 'z_bound': '253/500', 'zmax': 0, 'cz_cells': 0, 'linear_positive': 0, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+POS_UK {'u': 11, 'q': 91, 'k': 7, 'z_bound': '253/500', 'zmax': 0, 'cz_cells': 0, 'linear_positive': 0, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+POS_UK {'u': 11, 'q': 91, 'k': 8, 'z_bound': '253/500', 'zmax': 0, 'cz_cells': 0, 'linear_positive': 0, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+POS_UK {'u': 13, 'q': 77, 'k': 5, 'z_bound': '351/500', 'zmax': 0, 'cz_cells': 0, 'linear_positive': 0, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+POS_UK {'u': 13, 'q': 77, 'k': 6, 'z_bound': '351/500', 'zmax': 0, 'cz_cells': 0, 'linear_positive': 0, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+POS_UK {'u': 13, 'q': 77, 'k': 7, 'z_bound': '351/500', 'zmax': 0, 'cz_cells': 0, 'linear_positive': 0, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+POS_UK {'u': 13, 'q': 77, 'k': 8, 'z_bound': '351/500', 'zmax': 0, 'cz_cells': 0, 'linear_positive': 0, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+POS_UK {'u': 91, 'q': 11, 'k': 5, 'z_bound': '16653/500', 'zmax': 33, 'cz_cells': 7, 'linear_positive': 0, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+POS_UK {'u': 91, 'q': 11, 'k': 6, 'z_bound': '16653/500', 'zmax': 33, 'cz_cells': 7, 'linear_positive': 0, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+POS_UK {'u': 91, 'q': 11, 'k': 7, 'z_bound': '16653/500', 'zmax': 33, 'cz_cells': 7, 'linear_positive': 0, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+POS_UK {'u': 91, 'q': 11, 'k': 8, 'z_bound': '16653/500', 'zmax': 33, 'cz_cells': 7, 'linear_positive': 0, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+POS_UK {'u': 143, 'q': 7, 'k': 5, 'z_bound': '41041/500', 'zmax': 82, 'cz_cells': 10, 'linear_positive': 0, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+POS_UK {'u': 143, 'q': 7, 'k': 6, 'z_bound': '41041/500', 'zmax': 82, 'cz_cells': 10, 'linear_positive': 0, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+POS_UK {'u': 143, 'q': 7, 'k': 7, 'z_bound': '41041/500', 'zmax': 82, 'cz_cells': 10, 'linear_positive': 0, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+POS_UK {'u': 143, 'q': 7, 'k': 8, 'z_bound': '41041/500', 'zmax': 82, 'cz_cells': 10, 'linear_positive': 0, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+POS_UK {'u': 1001, 'q': 1, 'k': 5, 'z_bound': '2005003/500', 'zmax': 4010, 'cz_cells': 333, 'linear_positive': 0, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+POS_UK {'u': 1001, 'q': 1, 'k': 6, 'z_bound': '2005003/500', 'zmax': 4010, 'cz_cells': 333, 'linear_positive': 0, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+POS_UK {'u': 1001, 'q': 1, 'k': 7, 'z_bound': '2005003/500', 'zmax': 4010, 'cz_cells': 333, 'linear_positive': 0, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+POS_UK {'u': 1001, 'q': 1, 'k': 8, 'z_bound': '2005003/500', 'zmax': 4010, 'cz_cells': 333, 'linear_positive': 0, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+POS_TOTAL {'cz_cells': 1400, 'linear_positive': 0, 'square_discriminant': 0, 'integral_C1_roots': 0, 'exact_primitive_states': 0, 'radial_U_survivors': 0}
+POS_SURVIVOR_LEDGER []
+
+GLOBAL_RADIAL_SURVIVOR_COUNT= 0
+GLOBAL_SURVIVOR_LEDGER= []
+CERTIFICATE_STATUS=PASS

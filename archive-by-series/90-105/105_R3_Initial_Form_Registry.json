@@ -1,0 +1,84 @@
+{
+  "schema": "105-R3-initial-form-registry-v1",
+  "variables": [
+    "P1",
+    "P2",
+    "P3",
+    "Q0",
+    "D",
+    "T3",
+    "H",
+    "R",
+    "tau3",
+    "G",
+    "K",
+    "X",
+    "Y",
+    "b1",
+    "b2",
+    "b3"
+  ],
+  "generators": {
+    "F_sphere": "P1^2 + P2^2 + P3^2 - Q0^2",
+    "F_D": "D - K*P1 + Q0",
+    "F_T3": "T3 - Q0 + P3",
+    "F_H": "H - b2*Q0 + b1*X*D",
+    "F_R": "R - b2*Y + b3",
+    "F_tau": "Y*tau3 - b3*T3",
+    "F_UDD": "b2*P2 - tau3 - G*H",
+    "F_master": "b1*X*Y*G*D + b2*Y*(P2-G*Q0) - b3*T3"
+  },
+  "cells": {
+    "S0": {
+      "criterion": "g=0 / G=1",
+      "initial_form": "I_master|_{G=1}",
+      "decorations": [
+        "R>0",
+        "H-sign secondary",
+        "source active faces"
+      ]
+    },
+    "S1": {
+      "criterion": "g>0 and R=0",
+      "initial_form": "I_master + <R,b2*Y-b3>",
+      "decorations": [
+        "J",
+        "q-status",
+        "q1 source sublattice"
+      ]
+    },
+    "S2": {
+      "criterion": "g>0,R!=0,d=0 or 1",
+      "initial_form": "I_master on X/G in {1,10}",
+      "decorations": [
+        "d-wall",
+        "sign",
+        "borrow",
+        "J"
+      ]
+    },
+    "S3": {
+      "criterion": "g>0,d<=-1",
+      "initial_form": "I_master + outer-low real chamber",
+      "decorations": [
+        "H<0",
+        "R<0",
+        "J",
+        "source active faces"
+      ]
+    },
+    "S4": {
+      "criterion": "g>0,d>=2",
+      "initial_form": "I_master + outer-high real chamber",
+      "decorations": [
+        "H>0",
+        "R>0",
+        "J",
+        "carry value",
+        "source active faces"
+      ]
+    }
+  },
+  "finite_theorem": "finite combinatorial types modulo arithmetic depth",
+  "warning": "semantic initial form = algebraic support + arithmetic lattice decoration + Archimedean chamber; not naked Trop(V)"
+}

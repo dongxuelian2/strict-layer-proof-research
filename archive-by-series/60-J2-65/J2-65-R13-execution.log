@@ -1,0 +1,139 @@
+J2-65-R13 EXECUTION LOG
+UTC=2026-08-17T12:28:17Z
+
+===== J2-65-R13-RadialHomogenization.py =====
+R7_PROJECTIVE_CONIC_RELOADED=PASS
+RADIAL_SUBSTITUTION=r=t/s ; y=x/s
+RADIAL_HOMOGENEOUS_FORM=Ac*s^2+Bc*s*t+Cc*t^2+Dc*x^2+(K/G)*x*(Ec*s+Fc*t)
+Ac= G*(2*G**3*q**2 + 16*G**3*q + 32*G**3 + G**2*q**3 + 10*G**2*q**2 + 40*G**2*q + 64*G**2 + 2*G*q**3 + 18*G*q**2 + 40*G*q + 40*G + q**3 + 10*q**2 + 12*q + 8)
+Bc= 2*(4*G**3*q**5 + 44*G**3*q**4 + 136*G**3*q**3 + 48*G**3*q**2 - 224*G**3*q - 128*G**3 + 2*G**2*q**6 + 26*G**2*q**5 + 136*G**2*q**4 + 360*G**2*q**3 + 208*G**2*q**2 - 320*G**2*q - 192*G**2 + 3*G*q**6 + 34*G*q**5 + 128*G*q**4 + 248*G*q**3 + 128*G*q**2 - 128*G*q - 64*G + q**6 + 14*q**5 + 52*q**4 + 56*q**3 + 32*q**2)
+Cc= 10*G**2*q**8 + 152*G**2*q**7 + 736*G**2*q**6 + 992*G**2*q**5 - 576*G**2*q**4 - 1664*G**2*q**3 + 512*G**2*q**2 + 1536*G**2*q + 512*G**2 + 5*G*q**9 + 90*G*q**8 + 656*G*q**7 + 2368*G*q**6 + 3488*G*q**5 - 64*G*q**4 - 3840*G*q**3 - 1024*G*q**2 + 1280*G*q + 512*G + 6*q**9 + 96*q**8 + 600*q**7 + 1952*q**6 + 3296*q**5 + 1792*q**4 - 640*q**3 - 512*q**2
+Dc= G*q**4*(q + 4)**2*(2*G + q + 2)*(q**3 + 10*q**2 + 12*q + 8)**2
+Ec= -4*G*q**2*(G + 1)*(q + 4)*(q**3 + 10*q**2 + 12*q + 8)*(G**2*q + 4*G**2 + 2*G - q)
+Fc= -4*q**2*(G + 1)*(q + 4)*(q**3 + 10*q**2 + 12*q + 8)*(2*G**2*q**4 + 14*G**2*q**3 + 12*G**2*q**2 - 24*G**2*q - 16*G**2 + G*q**4 + 14*G*q**3 + 28*G*q**2 + 8*G*q - 2*q**4 - 8*q**3)
+FORM_DEGREE=2
+FORM_HOMOGENEOUS=TRUE
+PROJECTIVE_TO_RADIAL_EQUIVALENCE=PASS
+EXIT_CODE=0
+
+===== J2-65-R13-SourceIntegrality.py =====
+SOURCE_INTEGRALITY_MINIMAL_GENERATORS=alpha,x,Z,a3
+DERIVED_INTEGER=t,N,X,D2,h,m,r_rem,F
+TAIL_SCALE_CONGRUENCE=G | d*(q*c*N-B*t)
+NO_DENOMINATOR_CASE_SPLIT=TRUE
+EXIT_CODE=0
+
+===== J2-65-R13-SourceLattice.py =====
+SOURCE_INTEGER_QUANTITY_COUNT=12
+SOURCE_LINEAR_FORM_COUNT=4  # minimal saturated generators alpha,x,Z,a3
+SOURCE_LATTICE_RANK=3
+SOURCE_LATTICE_BASIS=TEMPLATE: Z=M*w1+rho*w2; a3=w2; x=w3; s=(alpha1*w1+alpha2*w2)/d; t=q^2*Z-4*a3
+SOURCE_LATTICE_SNF=(1,1,M), M=G/delta
+delta=gcd(G,d*hZ,d*ha); hZ=q^2*(c*(G-1)-B); ha=4B-2*q*c*A
+POWER_TEN_COLLAPSE (live q): delta=gcd(G,2*d*(q+4))
+DENOMINATOR_CASE_SPLIT_USED=FALSE
+EXIT_CODE=0
+
+===== J2-65-R13-PrimitiveRay.py =====
+CANONICAL_PRIMITIVE_RAY_THEOREM=PROVED
+EVERY_INTEGRAL_LIFT_EQUALS_n_TIMES_PRIMITIVE_GENERATOR=PROVED
+PRIMITIVE_RAY_UNIQUE_UP_TO_SIGN=PROVED
+POSITIVE_ORIENTATION_FIXES_SIGN=TRUE
+PROOF=transport Lambda_src by any Z-basis B_Lambda to Z^3; divide the integer coordinate vector by gcd of its coordinates
+GCD_x_u_RAY_FACTORIZATION=PROVED
+GCD_Z_u_RAY_FACTORIZATION=PROVED
+MULTIPLIER_COPRIME_TO_u_REQUIRED=TRUE
+RAY_x0_UNIT_MOD_u_REQUIRED=TRUE
+RAY_Z0_UNIT_MOD_u_REQUIRED=TRUE
+PRIMITIVE_GATE_FULL_RAY_FORMULA=gcd(n,u)=gcd(x0,u)=gcd(Z0,u)=1
+U_SQ_SHARPENING=x0^2 == Z0^2 (mod u) plus gcd(Z0,u)=1 implies gcd(x0,u)=1
+EXIT_CODE=0
+
+===== J2-65-R13-RadialGateHomogeneity.py =====
+W_GATE_COUNT_RECOVERED=8  # bundle-level global source gates
+PROJECTIVE_W_GATE_COUNT=4
+RADIAL_LOWER_GATE_COUNT=1
+RADIAL_UPPER_GATE_COUNT=0
+RADIAL_INTERVAL_GATE_COUNT=1
+NONHOMOGENEOUS_OTHER_COUNT=2
+LOW_CLASS=RADIAL_LOWER
+UP_CLASS=PROJECTIVE
+DIG3_CLASS=RADIAL_INTERVAL
+GENUINE_RADIAL_UPPER_GATE=PRESENT  # upper endpoint is n*a3_0 < G
+DIGIT_CONE_FIXED_COMPLEXITY=TRUE
+BRANCH_SPECIFIC_DEFICIENCY_BOUNDS_REIMPORTED=FALSE
+EXIT_CODE=0
+
+===== J2-65-R13-MultiplierSemigroup.py =====
+GENUINE_RADIAL_UPPER_GATE=PRESENT
+FREE_MULTIPLIER_THEOREM=NOT_APPLICABLE
+LOW_AUTOMATIC_AFTER_ADMISSIBLE_PRIMITIVE_RAY=FALSE_IN_GENERAL
+LEGAL_MULTIPLIERS_INFINITE=FALSE
+MULTIPLIER_INTERVAL:
+ n_min=max(floor(A*G/(10*x0))+1, ceil(G/(10*a3_0)), 1)
+ n_max=ceil(G/a3_0)-1
+ arithmetic condition: gcd(n,10*u)=1
+ ray conditions include gcd(x0,u)=gcd(Z0,u)=1 and source ten-unit base conditions
+COMPOSITE_COPRIME_GAP_OBJECT=Jacobsthal j(10*u)
+JACOBSTHAL_STAGE_TRIGGERED=TRUE
+WHOLE_MODULUS_SUFFICIENT_THEOREM=if the integer interval contains j(10*u) consecutive integers, it contains an n coprime to 10*u
+PRIME_FACTOR_SPLIT_USED=FALSE
+EXIT_CODE=0
+
+===== J2-65-R13-PrimitiveModuloU.py =====
+LAMBDA_u=Lambda_src/u*Lambda_src ~= (Z/uZ)^3 after choosing B_Lambda
+IN_CANONICAL_SOURCE_COORDINATES: Z0=M*w1+rho*w2 ; a3_0=w2 ; x0=w3
+U_SQ_RAY=x0^2 == Z0^2 (mod u)
+RAY_Z0_UNIT_MOD_u_REQUIRED=TRUE
+RAY_x0_UNIT_MOD_u_AUTOMATIC_FROM_U_SQ_AND_Z0_UNIT=TRUE
+PRIMITIVE_MODULO_u_COMPOSITE_OBSTRUCTION=NOT_PROVED
+PRIMITIVE_MODULO_u_AUTOMATICITY=PARTIAL: x-unit automatic; Z-unit not automatic
+PRIME_DECOMPOSITION_USED=FALSE
+EXIT_CODE=0
+
+===== J2-65-R13-PowerTenLattice.py =====
+POWER_OF_TEN_SOURCE_LATTICE_COLLAPSE=PROVED
+hZ mod G = -2*q**4*(q + 4)
+ha mod G = -2*(q + 2)**3*(q + 4)
+On the live q>1 locus q and q+2 are ten-units, hence units modulo G=10^g.
+SATURATION_DELTA=gcd(G,2*d*(q+4))
+SOURCE_LATTICE_SNF=(1,1,G/SATURATION_DELTA)
+SOURCE_LATTICE_COVOLUME=2*q^2*(q+4)*c/SATURATION_DELTA
+VALUATION_OR_PRIME_CASE_SPLIT_USED=FALSE
+EXIT_CODE=0
+
+===== J2-65-R13-IntegralTernary.py =====
+Q_rad(v)=P(v)+(K/G)S(v), with P,S the exact R7 binary-block forms.
+For B_Lambda from SourceLattice, define Q_clear(w)=d^2*G*Q_rad(B_Lambda*w).
+Q_clear has integer coefficients; let C_Q be their positive gcd and Q_prim=Q_clear/C_Q.
+TERNARY_FORM_CONTENT=C_Q
+TERNARY_FORM_SIGNATURE=(2,1)
+Let Delta_fib=R(G,q)-4*K^2*G^2*(G+1)^2 and delta=gcd(G,2*d*(q+4)).
+det(B_Lambda)=2*q^2*(q+4)*c/delta
+det_Gram(Q_prim)=4*d^6*G^4*q^10*(G+1)^2*(q+4)^6*(2*G+q+2)*c^6*Delta_fib/(delta^2*C_Q^3)
+DISCRIMINANT_CONVENTION=det(Hessian(Q_prim))=8*det_Gram(Q_prim)
+R7_CONIC_REGRESSION=PASS
+R9_BRAUER_CLASS_REGRESSION=NOT_NEEDED
+EXIT_CODE=0
+
+===== J2-65-R13-Regression.py =====
+R7_CONIC_REGRESSION=PASS
+R9_BRAUER_CLASS_REGRESSION=NOT_NEEDED
+ACTUAL_FIBRE_DISCRIMINANT_FACTOR= -4*G**4*K**2 + 4*G**4 - 8*G**3*K**2 + 4*G**3*q + 8*G**3 - 4*G**2*K**2 + G**2*q**2 + 8*G**2*q + 4*G**2 + 2*G*q**2 + 4*G*q - q**2
+ACTUAL_SIGNATURE=(2,1)  # inherited R7, preserved by lattice pullback
+SOURCE_LATTICE_UNIVERSAL_ISOTROPIC_SECTION=FALSE  # R7 generic conic has no universal rational section
+R10_R11_REOPENED=FALSE
+EXIT_CODE=0
+
+===== CONCRETE WHOLE-MODULUS LATTICE REPLAY =====
+TEST_FIBRE=G=1000,q=7,u=143,d=2 (uq=G+1)
+SOURCE_INTEGER_QUANTITY_COUNT=12
+SOURCE_LINEAR_FORM_COUNT=4
+SOURCE_LATTICE_RANK=3
+SOURCE_LATTICE_BASIS= [(22636089/2, 10948435/2, 0), (12250, 5925, 0), (0, 0, 1)]
+SOURCE_LATTICE_SNF= (1, 1, 250)
+SOURCE_LATTICE_DETERMINANT= 498575/2
+SATURATION_DELTA= 4
+CONGRUENCE_RESIDUE_rho= 121
+DENOMINATOR_CASE_SPLIT_USED=FALSE
+CONCRETE_LATTICE_REPLAY=PASS

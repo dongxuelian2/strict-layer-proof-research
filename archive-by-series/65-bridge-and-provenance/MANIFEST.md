@@ -1,0 +1,22 @@
+# 75-R2 Artifact Manifest
+
+- `75_MIGRATIONS/MC-001_Huang_Ternary_Cone_Primitive_Local_Counting.md`
+- `75_MIGRATIONS/MC-002_Cao_Xu_Toric_Strong_Approximation.md`
+- `75_MIGRATIONS/MC-003_Kelmer_Yu_Shrinking_Sector.md`
+- `75_MIGRATIONS/migration_stack_P2.md`
+- `75_R2/00_R1_imported_state.md`
+- `75_R2/01_exact_source_object.md`
+- `75_R2/02_split_nonsplit_audit.md`
+- `75_R2/03_torsor_toric_dictionary.md`
+- `75_R2/04_source_local_open_dictionary.md`
+- `75_R2/05_primitive_condition_audit.md`
+- `75_R2/06_brauer_reciprocity_audit.md`
+- `75_R2/07_archimedean_digit_region.md`
+- `75_R2/08_quantitative_theorem_registry.md`
+- `75_R2/09_height_bridge_analysis.md`
+- `75_R2/10_migration_dry_run.md`
+- `75_R2/11_remaining_new_mathematics.md`
+- `75_R2/12_R2_terminal_verdict.md`
+- `75_R2/THEOREM_CARDS/TC-001_Huang_Theorem_1_3.md`
+- `75_R2/THEOREM_CARDS/TC-002_Cao_Xu_Theorem_1_2.md`
+- `75_R2/THEOREM_CARDS/TC-003_Kelmer_Yu_Theorem_1_7.md`

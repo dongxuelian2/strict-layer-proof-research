@@ -1,0 +1,151 @@
+{
+  "symbolic_identity": "100*(Y0^2-(2K rho)^2)=G*sum_{j=0}^5 C_j G^j",
+  "defect_relation": "a=tau*G/10+rho; 31*rho+tau=0 mod 2K",
+  "coefficient_minima": [
+    [
+      1,
+      2,
+      [
+        6,
+        4,
+        1,
+        0,
+        2,
+        2
+      ]
+    ],
+    [
+      1,
+      5,
+      [
+        3,
+        2,
+        1,
+        0,
+        0,
+        1
+      ]
+    ],
+    [
+      2,
+      2,
+      [
+        8,
+        5,
+        1,
+        0,
+        2,
+        2
+      ]
+    ],
+    [
+      2,
+      5,
+      [
+        5,
+        4,
+        1,
+        0,
+        0,
+        1
+      ]
+    ],
+    [
+      3,
+      2,
+      [
+        10,
+        6,
+        1,
+        0,
+        2,
+        2
+      ]
+    ],
+    [
+      3,
+      5,
+      [
+        7,
+        5,
+        1,
+        0,
+        0,
+        1
+      ]
+    ]
+  ],
+  "term_gap": [
+    {
+      "k": 1,
+      "g_min": 3,
+      "v2_terms_lower": [
+        7,
+        8,
+        8,
+        10,
+        15,
+        18
+      ],
+      "v5_terms_lower": [
+        4,
+        6,
+        8,
+        10,
+        13,
+        17
+      ]
+    },
+    {
+      "k": 2,
+      "g_min": 4,
+      "v2_terms_lower": [
+        10,
+        11,
+        11,
+        14,
+        20,
+        24
+      ],
+      "v5_terms_lower": [
+        7,
+        10,
+        11,
+        14,
+        18,
+        23
+      ]
+    },
+    {
+      "k": 3,
+      "g_min": 5,
+      "v2_terms_lower": [
+        13,
+        14,
+        14,
+        18,
+        25,
+        30
+      ],
+      "v5_terms_lower": [
+        10,
+        13,
+        14,
+        18,
+        23,
+        29
+      ]
+    }
+  ],
+  "conditional_square_consequence": {
+    "v2_Y0": "k+1",
+    "v5_Y0": "k",
+    "Y0": "2K*y with gcd(y,10)=1",
+    "v2_y2_minus_rho2": "g",
+    "v5_y2_minus_rho2": "g-1",
+    "factorization": "(y-rho)(y+rho)=(G/5)*eta, gcd(eta,10)=1",
+    "eta_mod_10": "rho*tau mod 10",
+    "valuation_branches": 4
+  },
+  "verdict": "NEW_STRUCTURAL_FINITE_BRANCHING_NOT_DIMENSION_DROP"
+}

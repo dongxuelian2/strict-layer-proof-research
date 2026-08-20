@@ -1,0 +1,40 @@
+A1 J2 RCRF4 exact certificate
+ETA_MAJORANT=1299/500
+LOW_DEPTH_CENSUS_G=4..10
+
+THEOREM_CONSTANT_CHECKS=PASS
+ELL1_UPPER_COEFFICIENT_MAJORANT=9112089117/12500000
+GENERAL_DEFICIENCY_UPPER_RATIO_AT_L10=9112089117/1250000000
+GENERAL_DEFICIENCY_WEDGE: root survivor => G^3 < 146*10^(3ell)*u^2.
+GENERAL_DEFICIENCY_QGT1: q>1 => g<=3ell.
+GENERAL_DEFICIENCY_Q1: q=1 => g<=3ell+2.
+POSITIVE_SIZE_CONTRADICTION: G^3 < 600 u^2; q>1 => q>=7; impossible for G>=10^4.
+NEG_K2G_SIZE_CONTRADICTION: G^3 < 560 u^2; q>1 => q>=7; impossible for G>=10^4.
+ELL1_QGT1_SIZE_CONTRADICTION: G^3 < 145800 u^2; q>1 => q>=7; impossible for G>=10^4.
+ELL1_Q1_LARGE_G: G^3 < 145800(G+1)^2 impossible for g>=6.
+
+LOW_DEPTH_TOTALS={'positive_outer': 16, 'positive_pbz_solvable_outer': 4, 'positive_interval_residue': 0, 'positive_linear': 0, 'positive_root_core': 0, 'negative_outer': 16, 'negative_nbz_solvable_N_cells': 18, 'negative_interval_residue': 2, 'negative_linear': 0, 'negative_root_core': 0}
+LOW_DEPTH_g=4 {'positive_outer': 0, 'positive_pbz_solvable_outer': 0, 'positive_interval_residue': 0, 'positive_linear': 0, 'positive_root_core': 0, 'negative_outer': 0, 'negative_nbz_solvable_N_cells': 0, 'negative_interval_residue': 0, 'negative_linear': 0, 'negative_root_core': 0}
+LOW_DEPTH_g=5 {'positive_outer': 1, 'positive_pbz_solvable_outer': 0, 'positive_interval_residue': 0, 'positive_linear': 0, 'positive_root_core': 0, 'negative_outer': 1, 'negative_nbz_solvable_N_cells': 0, 'negative_interval_residue': 0, 'negative_linear': 0, 'negative_root_core': 0}
+LOW_DEPTH_g=6 {'positive_outer': 1, 'positive_pbz_solvable_outer': 0, 'positive_interval_residue': 0, 'positive_linear': 0, 'positive_root_core': 0, 'negative_outer': 1, 'negative_nbz_solvable_N_cells': 0, 'negative_interval_residue': 0, 'negative_linear': 0, 'negative_root_core': 0}
+LOW_DEPTH_g=7 {'positive_outer': 1, 'positive_pbz_solvable_outer': 0, 'positive_interval_residue': 0, 'positive_linear': 0, 'positive_root_core': 0, 'negative_outer': 1, 'negative_nbz_solvable_N_cells': 1, 'negative_interval_residue': 1, 'negative_linear': 0, 'negative_root_core': 0}
+LOW_DEPTH_g=8 {'positive_outer': 1, 'positive_pbz_solvable_outer': 0, 'positive_interval_residue': 0, 'positive_linear': 0, 'positive_root_core': 0, 'negative_outer': 1, 'negative_nbz_solvable_N_cells': 1, 'negative_interval_residue': 0, 'negative_linear': 0, 'negative_root_core': 0}
+LOW_DEPTH_g=9 {'positive_outer': 10, 'positive_pbz_solvable_outer': 3, 'positive_interval_residue': 0, 'positive_linear': 0, 'positive_root_core': 0, 'negative_outer': 10, 'negative_nbz_solvable_N_cells': 12, 'negative_interval_residue': 1, 'negative_linear': 0, 'negative_root_core': 0}
+LOW_DEPTH_g=10 {'positive_outer': 2, 'positive_pbz_solvable_outer': 1, 'positive_interval_residue': 0, 'positive_linear': 0, 'positive_root_core': 0, 'negative_outer': 2, 'negative_nbz_solvable_N_cells': 4, 'negative_interval_residue': 0, 'negative_linear': 0, 'negative_root_core': 0}
+
+POSITIVE_HIGH_DEPTH_LINEAR_WITNESS={'branch': 'POSITIVE_LINEAR', 'g': 2385, 'q': 19, 'N': -1, 't': 45, 'a3_last2': 69, 'Z_last2': 61, 'X_last2': 91, 'D2_last2': 51, 'h_last2': 29, 'm_last2': 11, 'r_last2': 49, 'root_core_pass': False, 'v2F': 1, 'v5F': 1, 'D_v2': 4768, 'D_v5': 4769}
+NEG_K2G_HIGH_DEPTH_LINEAR_WITNESS={'branch': 'NEG_K2G_LINEAR', 'g': 39, 'q': 7, 'N': 3, 't': 17, 'a3_last2': 71, 'Z_last2': 49, 'X_last2': 89, 'D2_last2': 53, 'h_last2': 23, 'm_last2': 1, 'r_last2': 47, 'root_core_pass': False, 'v2F': 2, 'v5F': 0, 'D_v2': 76, 'D_v5': 78}
+ELL1_Q1_FINITE_STATS={4: {'linear': 6, 'root_core': 0}, 5: {'linear': 6, 'root_core': 0}}
+ELL1_Q1_LINEAR_TOTAL=12
+ELL1_Q1_ROOT_CORE_TOTAL=0
+
+LINEAR_SURVIVOR_FILE=A1_J2_RCRF4_survivors.tsv
+LINEAR_SURVIVOR_ROWS=14
+ROOT_SURVIVOR_COUNT=0
+
+VERDICT_POSITIVE_J2=CLOSED
+VERDICT_NEGATIVE_K_2G=CLOSED
+VERDICT_ELL1=CLOSED
+VERDICT_FULL_J2=OPEN
+NEW_FRONTIER=J=2, S_R<0, ell>=2 (equiv k<=2g-2), with inherited g>=4,u>1 reductions.
+CERTIFICATE_STATUS=PASS

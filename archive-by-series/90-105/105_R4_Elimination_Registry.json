@@ -1,0 +1,85 @@
+{
+  "round": "105-R4",
+  "rings": [
+    {
+      "id": "AMB_NORMALIZED",
+      "ring": "Q[G^±1,K^±1,X^±1,Y^±1,p1,p2,p3,b1,b2,b3]",
+      "variables": {
+        "torus": [
+          "G",
+          "K",
+          "X",
+          "Y"
+        ],
+        "primitive": [
+          "p1",
+          "p2",
+          "p3"
+        ],
+        "denominator": [
+          "b1",
+          "b2",
+          "b3"
+        ]
+      },
+      "equations": [
+        "p1^2+p2^2+p3^2-1",
+        "b1*X*Y*G*(K*p1-1)+b2*Y*(p2-G)-b3*(1-p3)"
+      ],
+      "saturation_open_conditions": [
+        "G*K*X*Y != 0",
+        "1-p3 != 0 for explicit section"
+      ],
+      "eliminated_variables": [
+        "p1",
+        "p2",
+        "p3",
+        "b1",
+        "b2",
+        "b3"
+      ],
+      "output": "zero elimination ideal in Q[G^±1,K^±1,X^±1,Y^±1]",
+      "proof_method": "explicit section p=(2/7,3/7,6/7), b1=b2=1, b3=XYG(2K-7)+Y(3-7G)",
+      "classification": "K2_AMBIENT_ONLY",
+      "status": "PROVED_SYMBOLICALLY"
+    },
+    {
+      "id": "SOURCE_SEMANTIC",
+      "ring": "mixed arithmetic object; no ordinary polynomial ring equivalence asserted",
+      "annotations": [
+        "U positive integer",
+        "digit interval",
+        "gcd(U,V)=1",
+        "primitive gcd",
+        "q=1 affine congruence",
+        "actual cut"
+      ],
+      "saturation": [
+        "forbidden zero torus coordinates",
+        "chart exceptional divisors"
+      ],
+      "output": "ordinary source-semantic elimination not defined without loss",
+      "classification": "SOURCE_PRESERVING_ELIMINATION_OPEN",
+      "status": "PROVED_NEGATIVE_INTERFACE_STATEMENT"
+    },
+    {
+      "id": "PARTIAL_CHARACTER",
+      "ring": "Q[G^±1,K^±1,X^±1,Y^±1]",
+      "equation": "(G-1)*(X-G)*(X-10*G)",
+      "scope": [
+        "S0",
+        "S1",
+        "S2"
+      ],
+      "output": "fixed proper finite character-coset union",
+      "classification": "K3_SOURCE_COMPATIBLE_PROJECTION_BUT_SOURCE_NOT_ESSENTIAL",
+      "status": "PROVED"
+    }
+  ],
+  "computational_vs_proved": {
+    "symbolic_checks": "verification only",
+    "dominance": "proved by explicit algebraic section, script verifies identity",
+    "outer_exponent_full_rank": "proved by exponent-lattice determinant 1; script verifies determinant",
+    "source_mixed_semantics": "logical/provenance proof, not finite computation"
+  }
+}

@@ -1,0 +1,84 @@
+===== J2-55-R11-ConstantTerm-symbolic.py =====
+XI_CANCELLATION_BHR=PASS
+CENTERED_R_CANCELLATION_BHR=PASS
+CHI_CANCELLATION_B= False
+CHI_CANCELLATION_H= False
+CHI_CANCELLATION_R= False
+C_B_FACTOR= -4*f**2*w*(2*ch*q**2 + 2*e*q**5 + 13*e*q**4 + 10*e*q**3 + 12*e*q**2 + 8*e*q + 8*f*q**7*s - 4*f*q**7*t + 112*f*q**6*s - 8*f*q**6*t + 416*f*q**5*s + 104*f*q**5*t + 448*f*q**4*s - 80*f*q**4*t + 256*f*q**3*s - 864*f*q**3*t - 256*f*q**2*t + 512*f*q*t + 256*f*t)
+C_H_FACTOR= -4*f**2*w*(-2*H**2*e*q**5 - 12*H**2*e*q**4 + 4*H**2*f*q**7*t - 192*H**2*f*q**5*t - 192*H**2*f*q**4*t + 448*H**2*f*q**3*t + 256*H**2*f*q**2*t - 2*H*ch*q**2 - e*q**4 - 10*e*q**3 - 12*e*q**2 - 8*e*q + 8*f*q**6*t + 88*f*q**5*t + 272*f*q**4*t + 416*f*q**3*t - 512*f*q*t - 256*f*t)
+C_R_FACTOR= 4*R*f**2*w*(-8*R**3*f*q**6*t - 88*R**3*f*q**5*t - 272*R**3*f*q**4*t - 416*R**3*f*q**3*t + 512*R**3*f*q*t + 256*R**3*f*t + R**2*e*q**4 + 10*R**2*e*q**3 + 12*R**2*e*q**2 + 8*R**2*e*q + 8*R**2*f*q**7*s + 112*R**2*f*q**6*s + 416*R**2*f*q**5*s + 448*R**2*f*q**4*s + 256*R**2*f*q**3*s - 4*R*f*q**7*t + 192*R*f*q**5*t + 192*R*f*q**4*t - 448*R*f*q**3*t - 256*R*f*q**2*t + 2*chR*q**2 + 2*e*q**5 + 12*e*q**4)
+C_B_MOD_Q=-1024*f^3*w*t
+C_H_MOD_Q=+1024*f^3*w*t
+C_R_MOD_Q=+1024*R^4*f^3*w*t
+DU_B_MOD_Q=+1024*f^3*w*t
+DU_H_MOD_Q=-1024*f^3*w*t
+DU_R_MOD_Q=-1024*R^4*f^3*w*t
+C_EQUALS_4F2W_GAMMA_B=PASS
+C_EQUALS_4F2W_GAMMA_H=PASS
+C_EQUALS_4RF2W_GAMMA_R=PASS
+DU_EQUALS_OLD_NORMALIZED_GAMMA_BHR=PASS
+G_DIV_C_IS_EXACTLY_R8_CARRY_CORE_BH=PASS
+G_DIV_C_IS_EXACTLY_R8_CARRY_CORE_REVERSE=PASS
+Q2_XI_RECON_IS_DEFINITIONAL_AFTER_DU_EQUALS_GAMMA=PASS
+REVERSE_C_HAS_STRUCTURAL_R_FACTOR=PASS
+REVERSE_R_ORDER_GENERIC=1
+REVERSE_LOWEST_COEFF= 8*f**2*q**2*w*(chR + e*q**3 + 6*e*q**2)
+REVERSE_CORRECT_GATE=K*Du_R=4*f^2*w*P_R(R), not R|C_R as a depth condition
+DEPENDENCIES_B= ['q', 'f', 'w', 'e', 'ch', 's', 't']
+DEPENDENCIES_H= ['q', 'f', 'w', 'e', 'ch', 't', 'H']
+DEPENDENCIES_R= ['q', 'f', 'w', 'e', 'chR', 's', 't', 'R']
+B0_BOUNDARY_E_BOUND=|e|<48*q^3 (q>=7)
+B0_HIGH_E_BOUND=|e|<12*q^3 (q>=7,H>=10)
+SMALL_COFACTOR_PSEUDO_COUNTEREXAMPLE= {'q': 19, 'g': 9, 'f': 1, 'w': 5, 't': 5, 's': 0, 'e': 86024, 'eta': 3848, 'lam': 73152, 'alpha': -1575446, 'ch': 24612650, 'C': -11545000000000, 'Du': -11545, 'scope': 'TQR+eCRT+positive-lambda+height+G_DIV_C; NOT full RCE/DCDC'}
+SMALL_COFACTOR_UNIFORM_FROM_CURRENT_CONSTANT_TERM_GATES=FALSE
+R11_CONSTANT_TERM_SYMBOLIC=PASS
+
+===== J2-55-R11-ReverseRDescent.py =====
+GENERIC_REVERSE_C_R_ORDER=1
+GENERIC_LOWEST= 8*f**2*q**2*w*(chR + e*q**3 + 6*e*q**2)
+R_DIV_C_DEPTH_KILLER=FALSE_STRUCTURALLY
+CORRECT_NORMALIZED_GATE=K*Du_R=4*f^2*w*P_R(R)
+K2_Q7_COFactor=1
+K2_Q11_COFactor=1
+K1_SPECIAL_GENERIC_CR_SCOPE=FORBIDDEN
+ROWS= 6576
+CERT= J2-55-R11-reverse-r-certificate.tsv
+
+===== J2-55-R11-q1-PrimitiveConic.py =====
+Q1_P_MINUS_1_EQUALS_GQ=PASS
+Q1_GAUSSIAN_PRODUCT_NORMAL_FORM=ML=Y^2+C^2
+Q1_M_FORM=G^3*tau-(10G^2+4G-2)*a
+Q1_L_FORM=(Q*M+4(G+1)(2G+3)a)/G
+Q1_PRIMITIVE_GCD_M_A=1 (from tau=-31a+2Kn, gcd(a,n)=1)
+Q1_M_OVER_2_AND_L_OVER_2_TENUNITS=PASS in live g-k>=2
+Q1_COMMON_ODD_SUPPORT=gcd(M/2,L/2) divides (G+1)(2G+3)
+PRIMITIVE_DEFLATION=PASS
+GCD_A_M_EQUALS_GCD_A_T=PASS
+GCD_T_M_EQUALS_GCD_T_31A=PASS
+K=10 RATIO_INTERVAL=(31/20,2)
+K=100 RATIO_INTERVAL=(31/200,319/2000)
+K=1000 RATIO_INTERVAL=(31/2000,3109/200000)
+PROJECTIVE_SINGLE_PRIME_KILLER=IMPOSSIBLE_BY_CHEVALLEY_WARNING
+NORM_REDUCTION=PASS
+Q1_GLOBAL_CLOSURE=False
+CELLS= 888
+CERT= J2-55-R11-q1-conic-certificate.tsv
+
+===== J2-55-R11-HenselCyclotomic.py =====
+HENSEL_DIGIT_RECURRENCE=d_g=-[c(q_g)/5^g]*cprime(q_g)^(-1) mod 5
+CYCLOTOMIC_REMAINDER_RECURRENCE=r_{g+1} == 10*r_g-9-10*d_g*5^g*m_g (mod q_{g+1})
+FINITE_STATE_ON_(d_g,r_g)_ALONE=CLOSED_FALSE; quotient m_g is necessary
+EXACT_ACCEPTING_STATE_CONSEQUENCE=if q_g|(10^g+1), then c(q_g)/5^g + 2^(g+3) == 0 (mod q_g)
+DIAGNOSTIC_GMAX= 600
+DIAGNOSTIC_HITS= []
+GLOBAL_EQUALITY_EDGE_CLOSURE=False
+DIAG= J2-55-R11-HenselCyclotomic-diagnostic.tsv
+
+===== J2-55-R11-GConstant-search.py =====
+GATE_ORDER=INPUT,TAIL,RCE,DCDC,TQR,CARRY_CORE,THIRD_CORE,C_BUILD,G_DIV_C,D_COF,XI_RECON,ROOT_INTERVAL,LINEAR_ROOT,FULL_ROOT
+R10_HISTORICAL_79_REACH_THIRD_CORE=0 (frozen R10 result; not re-inferred here)
+CONSTANT_TERM_PSEUDO_SURVIVOR= {'kind': 'BOUNDARY_PSEUDO', 'g': 9, 'k': 9, 'delta': 0, 'q': 19, 'b': 0, 't': 5, 'e': 86024, 's': 0, 'chi': 467640350, 'rcenter': '', 'Au': '', 'A0': '', 'C': -11545000000000, 'C_div_G': 'PASS', 'Du': -11545, 'Du_mod_q': 7, 'xi_reconstructed': '', 'u': 52631579, 'G_candidate': 1000000000, 'root_status': 'PSEUDO_TQR_ECRT_GDIVC_NOT_FULL_RCE_DCDC', 'first_failure': 'SMALL_COFACTOR_LT_Q_FALSE'}
+UNIFORM_|Du|<q_FROM_CURRENT_CONSTANT_TERM_GATES=FALSE
+SURVIVOR_FILE= J2-55-R11-survivors.tsv
+
+ALL_CORE_PASS=TRUE

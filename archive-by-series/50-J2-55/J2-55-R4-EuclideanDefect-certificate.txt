@@ -1,0 +1,56 @@
+J2-55 R4 Content-Deflated Complementary-Factor / Euclidean-Defect certificate
+SCOPE=Strict A1-only; Exact Resonance R=0; J=2 only
+STATUS_J2=OPEN
+STATUS_DELTA_GT_0=OPEN_GLOBALLY; q=1 high frozen CLOSED; live q>1 has s=0
+STATUS_DELTA_EQ_0=OPEN_GLOBALLY
+STATUS_DELTA_LT_0=OPEN_GLOBALLY
+
+SYMBOLIC_STATUS=PASS
+CDF_1=Ftilde=d*Fsharp
+CDF_OMEGA=Omega=d*OmegaSharp after DCDC and gcd(d,2K)=1
+CDF_2=R=d*Rsharp; Rsharp=OmegaSharp-x*lambdaSharp
+LAM_UNIT=gcd(lambdaSharp,e*Mdecimal)=1 on actual root chart
+EDF_RAW_QUOTIENT_INVARIANT=mu=floor(uDsharp/(e*Mdecimal))=floor(uD2/(A*Mdecimal))
+EDF_RAW_REMAINDER=varrho=d*rho; gcd(varrho,A*Mdecimal)=d
+EDF_DEFECT=x=mu-s; lambdaSharp=rho+e*Mdecimal*s; lambda0=varrho+A*Mdecimal*s
+EDF_HEIGHT=0<=s<B; B=292*L^2*u^2/(A*G^3)
+EDF_SHORTNESS=B<A*Mdecimal
+EDF_CRT=s=(mu-rA) mod A and s=(mu-x10) mod Mdecimal => at most one s_star
+GLOBAL_EUCLIDEAN_DEFECT_ONE_CANDIDATE=PROVED
+EDF_HIGH=delta>=1 live actual root => s=0
+EDF_BOUNDARY=delta=0 => s<=146; q>1 => s<=20
+EPC_SHARP=OmegaSharp=(mu-s)*(rho+e*Mdecimal*s)
+EPC_RAW=Omega=(mu-s)*(varrho+A*Mdecimal*s)
+PHI_DEPENDENCY=exact re-expression of root equation; NOT independent
+SUPPORT_IDENTITY=TRUE_BUT_DEPENDENT
+COPRIME_X_LAMBDA_SHARP=NOT_PROVED; common radial scale obstructs blanket gcd=1 assertion
+A_EUCLID_COLLISION=u*X^2+Z*Mdecimal*x=lambda0*((A-1)*nu-Z), with Kx+Z=A*nu
+
+HISTORICAL_BOUNDARY_DCDC=79
+HISTORICAL_BOUNDARY_FIRST_FAILURE=PRIMITIVE_GCD_FAIL:4; DEFECT_BOUND_FAIL:75
+HISTORICAL_BOUNDARY_FULL_ROOT_SURVIVE=0
+HISTORICAL_OLD_SINGULAR_Q11_G=259,359,435,481,669,1025
+HISTORICAL_OLD_SINGULAR_NEW_FIRST_FAILURE=DEFECT_BOUND_FAIL for all six; no A2-fibre/j/content enumeration
+
+HIGH_DELTA1_DCDC_GLE1200=1
+HIGH_DELTA1_STATE=q=11,g=471
+HIGH_DELTA1_FIRST_FAILURE=PRIMITIVE_GCD_FAIL(gcd(Z,u)=13)
+
+REVERSE_R1_DIAGNOSTIC_SCOPE=q in {7,11,17,19}; g<=12; true post-DCDC only
+REVERSE_R1_DCDC=50
+REVERSE_R1_FIRST_FAILURE=PRIMITIVE_GCD_FAIL:6; DEFECT_BOUND_FAIL:44
+REVERSE_R1_FULL_ROOT_SURVIVE=0
+REVERSE_ZERO_MINIMAL_R_DIAGNOSTIC=no zero-tail t candidates at (q,r)=(7,1),(11,2),(17,2),(19,3); NOT a global zero-tail closure
+
+CONJECTURE_E1=PROVED
+CONJECTURE_E2=PROVED
+CONJECTURE_E3=OPEN
+CONJECTURE_E4=PROVED_AND_SHARPENED_FOR_QGT1
+CONJECTURE_E5=TRUE_ON_79_STATE_CORPUS; OPEN_UNIFORMLY
+CONJECTURE_E6=OPEN
+CONJECTURE_E7=STRONG_DIAGNOSTIC_SUPPORT; OPEN_UNIFORMLY
+
+NEW_FRONTIER=one structural Euclidean division + one CRT-selected defect + one exact integer product equality
+REGULAR_SINGULAR_TERMINAL_SPLIT=RETIRED
+J2_CLOSURE_CERTIFICATE=NOT_ISSUED
+CERTIFICATE_STATUS=PASS

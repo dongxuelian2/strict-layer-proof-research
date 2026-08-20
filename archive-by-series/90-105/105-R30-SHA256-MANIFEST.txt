@@ -1,0 +1,20 @@
+# 105-R30 SHA-256 manifest
+# Paths are relative to /mnt/data/105-R30.
+# The manifest itself is hashed separately in 105-R30-SHA256-MANIFEST.sha256.txt.
+4137beba338eba099012337ac2e2473e2d865bb706c3a05a336783c0ea7d3dcd  105-R30-Q-SUCCESSOR-SATURATION-CERTIFICATE.md
+0387eebb48b6e58f9e1cdbff4d3920858b2be7da7a6e0467bd1e7fdacb2a6af8  105-R30-Q-SUCCESSOR-SATURATION-CERTIFICATE.sha256.txt
+4fb3b68afbd9a95b7ff8067f5a93c78d1416f82b7c4b606912fb344163fc18f3  105-R30-TC3-TC4-exact-definitions.md
+da69fc97ed4a16a9a420ce00ea80557a29c65618da16f0052bb17e22a80b44a7  105-R30-TC3-TC4-survivor-registry.csv
+a6fb69e45bc9c62ba333ce0d34d85242bee8ddef57dfb574b688e4d2410c16df  105-R30-common-dilation-regression.csv
+8f3794ab5a2b3aff2b11972dc264b59b4cd293ccf7324b7d7724ef0e307ee0f0  105-R30-complete-certificate-registry.csv
+0afd91025db59c5b620ad931fbdc65cb478589411be49b9768a29c491e1f28a7  105-R30-exceptional-branch-registry.csv
+456fed8da7680d5485597765c969fccc2e4422910056de15d74726e5f7b2f6e5  105-R30-execution-script-output.json
+854a82ebd5b30611228ea771e992e82ff5a943be21457ab450dc98f47fba8afb  105-R30-execution.log
+ca536b3764ef49d593019ad7c24b3874f6b2f3b10d0f42af8218b3a966722f6e  105-R30-q-elimination-derivation.md
+6cc49cc8dad71a6432e37d6074d8cb6447caa2bf4fce7f4e776f1823f9ee2b98  105-R30-q-interval-registry.csv
+5537d1f013709023a6545e49917e09ed015abf2db7778d6aed96560882526204  105-R30-scripts/r30_manifest_verify.py
+ee55588078bfa7475afafdd1bef7019a1e0ea9a39a500f23b8463068d512e925  105-R30-scripts/r30_q_elimination.py
+ce9c0be6cf52201ef99605ea4a67b414fc14327554b51a0c58d5000f84b25ade  105-R30-stage-archive.md
+e4fc49facca11dfec3018c23f0b65eb6f3a20c0902c47f6ade901eee50a83649  105-R30-stage-archive.sha256.txt
+e86d6b1e0639f2c88ed877ea783f917d5e4c2499b71382ae7a9941861245060c  105-R30-successor-collision-proof.md
+456fed8da7680d5485597765c969fccc2e4422910056de15d74726e5f7b2f6e5  r30-script-stdout.log

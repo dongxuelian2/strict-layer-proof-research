@@ -1,0 +1,7 @@
+e2 = g-k-1 >= 1
+e5 = g-k+min(k,2)-1 >= 2
+eta == rho*(tau-10*rho) mod 2^e2
+eta == rho*(tau-10*rho) mod 5^e5
+A: ell == tau-10*rho modulo both deep prime powers
+D: r == 10*rho-tau modulo both deep prime powers
+B/C: compatible via the one-parameter exact gap solution and CRT lifting

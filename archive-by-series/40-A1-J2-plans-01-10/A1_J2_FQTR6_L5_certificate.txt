@@ -1,0 +1,7 @@
+A1 J2 FQTR6 ell=5 exact closure certificate
+TOTALS={'outer': 85, 'N_cells': 22083018, 'congruence': 4601553, 'tail': 981416, 'reconstructed': 486671, 'digit_legal': 155500, 'dcdc': 97, 'disc_nonnegative': 97, 'disc_square': 0, 'integral_a1_roots': 0, 'full_radial_survivors': 0}
+DCDC_SURVIVORS=97
+DISC_SQUARE_SURVIVORS=0
+INTEGRAL_ROOT_SURVIVORS=0
+FULL_RADIAL_SURVIVORS=0
+STATUS=ELL5_CLOSED

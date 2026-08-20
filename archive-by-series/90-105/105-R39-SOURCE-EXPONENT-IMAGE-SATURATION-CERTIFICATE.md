@@ -1,0 +1,45 @@
+# 105-R39 — Source-Exponent Image Saturation Certificate
+
+Certified:
+
+```text
+R39_SOURCE_EXPONENT_IMAGE_SATURATION_CERTIFICATE=PROVED
+AMBIENT_XY_GK_ROOT_FREEDOM=REMOVED
+PRESCRIBED_Q_EXPONENT_DETERMINIZATION=ACTIVE
+R38_AMBIENT_ROOT_REJECTED_PRE_ROOT=YES
+SOURCE_NATIVE_LINEAR_BRANCH_EXTINCTION=PROVED
+SOURCE_EXPONENT_SYNCHRONIZATION_EXTINCTION=FALSE
+GENUINE_EXPONENT_SYNCHRONIZED_ROOT=YES
+```
+
+The first exact synchronized root is
+
+\[
+(48,436,75,445),
+\]
+
+and its first failure is
+
+\[
+U_{\rm lo}=1>0=U_{\rm hi}.
+\]
+
+Not certified:
+
+```text
+ACTUAL_SOURCE_ROOT_EXTINCTION=NOT_PROVED
+ACTUAL_SOURCE_ROOT_EXISTENCE=NOT_FOUND
+CORRECTED_SIMULTANEOUS_LOCUS_EXTINCTION=NOT_PROVED
+STRICT_A1_UNLIFTABILITY_PROVED=NO
+FULL_STRICT_A1_WITNESS_FOUND=NO
+```
+
+The unique unresolved object after R39 is
+
+\[
+\boxed{
+\text{source-native negative quadratic production roots}
+\cap
+\{\mathcal U_0\ne\varnothing\}.
+}
+\]

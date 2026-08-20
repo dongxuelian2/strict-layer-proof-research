@@ -1,0 +1,42 @@
+A1 J2 TLRC7 exact certificate
+EXACT_ARITHMETIC=PASS
+VERDICT_FULL_J2=OPEN
+VERDICT_HIGH_TAIL=OPEN_GLOBALLY
+VERDICT_Q1_HIGH_TAIL=CLOSED
+VERDICT_H1=OPEN_GLOBALLY
+VERDICT_LOW_K=OPEN_COMPRESSED
+NEW_ROOT_KERNEL_HIGH: Delta_std = G^2 * Psi_h, Psi_h=4*u^2*10^(2h)*D2^2-A*Ftilde.
+NEW_ROOT_LAYER_R_HIGH: if Psi_h=s^2 then A*G | 2*(2*u*10^h*D2 +/- s).
+NEW_TAIL_FLATTENING: after TP2, Psi_h=Dscript/[2*d*q^3*(q+4)*c(q)]^2, deg_G(Dscript)=8.
+NEW_QUOTIENT_TAIL: e=(d*B*t-alpha)/q integer and d*c*N=alpha*u+e.
+NEW_LOCAL_P_DIV_Q: 64*Psi_h == (A-1)^2*10^(2h)*Q0^2 - A^2*P0^2 + 2*A*rho*Q0 (mod p), p|q.
+NEW_FIXED_FIBRE_THEOREM: decimal local data eventually stabilize; nondecimal local data are periodic with explicit prime-power order period.
+NEW_Q1_HIGH_CLOSURE: q=1,h>=1 => empty.
+Q1_PERIOD=15
+Q1_H1_TAIL_INTEGRAL=853
+Q1_H1_LOCAL_DCDC=3
+Q1_H1_LINEAR_LEGAL=0
+Q1_H2_LOCAL_DCDC=0
+Q1_H3_LOCAL_DCDC=0
+Q11_PSEUDO=(q=11,h=1,g=471,alpha=152510,t=31); Psi_mod_11=8 NONRESIDUE.
+SMALL_Q_DIAGNOSTIC_GMAX=1200
+SMALL_Q_DIAGNOSTIC_DCDC: q=7 -> 0; q=11 -> 1; q=17 -> 0; q=19 -> 0.
+NEW_LOW_K_REVERSE_TAIL: K | (qN+t)(CN-Bt); eventual K/(2*5^b) | CN-Bt for k>b.
+NEW_LOW_K_ROOT_KERNEL: Delta_std=K^2*Psi_minus_r, Psi_minus_r=4*u^2*D2^2-A*10^(2r)*Ftilde.
+LOW_K_PRE_DCDC_COUNTERFAMILY=(q=1,N=7,t=3); RCE/digit/radial passes; Ftilde mod5=3, hence DCDC fails.
+L6_SEARCH=NOT_RUN
+SYMBOLIC_STATUS=PASS
+LOCAL_STATUS=PASS
+SEARCH_STATUS=PASS
+REPORT_AUDIT=PASS
+FINAL_REPORT_FILE=A1_J2_TLRC7_Report.md
+SYMBOLIC_FILE=A1_J2_TLRC7_symbolic.py
+LOCAL_CHECK_FILE=A1_J2_TLRC7_local.py
+COMPUTATION_FILE=A1_J2_TLRC7_search.py
+CERTIFICATE_FILE=A1_J2_TLRC7_certificate.txt
+SURVIVOR_FILE=A1_J2_TLRC7_survivors.tsv
+e48026dc246969d3781f315529aad13e151d3d77ec92439e15d6c0603bba4b39  /mnt/data/A1_J2_TLRC7_Report.md
+d9bda168828e273969c504b84fb57bc710435bfdf8db05b626bf10370d93dceb  /mnt/data/A1_J2_TLRC7_symbolic.py
+89c0ee2473d7182ae13a42b11d789d82ae76a927c6f3686b4dff82442275142f  /mnt/data/A1_J2_TLRC7_local.py
+44bb50440ced8c231eb5e4b1d08f2507e622e48bda15b372950f8be50052d0a8  /mnt/data/A1_J2_TLRC7_search.py
+442f9b89fbf214cd91920e13a1e781d23d5f24d05f46d5600207226e62429dc1  /mnt/data/A1_J2_TLRC7_survivors.tsv

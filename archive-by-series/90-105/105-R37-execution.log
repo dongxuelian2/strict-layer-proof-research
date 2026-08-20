@@ -1,0 +1,50 @@
+105-R37 exact execution log
+
+===== r37-normalized-search-stdout.log =====
+R36_EXACT_REGRESSION source=753662 configs=8922022 pre_gcd_rej=0 disc_sq=297 raw_roots=12 sel_g0rej=6 sel_murej=6 sel_gcdrej=0 sel_pass=0 post_basic=0 simultaneous=0
+Q1_N21_U60_NORMALIZED source=1768988 configs=25929293 pre_gcd_rej=1619545 disc_sq=362 raw_roots=24 sel_g0rej=4 sel_murej=20 sel_gcdrej=0 sel_pass=0 post_basic=0 simultaneous=0
+Q2_N21_U60_NORMALIZED source=368102 configs=3419744 pre_gcd_rej=221455 disc_sq=142 raw_roots=0 sel_g0rej=0 sel_murej=0 sel_gcdrej=0 sel_pass=0 post_basic=0 simultaneous=0
+Q3_N21_U60_NORMALIZED source=239291 configs=1803893 pre_gcd_rej=49849 disc_sq=86 raw_roots=0 sel_g0rej=0 sel_murej=0 sel_gcdrej=0 sel_pass=0 post_basic=0 simultaneous=0
+Q5_N21_U60_NORMALIZED source=49850 configs=216147 pre_gcd_rej=0 disc_sq=0 raw_roots=0 sel_g0rej=0 sel_murej=0 sel_gcdrej=0 sel_pass=0 post_basic=0 simultaneous=0
+Q7_N21_U60_NORMALIZED source=49850 configs=216147 pre_gcd_rej=0 disc_sq=0 raw_roots=0 sel_g0rej=0 sel_murej=0 sel_gcdrej=0 sel_pass=0 post_basic=0 simultaneous=0
+
+===== r37-normalized-search-time.log =====
+elapsed=0:10.30 cpu=99% maxrss=3740KB
+
+===== r37-primitive-search-stdout.log =====
+R36_EXACT_REGRESSION source=753662 configs=8922022 pre_gcd_rej=0 disc_sq=297 raw_roots=12 sel_g0rej=6 sel_murej=6 sel_gcdrej=0 sel_pass=0 post_basic=0 simultaneous=0
+R36_CORRECTED_G0AW_NORMALIZED source=753662 configs=8922022 pre_gcd_rej=5601083 disc_sq=73 raw_roots=2 sel_g0rej=1 sel_murej=1 sel_gcdrej=0 sel_pass=0 post_basic=0 simultaneous=0
+Q1_N21_U60_PRIMITIVE_NORMALIZED source=1768988 configs=25929293 pre_gcd_rej=18393251 disc_sq=30 raw_roots=1 sel_g0rej=0 sel_murej=1 sel_gcdrej=0 sel_pass=0 post_basic=0 simultaneous=0
+Q2_N21_U60_PRIMITIVE_NORMALIZED source=368102 configs=3419744 pre_gcd_rej=2472944 disc_sq=12 raw_roots=0 sel_g0rej=0 sel_murej=0 sel_gcdrej=0 sel_pass=0 post_basic=0 simultaneous=0
+Q3_N21_U60_PRIMITIVE_NORMALIZED source=239291 configs=1803893 pre_gcd_rej=1319999 disc_sq=7 raw_roots=0 sel_g0rej=0 sel_murej=0 sel_gcdrej=0 sel_pass=0 post_basic=0 simultaneous=0
+Q5_N21_U60_PRIMITIVE_NORMALIZED source=49850 configs=216147 pre_gcd_rej=166297 disc_sq=0 raw_roots=0 sel_g0rej=0 sel_murej=0 sel_gcdrej=0 sel_pass=0 post_basic=0 simultaneous=0
+Q7_N21_U60_PRIMITIVE_NORMALIZED source=49850 configs=216147 pre_gcd_rej=166297 disc_sq=0 raw_roots=0 sel_g0rej=0 sel_murej=0 sel_gcdrej=0 sel_pass=0 post_basic=0 simultaneous=0
+
+===== r37-primitive-search-time.log =====
+elapsed=0:05.78 cpu=99% maxrss=3748KB
+
+===== r37-n31-time.log =====
+N31_Q1_U20 source=5912791 configs=67546418 pre=4062100 disc_sq=40 raw=0 g0rej=0 murej=0 gcdrej=0 selpass=0 post=0 sim=0
+elapsed=0:18.43 cpu=99% maxrss=3532KB
+
+===== r37-root-replay-verify.log =====
+ROOT_ROWS=36
+R36_REGRESSION_ROOTS=12
+AUTOPSY_ROWS=12
+ERRORS=0
+INDEPENDENT_ROOT_REPLAY=PASS
+
+===== r37-symbolic-families.log =====
+F_A F11= 0 TC1= 0 SPHERE= 0
+F_B F11= 0 TC1= 0 SPHERE= 0
+F_C F11= 0 TC1= 0 SPHERE= 0
+FA_r_sel=18/5; actual_g0=15*t; primitive_ray=(6,58,9,59)
+FB_r=18; mu=5 does_not_divide_18; actual_g0=3*t; primitive_ray=(6,58,9,59)
+FC_r=98*j/3; for j in {1,2} nonintegral; actual_g0=7*t; primitive_ray=(14,138,9,139)
+SYMBOLIC_FAMILY_IDENTITIES=PASS
+
+VERIFICATION MODES:
+- R36 frozen hashes: LEDGER-CROSSCHECK from authoritative R36 manifest.
+- R37 outputs: local bytewise SHA-256.
+- Root equations: independent exact Python replay.
+- Symbolic scaling families: SymPy exact polynomial identity checks.

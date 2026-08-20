@@ -1,0 +1,135 @@
+===== J2-55-R12-RootSaturation-symbolic.py =====
+J2-55 R12 FAST ROOT SATURATION CERTIFICATE
+FULL_ROOT_MOD_CARRY_IDEAL=NONZERO
+BOUNDARY_ROOTNF_DEGREE_G=4
+HIGH_ROOTNF_DEGREE_G=4
+REVERSE_GENERIC_PRIMITIVE_DEGREE_R=7
+REVERSE_K1_SPECIAL_PRIMITIVE_DEGREE_R=7
+P_B_SHA256=92af2937c40fdf2dc056472228ec1a91d7b01444dd26f6f6718e68b261a35648
+P_H_SHA256=cf7b8ef58e9e24e8a63daf29d5d78ea5184bf19052a525563c5cb0ff80f5e180
+P_R_SHA256=9b67233170bf9203917a84ec309989dbe2d87351c0210342af6912dc3455a0b3
+P_K1_SHA256=d950fb494bfb4b4e4bcae5a4054f64041170856bfc2ecc78dc8aae9ea393afd2
+REVERSE_GENERIC_CONSTANT=gamma*(-K**2*gamma*q - 2*K**2*gamma - 64*K*e*f**2*q**3*w + 256*f**3*q**5*t*w + 1024*f**3*q**4*t*w)
+REVERSE_K1_CONSTANT=-gamma*(-80*e*q**3 - 5*gamma*q - 10*gamma + 32*q**5*t + 128*q**4*t)
+ROOTNF_INDEPENDENT=TRUE
+NO_R12_RESIDUAL_LADDER=PASS
+
+===== J2-55-R12-PowerTenRoot.py =====
+J2-55 R12 FAST ROOT SATURATION CERTIFICATE
+FULL_ROOT_MOD_CARRY_IDEAL=NONZERO
+BOUNDARY_ROOTNF_DEGREE_G=4
+HIGH_ROOTNF_DEGREE_G=4
+REVERSE_GENERIC_PRIMITIVE_DEGREE_R=7
+REVERSE_K1_SPECIAL_PRIMITIVE_DEGREE_R=7
+P_B_SHA256=92af2937c40fdf2dc056472228ec1a91d7b01444dd26f6f6718e68b261a35648
+P_H_SHA256=cf7b8ef58e9e24e8a63daf29d5d78ea5184bf19052a525563c5cb0ff80f5e180
+P_R_SHA256=9b67233170bf9203917a84ec309989dbe2d87351c0210342af6912dc3455a0b3
+P_K1_SHA256=d950fb494bfb4b4e4bcae5a4054f64041170856bfc2ecc78dc8aae9ea393afd2
+REVERSE_GENERIC_CONSTANT=gamma*(-K**2*gamma*q - 2*K**2*gamma - 64*K*e*f**2*q**3*w + 256*f**3*q**5*t*w + 1024*f**3*q**4*t*w)
+REVERSE_K1_CONSTANT=-gamma*(-80*e*q**3 - 5*gamma*q - 10*gamma + 32*q**5*t + 128*q**4*t)
+ROOTNF_INDEPENDENT=TRUE
+NO_R12_RESIDUAL_LADDER=PASS
+BOUNDARY degree 4 lowest_power 0 constant -16*f**3*w*(e**2*f*q**9*w + 22*e**2*f*q**8*w + 164*e**2*f*q**7*w + 504*e**2*f*q**6*w + 816*e**2*f*q**5*w + 800*e**2*f*q**4*w + 448*e**2*f*q**3*w + 128*e**2*f*q**2*w - 16*e*f**2*q**11*t*w - 368*e*f**2*q**10*t*w - 2976*e*f**2*q**9*t*w - 12352*e*f**2*q**8*t*w - 35840*e*f**2*q**7*t*w - 65792*e*f**2*q**6*t*w - 37888*e*f**2*q**5*t*w + 21504*e*f**2*q**4*t*w + 49152*e*f**2*q**3*t*w + 32768*e*f**2*q**2*t*w + 8192*e*f**2*q*t*w + 64*f**3*q**13*t**2*w + 1536*f**3*q**12*t**2*w + 14656*f**3*q**11*t**2*w + 83840*f**3*q**10*t**2*w + 344320*f**3*q**9*t**2*w + 897536*f**3*q**8*t**2*w + 1088512*f**3*q**7*t**2*w - 51200*f**3*q**6*t**2*w - 1638400*f**3*q**5*t**2*w - 1769472*f**3*q**4*t**2*w - 294912*f**3*q**3*t**2*w + 786432*f**3*q**2*t**2*w + 589824*f**3*q*t**2*w + 131072*f**3*t**2*w + 16*gamma*q**5*t + 64*gamma*q**4*t)
+HIGH degree 4 lowest_power 0 constant -16*f**3*w*(256*H**4*e*f**2*q**9*t*w + 2048*H**4*e*f**2*q**8*t*w + 3072*H**4*e*f**2*q**7*t*w - 4096*H**4*e*f**2*q**6*t*w - 512*H**4*f**3*q**11*t**2*w - 1024*H**4*f**3*q**10*t**2*w + 30720*H**4*f**3*q**9*t**2*w + 143360*H**4*f**3*q**8*t**2*w + 114688*H**4*f**3*q**7*t**2*w - 163840*H**4*f**3*q**6*t**2*w - 131072*H**4*f**3*q**5*t**2*w - 64*H**2*e*f**2*q**9*t*w - 896*H**2*e*f**2*q**8*t*w - 5632*H**2*e*f**2*q**7*t*w - 15872*H**2*e*f**2*q**6*t*w - 15360*H**2*e*f**2*q**5*t*w - 4096*H**2*e*f**2*q**4*t*w + 256*H**2*f**3*q**11*t**2*w + 6144*H**2*f**3*q**10*t**2*w + 57344*H**2*f**3*q**9*t**2*w + 241664*H**2*f**3*q**8*t**2*w + 458752*H**2*f**3*q**7*t**2*w + 278528*H**2*f**3*q**6*t**2*w - 294912*H**2*f**3*q**5*t**2*w - 425984*H**2*f**3*q**4*t**2*w - 131072*H**2*f**3*q**3*t**2*w - 16*H**2*gamma*q**5*t - 64*H**2*gamma*q**4*t + e**2*f*q**9*w + 22*e**2*f*q**8*w + 164*e**2*f*q**7*w + 504*e**2*f*q**6*w + 816*e**2*f*q**5*w + 800*e**2*f*q**4*w + 448*e**2*f*q**3*w + 128*e**2*f*q**2*w - 16*e*f**2*q**11*t*w - 368*e*f**2*q**10*t*w - 3168*e*f**2*q**9*t*w - 13504*e*f**2*q**8*t*w - 33280*e*f**2*q**7*t*w - 45824*e*f**2*q**6*t*w - 22528*e*f**2*q**5*t*w + 25600*e*f**2*q**4*t*w + 49152*e*f**2*q**3*t*w + 32768*e*f**2*q**2*t*w + 8192*e*f**2*q*t*w + 64*f**3*q**13*t**2*w + 1536*f**3*q**12*t**2*w + 14912*f**3*q**11*t**2*w + 78720*f**3*q**10*t**2*w + 256256*f**3*q**9*t**2*w + 512512*f**3*q**8*t**2*w + 515072*f**3*q**7*t**2*w - 165888*f**3*q**6*t**2*w - 1212416*f**3*q**5*t**2*w - 1343488*f**3*q**4*t**2*w - 163840*f**3*q**3*t**2*w + 786432*f**3*q**2*t**2*w + 589824*f**3*q*t**2*w + 131072*f**3*t**2*w)
+REVERSE_GENERIC degree 7 lowest_power 0 constant gamma*(-K**2*gamma*q - 2*K**2*gamma - 64*K*e*f**2*q**3*w + 256*f**3*q**5*t*w + 1024*f**3*q**4*t*w)
+REVERSE_K1 degree 7 lowest_power 0 constant -gamma*(-80*e*q**3 - 5*gamma*q - 10*gamma + 32*q**5*t + 128*q**4*t)
+REVERSE_GENERIC_C0_MOD_Q=-2*K^2*gamma^2
+REVERSE_K1_C0_MOD_Q=10*gamma^2
+THEREFORE_C0_ZERO_IMPLIES_q|gamma (q ten-unit, gcd(K,q)=1)
+INHERITED_R11_DU_MODQ=unit*t; hence q∤t => C0!=0 on legal normalized branch
+FIXED_COEFFICIENT_FIBRE_THEOREM=if C0!=0 and P(10^r)=0 then 10^r|C0
+PERIODIC_CELL_ALONE_FIXES_COEFFICIENTS=FALSE
+CELL_LEVEL_FINITE_R_BY_RATIONAL_ROOT=NOT_PROVED
+NO_FALSE_TYPE_CLOSURE=PASS
+
+===== J2-55-R12-ReverseRootPolynomial.py =====
+J2-55 R12 FAST ROOT SATURATION CERTIFICATE
+FULL_ROOT_MOD_CARRY_IDEAL=NONZERO
+BOUNDARY_ROOTNF_DEGREE_G=4
+HIGH_ROOTNF_DEGREE_G=4
+REVERSE_GENERIC_PRIMITIVE_DEGREE_R=7
+REVERSE_K1_SPECIAL_PRIMITIVE_DEGREE_R=7
+P_B_SHA256=92af2937c40fdf2dc056472228ec1a91d7b01444dd26f6f6718e68b261a35648
+P_H_SHA256=cf7b8ef58e9e24e8a63daf29d5d78ea5184bf19052a525563c5cb0ff80f5e180
+P_R_SHA256=9b67233170bf9203917a84ec309989dbe2d87351c0210342af6912dc3455a0b3
+P_K1_SHA256=d950fb494bfb4b4e4bcae5a4054f64041170856bfc2ecc78dc8aae9ea393afd2
+REVERSE_GENERIC_CONSTANT=gamma*(-K**2*gamma*q - 2*K**2*gamma - 64*K*e*f**2*q**3*w + 256*f**3*q**5*t*w + 1024*f**3*q**4*t*w)
+REVERSE_K1_CONSTANT=-gamma*(-80*e*q**3 - 5*gamma*q - 10*gamma + 32*q**5*t + 128*q**4*t)
+ROOTNF_INDEPENDENT=TRUE
+NO_R12_RESIDUAL_LADDER=PASS
+k=1,q=7 REFINED_CELLS=77 q∤t=66 q|t=11
+k=2,q=7 REFINED_CELLS=77 q∤t=66 q|t=11
+k=2,q=11 REFINED_CELLS=132 q∤t=120 q|t=12
+NEW_EXACT_GATE=actual full root => R divides carry-saturated primitive constant coefficient C0
+C0_ZERO_ON_q_NOT_DIV_t=IMPOSSIBLE by C0 mod q and inherited gamma mod q = unit*t
+FIXED_COEFFICIENT_FIBRE=FINITE_R via 10^r|C0 when C0!=0
+R10_PERIODIC_CELL_FREEZES_e_t_gamma=FALSE
+K1_Q7_CLOSED=False
+K2_Q7_CLOSED=False
+K2_Q11_CLOSED=False
+LOWK_TYPE_CLOSURE_NOT_CLAIMED=PASS
+LEDGER=J2-55-R12-ReverseRootPolynomial.tsv
+
+===== J2-55-R12-PrimitiveSupport.py =====
+J2-55 R12 Primitive Support certificate
+GCD_Z_U_PRIMITIVE=FROZEN_FROM_R2
+U_SQUARE=x^2==Z^2 (mod u)
+XU_PRIM=gcd(x,u)=1 PROVED
+ROOT_FACTOR=Lambda_x=uD2-A*M*x
+GCD_X_LAMBDA=gcd(x,uD2) EXACT
+IF_XU_PRIM_THEN_GCD_X_LAMBDA=gcd(x,D2) EXACT
+ROOT_INTERVAL_LOW=10*Xclr>Dfl*A*G
+ROOT_INTERVAL_UP=AL*Xclr<8*u*D2*Dfl
+SMALL_EXHAUSTIVE_XU_CHECKS= 42701
+R8_R11_CARRY_CHAIN_CONSUMES_XU_PRIM=FALSE
+R8_R11_CARRY_CHAIN_CONSUMES_ROOT_INTERVAL=FALSE
+SATURATED_INTEGER_PSEUDO_SURVIVOR=NOT_FOUND
+R10_HISTORICAL_79_REACH_THIRD_CORE=0 (inherited exact replay)
+INDEPENDENT_PRIMITIVE_SUPPORT_GATE=OPEN_GLOBAL_THEOREM
+
+===== J2-55-R12-q1-GaussianSupport.py =====
+K=10 CELLS=8 A_MOD4_COUNTS=(4,4)
+K=100 CELLS=80 A_MOD4_COUNTS=(40,40)
+K=1000 CELLS=800 A_MOD4_COUNTS=(400,400)
+J2-55 R12 q=1 Gaussian support certificate
+Y_EVEN=PROVED_FROM_ML_DIV4_AND_CSTAR_EVEN
+GAUSS0=M0*L0=Y0^2+[S_G*a]^2
+MG1=M == -(tau+4a) mod (G+1)
+MG2=8M == -(27tau+116a) mod (2G+3)
+GCD_GPLUS1_2GPLUS3=1
+PRIMITIVE_GCD_A_TAU=1 from tau=-31a+2Kn, gcd(a,n)=1, gcd(a,2K)=1
+LIN_COPRIME=gcd(tau+4a,27tau+116a)=1
+COMMON_SUPPORT=d|[(tau+4a)(27tau+116a)]
+INERT_KERNEL_M0_DIVIDES_D=PROVED
+INERT_KERNEL_L0_DIVIDES_D=PROVED
+S_FREE_M0_MOD4_MUST_EQUAL_1=PROVED
+S_FREE_L0_MOD4_MUST_EQUAL_1=PROVED
+M0_MOD4=L0_MOD4=a_MOD4 in live g>=4
+M_POSITIVITY_FROM_PRIMITIVE_RATIO_PACKAGE=FALSE
+M_POSITIVITY_COUNTEREXAMPLES= [(10, 10000, 1009, 1, 1564), (100, 10000, 1129, 1, 175), (1000, 100000, 10129, 1, 157)]
+M_SIGN_MUST_BE_HANDLED_IN_GAUSSIAN_NORM; no positive-factor allocation assumed
+K=10 TAU_OVER_A=(0,9) LIN1<13a LIN2<359a d<4667a^2
+K=100 TAU_OVER_A=(0,9/10) LIN1<49/10a LIN2<1403/10a d<68747/100a^2
+K=1000 TAU_OVER_A=(0,9/100) LIN1<409/100a LIN2<11843/100a d<4843787/10000a^2
+DIAGNOSTIC_EXTERNAL_GATE= [(1000, 100000, 451, 19, 7, 3, 3, 'KILL'), (1000, 100000, 193, 17, 3, 1, 1, 'PASS_SUPPORT_GATE'), (100, 10000, 19, 11, 3, 3, 3, 'KILL'), (10, 10000, 9, 1, 14, 1, 1, 'PASS_SUPPORT_GATE')]
+K1000_CLOSED=False
+K100_CLOSED=False
+K10_CLOSED=False
+Q1_TOTAL_CLOSED=False
+LEDGER=J2-55-R12-q1-GaussianSupport.tsv
+
+===== J2-55-R12-HenselRootSplice.py =====
+J2-55 R12 Hensel root-splice certificate
+R11_HC_DEPENDENCY=DERIVED_ONLY_FROM_[5^g|c(q), q|10^g+1]
+R11_HC_INDEPENDENT_OBSTRUCTION=FALSE
+R11_HC_STATUS=RETIRED_AS_INDEPENDENT; retained only as cheap consequence filter
+HENSEL_UNIQUE_Q_G=PASS
+DIAGNOSTIC_GMAX=1000
+DIAGNOSTIC_CYCLOTOMIC_HITS= 0
+FULL_ROOT_SPLICE_OBJECT=E_ind(q_g,u,e,t,gamma,...)
+FULL_ROOT_SPLICE_GLOBAL_CLOSURE=False
+DIAGNOSTIC=J2-55-R12-HenselRootSplice-diagnostic.tsv
+
+===== J2-55-R12-RootSaturation-full-derivation.py =====
+STATUS=GENERATED_BUT_NOT_COUNTED_AS_EXECUTED_CERTIFICATE
+NOTE=first full aggressive symbolic run exceeded runtime budget; compact exact frozen-factor certificate is the executed certification path

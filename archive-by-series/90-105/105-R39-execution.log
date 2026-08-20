@@ -1,0 +1,26 @@
+===== R39 verifier =====
+R39_VERIFY=PASS
+FIRST_EXPONENT_SYNCHRONIZED_ROOT=(48,436,75,445)
+FIRST_FAILURE=SOURCE_INTEGER_ROOM_EMPTY
+SOURCE_NATIVE_LINEAR_BRANCH_EXTINCTION=PROVED
+
+===== exact first synchronized root =====
+packet=(48,436,75,445)
+g0=12 mu=2 a=1 s=2
+exponents=(n2,n3,m2,m3,g,k)=(2,1,1,1,0,1)
+powers=(X,Y,G,K)=(10,10,1,10)
+coefficients=(L,B,C)=(1000,168,26760)
+Acal=-971776
+delta=190913068096 R=436936
+source_room=Ulo:1,Uhi:0
+
+===== R38 regression =====
+old_X=1 production_X=10
+production_coefficients=(1000,132,702)
+corrected_F11_discriminant=3637502416000000
+corrected_F11_discriminant_square=0
+production_rejection=PRE_ROOT_EXPONENT_MISMATCH
+
+===== verification modes =====
+historical_inputs=LEDGER-CROSSCHECK
+R39_outputs=ACTIVE_RUNTIME_BYTEWISE_SHA256

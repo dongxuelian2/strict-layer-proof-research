@@ -1,0 +1,26 @@
+R4_EXACT_CERTIFICATE
+====================
+FLOAT_GATE_DECISIONS=0
+PCS_LOCAL (5, 1, 11) : p2 e=4 necessary=[(0, 1), (3, 1)] exact=[(3, 1)]; p5 e=5 necessary=[(0, 1), (957, 1)] exact=[(957, 1)]
+PCS_PACKET (5, 1, 11) : a == 44707 b (mod 50000)
+PCS_LOCAL (5, 3, 11) : p2 e=4 necessary=[(0, 1), (11, 1)] exact=[(11, 1)]; p5 e=5 necessary=[(0, 1), (1727, 1)] exact=[(1727, 1)]
+PCS_PACKET (5, 3, 11) : a == 39227 b (mod 50000)
+PCS_LOCAL (5, 4, 11) : p2 e=4 necessary=[(0, 1), (11, 1)] exact=[(11, 1)]; p5 e=5 necessary=[(0, 1), (2227, 1)] exact=[(2227, 1)]
+PCS_PACKET (5, 4, 11) : a == 27227 b (mod 50000)
+PCS_LOCAL (5, 1, 9091) : p2 e=4 necessary=[(0, 1), (3, 1)] exact=[(3, 1)]; p5 e=5 necessary=[(0, 1), (1352, 1)] exact=[(1352, 1)]
+PCS_PACKET (5, 1, 9091) : a == 48227 b (mod 50000)
+PCS_LOCAL (5, 3, 9091) : p2 e=4 necessary=[(0, 1), (3, 1)] exact=[(3, 1)]; p5 e=6 necessary=[(14722, 1)] exact=[(14722, 1)]
+PCS_PACKET (5, 3, 9091) : a == 155347 b (mod 250000)
+FIRST_PCS_BAND (5, 1, 11) : a=224277651577 b=11411 ell=4475350 D=80000000 gcd(C1,u)=11 primitive_gcd=11
+FIRST_PCS_BAND (5, 3, 11) : a=5982784950483 b=302729 ell=119418196 D=800000000000 gcd(C1,u)=11 primitive_gcd=11
+FIRST_PCS_BAND (5, 4, 11) : a=20939904412893 b=1059559 ell=418221116 D=80000000000000 gcd(C1,u)=11 primitive_gcd=11
+FIRST_PCS_BAND (5, 1, 9091) : a=297757093 b=9907159 ell=-9549896 D=80000000 gcd(C1,u)=9091 primitive_gcd=9091
+FIRST_PCS_BAND (5, 3, 9091) : a=538232869 b=17795527 ell=-11055774 D=4000000000000 gcd(C1,u)=9091 primitive_gcd=9091
+FULL_PACKET_SURVIVOR=PASS
+FULL_PACKET_SURVIVOR_KEY= (5, 3, 11)
+a,b= 6300650477551 318813
+c= 2844241425759278313791310157183552723
+C2= 54695636408717919553598977546465994745062629
+D_LAMBDA= 52175200000000000
+FULL_PRIMITIVE_PACKET_GUILLOTINE=FALSE
+CERTIFICATE_STATUS=PASS

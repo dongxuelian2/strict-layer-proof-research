@@ -1,0 +1,7 @@
+Fourth 85 R1 computation execution log
+======================================
+qgt1_sparse_elimination.py: PASS
+q1_defect_signature.py: PASS after simplifying the finite coefficient-residue audit; first exploratory implementation timed out and was not used as evidence.
+q1_defect_cases.tsv: GENERATED 24 rows
+
+The scripts are proof-assistance certificates. The report contains the human-readable algebraic proofs; no finite search is promoted to J2 closure.

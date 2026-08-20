@@ -1,0 +1,11 @@
+95-R8 g=0 exact regression replay
+===================================
+A: J=5, C2=13, C3=53, rho=13/530, I=[10/13,10/53), class=C_FAIL, integers=[]
+B: J=5, C2=109, C3=25, rho=109/250, I=[10/109,2/5), class=I_FAIL, integers=[]
+C: J=5, C2=73, C3=969, rho=73/9690, I=[10/73,10/969), class=C_FAIL, integers=[]
+D: J=5, C2=949, C3=949, rho=1/10, I=[10/949,10/949), class=C_FAIL, integers=[]
+E: J=10, C2=2514, C3=297, rho=419/495, I=[5/1257,10/297), class=I_FAIL, integers=[]
+REAL_CONE: C2=17813, C3=2633, I=[10/17813,10/2633), class=I_FAIL
+PLUS_K_BOUND_MAX_RHS=63125/3 -> k<=4
+PLUS_K_BOUND_B1_GE_3_RHS=252500/27 -> k<=3
+CERTIFICATE_STATUS=PASS

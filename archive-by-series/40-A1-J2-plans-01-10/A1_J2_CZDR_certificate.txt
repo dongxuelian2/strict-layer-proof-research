@@ -1,0 +1,63 @@
+A1 J2 CZDR targeted exact certificate
+ETA_MAJORANT=1299/500
+SEARCH_G=4..10
+NOTE=Targeted audit only; not a global J2 closure certificate.
+
+=== g=4 G=10000 ===
+ADMISSIBLE_(u,q,A)=[(73, 137, 147), (10001, 1, 20003)]
+POSITIVE_STATS={'outer_pairs': 2, 'q1_nonunit_kills': 3, 't_candidates': 0, 'linear_survivors': 0, 'disc_nonnegative': 0, 'square_discriminant': 0, 'integral_a1_roots': 0}
+NEG_K_2G_PLUS_1_AUDIT=[(137, 73, 'q>1', []), (1, 10001, 'q=1', [-3, -1], [3000, 1000])]
+NEG_K_2G_STATS={'outer_pairs': 2, 't_candidates': 10, 'linear_survivors': 1, 'disc_nonnegative': 1, 'square_discriminant': 0, 'integral_a1_roots': 0, 'q1_N1_family_seen': 1}
+Q1_K_2G_POLYNOMIAL_GAP=(587924762431092175, -692319245168507756)
+
+=== g=5 G=100000 ===
+ADMISSIBLE_(u,q,A)=[(11, 9091, 23), (9091, 11, 18183), (100001, 1, 200003)]
+POSITIVE_STATS={'outer_pairs': 3, 'q1_nonunit_kills': 3, 't_candidates': 0, 'linear_survivors': 0, 'disc_nonnegative': 0, 'square_discriminant': 0, 'integral_a1_roots': 0}
+NEG_K_2G_PLUS_1_AUDIT=[(9091, 11, 'q>1', []), (11, 9091, 'q>1', []), (1, 100001, 'q=1', [-3, -1], [30000, 10000])]
+NEG_K_2G_STATS={'outer_pairs': 3, 't_candidates': 10, 'linear_survivors': 1, 'disc_nonnegative': 1, 'square_discriminant': 0, 'integral_a1_roots': 0, 'q1_N1_family_seen': 1}
+Q1_K_2G_POLYNOMIAL_GAP=(5987927676267310992175, -6812316324492685007756)
+
+=== g=6 G=1000000 ===
+ADMISSIBLE_(u,q,A)=[(101, 9901, 203), (9901, 101, 19803), (1000001, 1, 2000003)]
+POSITIVE_STATS={'outer_pairs': 3, 'q1_nonunit_kills': 3, 't_candidates': 0, 'linear_survivors': 0, 'disc_nonnegative': 0, 'square_discriminant': 0, 'integral_a1_roots': 0}
+NEG_K_2G_PLUS_1_AUDIT=[(9901, 101, 'q>1', []), (101, 9901, 'q>1', []), (1, 1000001, 'q=1', [-3, -1], [300000, 100000])]
+NEG_K_2G_STATS={'outer_pairs': 3, 't_candidates': 10, 'linear_survivors': 1, 'disc_nonnegative': 1, 'square_discriminant': 0, 'integral_a1_roots': 0, 'q1_N1_family_seen': 1}
+Q1_K_2G_POLYNOMIAL_GAP=(59987927967626973109992175, -68012316032449026850007756)
+
+=== g=7 G=10000000 ===
+ADMISSIBLE_(u,q,A)=[(11, 909091, 23), (909091, 11, 1818183), (10000001, 1, 20000003)]
+POSITIVE_STATS={'outer_pairs': 3, 'q1_nonunit_kills': 3, 't_candidates': 0, 'linear_survivors': 0, 'disc_nonnegative': 0, 'square_discriminant': 0, 'integral_a1_roots': 0}
+NEG_K_2G_PLUS_1_AUDIT=[(909091, 11, 'q>1', []), (11, 909091, 'q>1', []), (1, 10000001, 'q=1', [-3, -1], [3000000, 1000000])]
+NEG_K_2G_STATS={'outer_pairs': 3, 't_candidates': 11, 'linear_survivors': 1, 'disc_nonnegative': 1, 'square_discriminant': 0, 'integral_a1_roots': 0, 'q1_N1_family_seen': 1}
+Q1_K_2G_POLYNOMIAL_GAP=(599987927996762699731099992175, -680012316003244900268500007756)
+
+=== g=8 G=100000000 ===
+ADMISSIBLE_(u,q,A)=[(5882353, 17, 11764707), (100000001, 1, 200000003)]
+POSITIVE_STATS={'outer_pairs': 2, 'q1_nonunit_kills': 3, 't_candidates': 0, 'linear_survivors': 0, 'disc_nonnegative': 0, 'square_discriminant': 0, 'integral_a1_roots': 0}
+NEG_K_2G_PLUS_1_AUDIT=[(17, 5882353, 'q>1', []), (1, 100000001, 'q=1', [-3, -1], [30000000, 10000000])]
+NEG_K_2G_STATS={'outer_pairs': 2, 't_candidates': 10, 'linear_survivors': 1, 'disc_nonnegative': 1, 'square_discriminant': 0, 'integral_a1_roots': 0, 'q1_N1_family_seen': 1}
+Q1_K_2G_POLYNOMIAL_GAP=(5999987927999676269997310999992175, -6800012316000324490002685000007756)
+
+=== g=9 G=1000000000 ===
+ADMISSIBLE_(u,q,A)=[(11, 90909091, 23), (13, 76923077, 27), (19, 52631579, 39), (91, 10989011, 183), (133, 7518797, 267), (143, 6993007, 287), (209, 4784689, 419), (1001, 999001, 2003), (1463, 683527, 2927), (1729, 578369, 3459), (19019, 52579, 38039), (52579, 19019, 105159), (368053, 2717, 736107), (578369, 1729, 1156739), (999001, 1001, 1998003), (4048583, 247, 8097167), (4784689, 209, 9569379), (10989011, 91, 21978023), (12987013, 77, 25974027), (52631579, 19, 105263159), (90909091, 11, 181818183), (142857143, 7, 285714287), (1000000001, 1, 2000000003)]
+POSITIVE_STATS={'outer_pairs': 23, 'q1_nonunit_kills': 3, 't_candidates': 0, 'linear_survivors': 0, 'disc_nonnegative': 0, 'square_discriminant': 0, 'integral_a1_roots': 0}
+NEG_K_2G_PLUS_1_AUDIT=[(90909091, 11, 'q>1', []), (76923077, 13, 'q>1', []), (52631579, 19, 'q>1', []), (10989011, 91, 'q>1', []), (7518797, 133, 'q>1', []), (6993007, 143, 'q>1', []), (4784689, 209, 'q>1', []), (999001, 1001, 'q>1', []), (683527, 1463, 'q>1', []), (578369, 1729, 'q>1', []), (52579, 19019, 'q>1', []), (19019, 52579, 'q>1', []), (2717, 368053, 'q>1', []), (1729, 578369, 'q>1', []), (1001, 999001, 'q>1', []), (247, 4048583, 'q>1', []), (209, 4784689, 'q>1', []), (91, 10989011, 'q>1', []), (77, 12987013, 'q>1', []), (19, 52631579, 'q>1', []), (11, 90909091, 'q>1', []), (7, 142857143, 'q>1', []), (1, 1000000001, 'q=1', [-3, -1], [300000000, 100000000])]
+NEG_K_2G_STATS={'outer_pairs': 23, 't_candidates': 11, 'linear_survivors': 1, 'disc_nonnegative': 1, 'square_discriminant': 0, 'integral_a1_roots': 0, 'q1_N1_family_seen': 1}
+Q1_K_2G_POLYNOMIAL_GAP=(59999987927999967626999973109999992175, -68000012316000032449000026850000007756)
+
+=== g=10 G=10000000000 ===
+ADMISSIBLE_(u,q,A)=[(101, 99009901, 203), (3541, 2824061, 7083), (27961, 357641, 55923), (357641, 27961, 715283), (2824061, 3541, 5648123), (99009901, 101, 198019803), (10000000001, 1, 20000000003)]
+POSITIVE_STATS={'outer_pairs': 7, 'q1_nonunit_kills': 3, 't_candidates': 0, 'linear_survivors': 0, 'disc_nonnegative': 0, 'square_discriminant': 0, 'integral_a1_roots': 0}
+NEG_K_2G_PLUS_1_AUDIT=[(99009901, 101, 'q>1', []), (2824061, 3541, 'q>1', []), (357641, 27961, 'q>1', []), (27961, 357641, 'q>1', []), (3541, 2824061, 'q>1', []), (101, 99009901, 'q>1', []), (1, 10000000001, 'q=1', [-3, -1], [3000000000, 1000000000])]
+NEG_K_2G_STATS={'outer_pairs': 7, 't_candidates': 10, 'linear_survivors': 1, 'disc_nonnegative': 1, 'square_discriminant': 0, 'integral_a1_roots': 0, 'q1_N1_family_seen': 1}
+Q1_K_2G_POLYNOMIAL_GAP=(599999987927999996762699999731099999992175, -680000012316000003244900000268500000007756)
+
+ROOT_SURVIVOR_COUNT=0
+ROOT_SURVIVORS=[]
+
+VERDICT:
+positive compressed branch: no linear survivor for g=4..10;
+negative k=2g+1: exact N-strip audit is empty after q=1 nonunit check;
+negative k=2g: only the q=1,N=1,t=9 family reaches the root gate in these depths;
+that family is killed by the exact adjacent-square polynomial gap;
+no integral root survivor occurs in the audited slices.

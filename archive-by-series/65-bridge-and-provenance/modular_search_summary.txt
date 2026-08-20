@@ -1,0 +1,7 @@
+TARGET=valuation-template/factor-gap quotient residue compatibility
+FIXED_CASES=24
+ORIENTATIONS_PER_CASE=4
+NECESSARY_SKELETON_WITNESSES=96
+ALL_24x4_COMPATIBLE=TRUE
+INTERPRETATION=No immediate local/source death follows from exact 2/5 cores + gap + deep eta congruences + DCDC rho residue/window alone.
+NOT_A_SOURCE_SOLUTION_SEARCH=TRUE

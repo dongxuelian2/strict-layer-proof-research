@@ -1,0 +1,11 @@
+R2: h=gcd(y,rho), Y0=2K*y, a=tau*G/10+rho.
+For every odd p|h, p does not divide 10*K*G*tau; hence p does not divide a, and p|Psi_K(G).
+
+Gaussian identity: M0*L0=Y0^2+(S_G*a)^2, S_G=(G+1)(2G+3).
+Modulo an odd p|h:
+M0*L0 == (S_G*a)^2 (mod p).
+If p does not divide S_G then p divides neither M0 nor L0.
+Therefore the inert-prime theorems controlling primes that already divide M0 or L0 do not
+create a destination for p|h. The bridge h|S*Q*T4 is absent.
+
+VERDICT: FAILURE C; SUPPORT_COLLISION_ARCHITECTURE=DEAD.

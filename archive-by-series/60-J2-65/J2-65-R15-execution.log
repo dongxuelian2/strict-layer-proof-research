@@ -1,0 +1,136 @@
+SYNTAX_PASS J2_65_R15_common.py
+SYNTAX_PASS J2-65-R15-BoundaryCoordinate.py
+SYNTAX_PASS J2-65-R15-BoundaryLattice.py
+SYNTAX_PASS J2-65-R15-BoundaryTernary.py
+SYNTAX_PASS J2-65-R15-BinaryDiscriminant.py
+SYNTAX_PASS J2-65-R15-SchurComplement.py
+SYNTAX_PASS J2-65-R15-ContactClearance.py
+SYNTAX_PASS J2-65-R15-WProjection.py
+SYNTAX_PASS J2-65-R15-PowerTenBoundary.py
+SYNTAX_PASS J2-65-R15-Regression.py
+
+===== J2-65-R15-Regression.py =====
+R15_REGRESSION=PASS
+R14_DLB_RECOVERED=PASS
+R7_DELTA_FIB_RECOVERED=PASS
+SOURCE_PRESERVING_NORM_COMPLETION=PASS
+RAY_ENUMERATION_USED=FALSE
+FACTOR_u_USED=FALSE
+STDERR=Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 772, in warm_spreadsheet_runtime
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/connection.py", line 37, in get_or_create_client
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/daemon.py", line 124, in start_daemon
+TimeoutError: Timed out waiting for artifact tool daemon socket. Set ARTIFACT_TOOL_RPC_DAEMON_STARTUP_TIMEOUT_S=<seconds> to increase the limit.
+EXIT_CODE=0
+
+===== J2-65-R15-BoundaryCoordinate.py =====
+LOW_DEFECT_COORDINATE=hLOW=10*x0-A*a3_0
+LOW_DEFECT_POSITIVE=PROVED
+CLEARANCE_IN_hLOW=min(9/10,hLOW/(A*a3_0+hLOW))
+CLEARANCE_QUANTIZATION=kappa>=1/(A*a3_0+1)
+QUANTIZED_HEIGHT_NECESSITY=G<=j(10*u)*a3_0*(A*a3_0+1)
+CHI_RETAINED_AS_TERMINAL_VARIABLE=FALSE
+STDERR=Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 720, in _warm_feature_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 704, in _warm_collaboration_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/generated/interface/models.py", line 32317, in hydrate_crdt_from_proto
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/remote.py", line 749, in __call__
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/client.py", line 150, in call
+artifact_tool.rpc.client.RemoteError: hydrateCrdtFromProto requires an empty collaborative document.
+EXIT_CODE=0
+
+===== J2-65-R15-BoundaryLattice.py =====
+Tpartial=[[1,0,0],[0,1,0],[0,-A,10]]
+BOUNDARY_LINEAR_MAP_DETERMINANT=10
+BOUNDARY_LATTICE_BASIS=(M,0,0),(rho,1,-A),(0,0,10)
+BOUNDARY_LATTICE_INDEX=10*M
+BOUNDARY_LATTICE_SNF=(1,gcd(M,10),10*M/gcd(M,10))
+FIXED_MOD10_CONDITION=A*a3+hLOW == 0 (mod 10)
+MOVING_DENOMINATOR_CASE_SPLIT_USED=FALSE
+STDERR=Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 720, in _warm_feature_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 704, in _warm_collaboration_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/generated/interface/models.py", line 32317, in hydrate_crdt_from_proto
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/remote.py", line 749, in __call__
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/client.py", line 150, in call
+artifact_tool.rpc.client.RemoteError: hydrateCrdtFromProto requires an empty collaborative document.
+EXIT_CODE=0
+
+===== J2-65-R15-PowerTenBoundary.py =====
+DLB_DEGREE_IN_K=2
+DLB_STRICTLY_DECREASING_FOR_K>0=TRUE
+POWER_TEN_BASE=G>=10,K>=10,q<=G+1<=11G/10
+DLB_K10_POSITIVE_MONOMIAL_BOUND=9588271/625000*G^10
+DLB_K10_UPPER_BOUND=-980411729/625000*G^10
+DLB_SIGN_ON_POWER_TEN_W_SECTOR=NEGATIVE
+DLB_SQUARECLASS_STATUS=MOVING
+REAL_LOW_BOUNDARY_INTERSECTION=TWO_DISTINCT_POINTS
+STDERR=Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 720, in _warm_feature_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 704, in _warm_collaboration_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/generated/interface/models.py", line 32317, in hydrate_crdt_from_proto
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/remote.py", line 749, in __call__
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/client.py", line 150, in call
+artifact_tool.rpc.client.RemoteError: hydrateCrdtFromProto requires an empty collaborative document.
+EXIT_CODE=0
+
+===== J2-65-R15-SchurComplement.py =====
+SCHUR_COMPLEMENT_IDENTITY=PROVED
+Delta_partial=-64*mathA*detGram(Qpartial)
+R7_FIBRE_DISCRIMINANT_RELATION=PROVED
+SOURCE_PRESERVING_NORM_COMPLETION=PASS
+STDERR=Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 720, in _warm_feature_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 704, in _warm_collaboration_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/generated/interface/models.py", line 32317, in hydrate_crdt_from_proto
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/remote.py", line 749, in __call__
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/client.py", line 150, in call
+artifact_tool.rpc.client.RemoteError: hydrateCrdtFromProto requires an empty collaborative document.
+EXIT_CODE=0
+
+===== GENERATOR EXACT CHECKS =====
+QPARTIAL_PRIMITIVE=PASS
+BOUNDARY_DISCRIMINANT_IDENTITY=PASS
+R14_DLB_SPECIALIZATION=PASS
+SCHUR_COMPLEMENT_IDENTITY=PASS
+R7_DELTA_FIB_RELATION=PASS
+SOURCE_PRESERVING_NORM=PASS
+POWER_TEN_DLB_NEGATIVITY=PASS
+ETA_ZERO_W_CLOSURE=PASS
+
+===== SHA256 =====
+bf740618e5bb89d3fd60f1f1a07068cb613ff808af3f7a4ca7337fb377df9257  J2-65-R15-BinaryDiscriminant.py
+ab21c41ca57c411f4bfc99a6df0dd9759b9221209eee73ceb922ac694327a828  J2-65-R15-BinaryDiscriminantForm.txt
+45e6e31f6bb2dacbaee580b317638aa74671c72549a3fc80fe8e50f996db960e  J2-65-R15-Boundary-Defect-Geometry-Report.md
+be39cdf861092a0cc11d149f3d874461a644a56f4db86dd69fb06f03d8cef91b  J2-65-R15-BoundaryCoordinate.py
+ea6e19113148b3809cf01906bfbdb1b41b99f23886ef89ce4317a7da1e2be6d7  J2-65-R15-BoundaryDiscriminantFactors.tsv
+04d4f711910614f5e40c887566947c995617f6692a73571e509723ea9040d66f  J2-65-R15-BoundaryLattice.py
+47e97ecc54a06e4424beffe69faca5485762a16277b6d8f69edd648b2dce77d3  J2-65-R15-BoundaryLatticeBasis.txt
+b4790dd793e7ce1c08dd06e02de8706c1c6f6244fe34186e48efc8cdb2374ff4  J2-65-R15-BoundaryLatticeSmith.tsv
+dc1594331322d4bd1c07d7f1583f0faba03f42e25007d20effb4fdfa021e4e68  J2-65-R15-BoundaryTernary.py
+709873c886836d714af93019d2bd7e1a644915f7a97e9f5d389737852b990763  J2-65-R15-BoundaryTernaryForm.txt
+6e09829b076bf0b063c7c3f4bff3e2074de3e8961526a795de70204963b775c1  J2-65-R15-ContactClearance.py
+1e53f77e67afb1924ea24876abf0f8b2dcbd18551f371f0036e6b9f27e35803d  J2-65-R15-PowerTenBoundary.py
+dbce2c704a852984c514a49cded0fd49a5708aa39dbd9db55bbe63b6b82976fa  J2-65-R15-PowerTenBoundaryDiscriminant.tsv
+bf06d39533d65e08e28a8398d50cfe3614e2773cca019cba21f9db247bb76f6f  J2-65-R15-Regression.py
+babaee95a4fa1ee7fef0ad9cf29ef71b14e68b7181aae37033206d23911fbffd  J2-65-R15-SchurComplement.py
+fbb52ece7d82b42136ec10de15a8ed313edde30075f4ccc93bdff8dca4392946  J2-65-R15-ThinShell.tsv
+aa6244664a92cdccc95f6a2c7a2aa978d36f2af4ad89ae8c8054836e21c6dcd4  J2-65-R15-WProjection.py
+dbd91b74212bd9e7c873409050f88212f0be4460b68a3d958d0579ac33e38ddf  J2-65-R15-WProjection.tsv
+ccd2bc35d5f14f6f9b2f7d8b6d15baa27d5fa116a404d416130a4be965c261b9  J2-65-R15-certificate.txt
+6419404bffa8fc221f327b74ba167d5bf1595a906ea6780acf4e61956214a049  J2_65_R15_common.py
+J2_STATUS=OPEN

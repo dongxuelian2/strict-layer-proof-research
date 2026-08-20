@@ -1,0 +1,45 @@
+A1 J2 DCDC5 exact certificate
+ETA_MAJORANT=1299/500
+THEOREM_CHECKS=PASS
+NEW_Q1_WEDGE: q=1, ell>=2, DCDC/root survivor => g<=2ell+2.
+NEW_QGT1_WEDGE: q>1, ell>=3, DCDC/root survivor => g<=3ell-1.
+OUTER_SENSITIVE: G < (73/(2q^2))*(1+1/G)^2*10^(3ell) for ell>=3.
+OUTER_STAIRCASE: q>=23 => g<=3ell-2; q>=61 => g<=3ell-3.
+NORMALIZED_COMPLEMENT: ell>=3, Lambda=2K lambda0, lambda0=uD2-(A*10^ell/8)a1; v5(lambda0)=0; ell>=4 => gcd(lambda0,10)=1.
+NT_DCDC: with M=q(q+4), R=At-2N, Y=R+uNM, E=uq((G-1)t-qN)+GY, 4M^2 F=A Y^2+2RE.
+Q1_TAIL: 100F cubic identity verified on every q=1 digit-legal census cell.
+
+ELL=2 TOTALS={'outer': 8, 'N_cells': 2086, 'congruence': 1468, 'reconstructed': 656, 'digit_legal': 214, 'dcdc': 0, 'disc_nonnegative': 0, 'disc_square': 0, 'integral_a1_roots': 0, 'full_radial_survivors': 0}
+ELL=2 g=4 {'q_values': [137, 1], 'outer': 2, 'N_cells': 522, 'congruence': 476, 'reconstructed': 212, 'digit_legal': 69, 'dcdc': 0, 'disc_nonnegative': 0, 'disc_square': 0, 'integral_a1_roots': 0, 'full_radial_survivors': 0}
+ELL=2 g=5 {'q_values': [9091, 11, 1], 'outer': 3, 'N_cells': 782, 'congruence': 515, 'reconstructed': 231, 'digit_legal': 76, 'dcdc': 0, 'disc_nonnegative': 0, 'disc_square': 0, 'integral_a1_roots': 0, 'full_radial_survivors': 0}
+ELL=2 g=6 {'q_values': [9901, 101, 1], 'outer': 3, 'N_cells': 782, 'congruence': 477, 'reconstructed': 213, 'digit_legal': 69, 'dcdc': 0, 'disc_nonnegative': 0, 'disc_square': 0, 'integral_a1_roots': 0, 'full_radial_survivors': 0}
+ELL=2 DCDC_SURVIVORS=0
+
+ELL=3 TOTALS={'outer': 13, 'N_cells': 33784, 'congruence': 24617, 'reconstructed': 10996, 'digit_legal': 3574, 'dcdc': 0, 'disc_nonnegative': 0, 'disc_square': 0, 'integral_a1_roots': 0, 'full_radial_survivors': 0}
+ELL=3 g=4 {'q_values': [137, 1], 'outer': 2, 'N_cells': 5198, 'congruence': 4717, 'reconstructed': 2099, 'digit_legal': 683, 'dcdc': 0, 'disc_nonnegative': 0, 'disc_square': 0, 'integral_a1_roots': 0, 'full_radial_survivors': 0}
+ELL=3 g=5 {'q_values': [9091, 11, 1], 'outer': 3, 'N_cells': 7796, 'congruence': 5108, 'reconstructed': 2287, 'digit_legal': 743, 'dcdc': 0, 'disc_nonnegative': 0, 'disc_square': 0, 'integral_a1_roots': 0, 'full_radial_survivors': 0}
+ELL=3 g=6 {'q_values': [9901, 101, 1], 'outer': 3, 'N_cells': 7796, 'congruence': 4727, 'reconstructed': 2103, 'digit_legal': 685, 'dcdc': 0, 'disc_nonnegative': 0, 'disc_square': 0, 'integral_a1_roots': 0, 'full_radial_survivors': 0}
+ELL=3 g=7 {'q_values': [909091, 11, 1], 'outer': 3, 'N_cells': 7796, 'congruence': 5107, 'reconstructed': 2287, 'digit_legal': 742, 'dcdc': 0, 'disc_nonnegative': 0, 'disc_square': 0, 'integral_a1_roots': 0, 'full_radial_survivors': 0}
+ELL=3 g=8 {'q_values': [17, 1], 'outer': 2, 'N_cells': 5198, 'congruence': 4958, 'reconstructed': 2220, 'digit_legal': 721, 'dcdc': 0, 'disc_nonnegative': 0, 'disc_square': 0, 'integral_a1_roots': 0, 'full_radial_survivors': 0}
+ELL=3 DCDC_SURVIVORS=0
+
+ELL=4 TOTALS={'outer': 59, 'N_cells': 1532834, 'congruence': 359711, 'reconstructed': 163625, 'digit_legal': 52965, 'dcdc': 2, 'disc_nonnegative': 2, 'disc_square': 0, 'integral_a1_roots': 0, 'full_radial_survivors': 0}
+ELL=4 g=4 {'q_values': [137, 1], 'outer': 2, 'N_cells': 51962, 'congruence': 47126, 'reconstructed': 23162, 'digit_legal': 7384, 'dcdc': 2, 'disc_nonnegative': 2, 'disc_square': 0, 'integral_a1_roots': 0, 'full_radial_survivors': 0}
+ELL=4 g=5 {'q_values': [9091, 11, 1], 'outer': 3, 'N_cells': 77942, 'congruence': 51017, 'reconstructed': 22907, 'digit_legal': 7429, 'dcdc': 0, 'disc_nonnegative': 0, 'disc_square': 0, 'integral_a1_roots': 0, 'full_radial_survivors': 0}
+ELL=4 g=6 {'q_values': [9901, 101, 1], 'outer': 3, 'N_cells': 77942, 'congruence': 47231, 'reconstructed': 21016, 'digit_legal': 6828, 'dcdc': 0, 'disc_nonnegative': 0, 'disc_square': 0, 'integral_a1_roots': 0, 'full_radial_survivors': 0}
+ELL=4 g=7 {'q_values': [909091, 11, 1], 'outer': 3, 'N_cells': 77942, 'congruence': 51020, 'reconstructed': 22834, 'digit_legal': 7414, 'dcdc': 0, 'disc_nonnegative': 0, 'disc_square': 0, 'integral_a1_roots': 0, 'full_radial_survivors': 0}
+ELL=4 g=8 {'q_values': [17, 1], 'outer': 2, 'N_cells': 51962, 'congruence': 49533, 'reconstructed': 22168, 'digit_legal': 7197, 'dcdc': 0, 'disc_nonnegative': 0, 'disc_square': 0, 'integral_a1_roots': 0, 'full_radial_survivors': 0}
+ELL=4 g=9 {'q_values': [90909091, 76923077, 52631579, 10989011, 7518797, 6993007, 4784689, 999001, 683527, 578369, 52579, 19019, 2717, 1729, 1001, 247, 209, 91, 77, 19, 11, 7, 1], 'outer': 23, 'N_cells': 597542, 'congruence': 61895, 'reconstructed': 28270, 'digit_legal': 9156, 'dcdc': 0, 'disc_nonnegative': 0, 'disc_square': 0, 'integral_a1_roots': 0, 'full_radial_survivors': 0}
+ELL=4 g=10 {'q_values': [99009901, 2824061, 357641, 27961, 3541, 101, 1], 'outer': 7, 'N_cells': 181862, 'congruence': 47246, 'reconstructed': 21025, 'digit_legal': 6828, 'dcdc': 0, 'disc_nonnegative': 0, 'disc_square': 0, 'integral_a1_roots': 0, 'full_radial_survivors': 0}
+ELL=4 g=11 {'q_values': [9090909091, 4347826087, 826446281, 395256917, 35932447, 24431957, 11390819, 2221087, 1062259, 1035529, 201917, 96569, 94139, 8779, 121, 11], 'outer': 16, 'N_cells': 415680, 'congruence': 4643, 'reconstructed': 2243, 'digit_legal': 729, 'dcdc': 0, 'disc_nonnegative': 0, 'disc_square': 0, 'integral_a1_roots': 0, 'full_radial_survivors': 0}
+ELL=4 DCDC_SURVIVORS=2
+
+DCDC_SURVIVOR_ROWS=2
+DCDC_SURVIVOR_FILE=A1_J2_DCDC5_survivors.tsv
+VERDICT_ELL2=CLOSED
+VERDICT_ELL3=CLOSED
+VERDICT_ELL4=CLOSED
+VERDICT_Q1=OPEN_BUT_SLOPE2
+VERDICT_FULL_J2=OPEN
+NEW_FRONTIER=J=2, S_R<0, ell>=5, g>=4, u>1, with q=1 => g<=2ell+2 and q>1 => g<=3ell-1.
+CERTIFICATE_STATUS=PASS

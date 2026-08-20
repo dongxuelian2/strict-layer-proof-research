@@ -1,0 +1,13 @@
+SYMBOLIC ELIMINANT: 100000000*G**4 + 10000*G**2 - 22200*G*Q0 + 200*G - 987679*Q0**2 - 222*Q0 + 1000001
+DISCRIMINANT: 80000000*(4938395*G**4 + 500*G**2 + 10*G + 49384)
+H ON MASTER: (100*G - Q0 + 1)/10
+DISC-CHECK (10, 4, 7)
+DISC-CHECK (100, 4, 7)
+DISC-CHECK (1000, 4, 7)
+DISC-CHECK (100000, 4, 7)
+DISC-CHECK (10000000000, 4, 7)
+R3-SECTION {'r': 1, 'G': 100, 'd': -1, 'V': 100000, 'U': 1001, 'J': 10, 'sphere': 'PASS', 'digits': 'PASS', 'gcd': 'PASS', 'tail': 'PASS', 'leading_word_section': 'FAIL', 'master_section': 'FAIL', 'master_residual': 44450000098900}
+R3-SECTION {'r': 2, 'G': 1000, 'd': -2, 'V': 10000000, 'U': 10001, 'J': 10, 'sphere': 'PASS', 'digits': 'PASS', 'gcd': 'PASS', 'tail': 'PASS', 'leading_word_section': 'FAIL', 'master_section': 'FAIL', 'master_residual': 4445000000009989000}
+R3-SECTION {'r': 3, 'G': 10000, 'd': -3, 'V': 1000000000, 'U': 100001, 'J': 10, 'sphere': 'PASS', 'digits': 'PASS', 'gcd': 'PASS', 'tail': 'PASS', 'leading_word_section': 'FAIL', 'master_section': 'FAIL', 'master_residual': 444500000000000999890000}
+R3-SECTION {'r': 5, 'G': 1000000, 'd': -5, 'V': 10000000000000, 'U': 10000001, 'J': 10, 'sphere': 'PASS', 'digits': 'PASS', 'gcd': 'PASS', 'tail': 'PASS', 'leading_word_section': 'FAIL', 'master_section': 'FAIL', 'master_residual': 4445000000000000000009999989000000}
+105-R5C certificate: PASS

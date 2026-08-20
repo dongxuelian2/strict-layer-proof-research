@@ -1,0 +1,290 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:105-r2:kappa-src",
+  "title": "105-R2 KappaSrc canonical source-section datum",
+  "type": "object",
+  "required": [
+    "base",
+    "source_lattice",
+    "admissible_section",
+    "word_map",
+    "equivalence_firewall"
+  ],
+  "properties": {
+    "base": {
+      "type": "object",
+      "description": "Faithful pre-J primitive semantic state; U is excluded.",
+      "required": [
+        "V",
+        "C",
+        "digit_lengths",
+        "power10",
+        "des_saturation"
+      ],
+      "properties": {
+        "V": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "C": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 3,
+          "items": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "description": "Primitive positive generator (C1,C2,C3), gcd=1."
+        },
+        "digit_lengths": {
+          "type": "object",
+          "required": [
+            "n",
+            "m"
+          ],
+          "properties": {
+            "n": {
+              "type": "array",
+              "minItems": 3,
+              "maxItems": 3,
+              "items": {
+                "type": "integer",
+                "minimum": 1
+              }
+            },
+            "m": {
+              "type": "array",
+              "minItems": 3,
+              "maxItems": 3,
+              "items": {
+                "type": "integer",
+                "minimum": 1
+              }
+            }
+          }
+        },
+        "power10": {
+          "type": "object",
+          "required": [
+            "g",
+            "k",
+            "G",
+            "K"
+          ],
+          "properties": {
+            "g": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "k": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "G": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "K": {
+              "type": "integer",
+              "minimum": 10
+            }
+          }
+        },
+        "des_saturation": {
+          "type": "object",
+          "required": [
+            "Lambda_beta",
+            "v",
+            "delta_v",
+            "J"
+          ],
+          "properties": {
+            "Lambda_beta": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "v": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "delta_v": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "J": {
+              "type": "integer",
+              "minimum": 1
+            }
+          }
+        }
+      }
+    },
+    "source_lattice": {
+      "type": "object",
+      "required": [
+        "rank",
+        "ambient",
+        "origin",
+        "primitive_generator",
+        "orientation"
+      ],
+      "properties": {
+        "rank": {
+          "const": 1
+        },
+        "ambient": {
+          "const": "Z^3_numerator_blocks"
+        },
+        "origin": {
+          "const": [
+            0,
+            0,
+            0
+          ]
+        },
+        "primitive_generator": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 3,
+          "items": {
+            "type": "integer",
+            "minimum": 1
+          }
+        },
+        "orientation": {
+          "const": "U>0"
+        }
+      }
+    },
+    "admissible_section": {
+      "type": "object",
+      "required": [
+        "parameter",
+        "interval",
+        "primitive_condition"
+      ],
+      "properties": {
+        "parameter": {
+          "const": "U"
+        },
+        "interval": {
+          "type": "object",
+          "required": [
+            "left_closed",
+            "right_open",
+            "L_formula",
+            "R_formula"
+          ],
+          "properties": {
+            "left_closed": {
+              "const": true
+            },
+            "right_open": {
+              "const": true
+            },
+            "L_formula": {
+              "const": "max_i(10^(n_i-1)/C_i)"
+            },
+            "R_formula": {
+              "const": "min_i(10^n_i/C_i)"
+            }
+          }
+        },
+        "primitive_condition": {
+          "const": "gcd(U,V)=1"
+        },
+        "extra_chart_pullbacks": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "word_map": {
+      "type": "object",
+      "required": [
+        "numerator_blocks",
+        "denominator_blocks",
+        "cut_source"
+      ],
+      "properties": {
+        "numerator_blocks": {
+          "const": "a_i=U*C_i"
+        },
+        "denominator_blocks": {
+          "const": "b_i=V/g_i"
+        },
+        "cut_source": {
+          "const": "digit-length labels retained in base"
+        }
+      }
+    },
+    "q1_observable": {
+      "type": "object",
+      "description": "Present only on q=1 fixed source strata.",
+      "properties": {
+        "dq": {
+          "type": "integer",
+          "enum": [
+            1,
+            3,
+            7,
+            9
+          ]
+        },
+        "tau": {
+          "type": "integer"
+        },
+        "domain_congruence": {
+          "const": "31*C3*U + dq*tau == 0 mod 2*K*dq"
+        },
+        "rho_formula": {
+          "const": "rho=U*C3/dq-tau*G/10"
+        },
+        "inverse_formula": {
+          "const": "U=dq*(rho+tau*G/10)/C3"
+        },
+        "U_step_formula": {
+          "const": "2*K*dq/gcd(C3,2*K*dq)"
+        },
+        "rho_step_formula": {
+          "const": "2*K*C3/gcd(C3,2*K*dq)"
+        }
+      }
+    },
+    "equivalence_firewall": {
+      "type": "object",
+      "required": [
+        "commute_with_source_embedding",
+        "preserve_admissible_subset",
+        "preserve_word_map",
+        "preserve_orientation"
+      ],
+      "properties": {
+        "commute_with_source_embedding": {
+          "const": true
+        },
+        "preserve_admissible_subset": {
+          "const": true
+        },
+        "preserve_word_map": {
+          "const": true
+        },
+        "preserve_orientation": {
+          "const": true
+        },
+        "projective_scaling_allowed": {
+          "const": false
+        },
+        "translation_allowed": {
+          "const": false
+        },
+        "arbitrary_auxiliary_basis_change_allowed": {
+          "const": true,
+          "description": "Only if source embedding/functionals are transported simultaneously."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+85-R6 live N0 split-base finite scan
+RANGE=4<=g<=8
+ROOT_FILTER_USED=NO
+g=4 split_base_count=1
+g=5 split_base_count=5
+g=6 split_base_count=5
+g=7 split_base_count=3
+g=8 split_base_count=3
+SPLIT_BASE (4, 1, 7, 73, 137)
+SPLIT_BASE (5, 4, 6, 11, 9091)
+SPLIT_BASE (5, 3, 7, 11, 9091)
+SPLIT_BASE (5, 1, 9, 11, 9091)
+SPLIT_BASE (5, 3, 7, 9091, 11)
+SPLIT_BASE (5, 1, 9, 9091, 11)
+SPLIT_BASE (6, 2, 10, 101, 9901)
+SPLIT_BASE (6, 4, 8, 9901, 101)
+SPLIT_BASE (6, 3, 9, 9901, 101)
+SPLIT_BASE (6, 2, 10, 9901, 101)
+SPLIT_BASE (6, 1, 11, 9901, 101)
+SPLIT_BASE (7, 6, 8, 11, 909091)
+SPLIT_BASE (7, 3, 11, 11, 909091)
+SPLIT_BASE (7, 7, 7, 909091, 11)
+SPLIT_BASE (8, 10, 6, 5882353, 17)
+SPLIT_BASE (8, 9, 7, 5882353, 17)
+SPLIT_BASE (8, 8, 8, 5882353, 17)
+FINITE_SCAN_ONLY=TRUE
+CERTIFICATE_STATUS=PASS

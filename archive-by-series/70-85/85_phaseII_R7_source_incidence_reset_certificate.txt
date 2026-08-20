@@ -1,0 +1,20 @@
+FIBRE_PROJECTION_CHECKS
+(5, 1, 11, 9091) D= 20 Rsrc= 7 gcd(tau_z_coeff,10)= 1
+(5, 3, 11, 9091) D= 2000 Rsrc= 1227 gcd(tau_z_coeff,10)= 1
+(5, 4, 11, 9091) D= 20000 Rsrc= 7227 gcd(tau_z_coeff,10)= 1
+(5, 1, 9091, 11) D= 20 Rsrc= 7 gcd(tau_z_coeff,10)= 1
+(5, 3, 9091, 11) D= 2000 Rsrc= 1347 gcd(tau_z_coeff,10)= 1
+
+DEEPEST_WITNESS
+SOURCE_LATTICE=PASS
+PRIMITIVE_SOURCE_CONIC=PASS
+INTRINSIC_PCS=PASS
+PURE_10_POWER_G=PASS
+uq=G+1=PASS
+RADIAL_BAND=PASS
+POWER_OF_TEN_SECTION=PASS
+D= 2000 Rsrc= 1227
+Theta= 11070385375649529990643846270296189232
+v2(Msec)= 12 v5(Msec)= 10 required= (8, 10)
+INTEGER_COMMON_U=FAIL interval= (1, 0)
+FULL_SOURCE_LIFT=FAIL (inherited first failing layer)

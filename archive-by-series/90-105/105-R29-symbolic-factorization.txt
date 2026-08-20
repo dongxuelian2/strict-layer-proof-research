@@ -1,0 +1,39 @@
+105-R29 symbolic factorization / exact elimination ledger
+
+1. Xi exact expansion
+
+u0*Xi = W*(Q0-P3) + A*10^n*(10^g*Q0-P2)
+      = W*Q0 - W*P3 + A*10^(n+g)*Q0 - A*10^n*P2.
+
+With P2=u0*W*C2 and P3=u0*A*C3:
+
+u0*Xi = Q0*(W+A*10^(n+g)) - u0*A*W*(C3+10^n*C2).
+
+2. Fully expanded support-core normal form
+
+F_support_core = mu*Q0*W + mu*A*10^(n+g)*Q0
+                 - mu*u0*A*W*C3 - mu*u0*A*W*10^n*C2
+                 - u0*a0*10^(r+k)*P1 + u0*a0*10^r*Q0 = 0,
+where r=m+n+g.
+
+Equivalently:
+mu*[Q0*ell-AW(C3+10^n*C2)] = a0*10^r*(10^k P1-Q0).
+
+3. TC1 / Direct-W identity
+
+Direct-W: W*(u0*A*X*Y*G*D-g1*T)=g1*A*Y*H.
+Move g1*W*T to the right:
+A*W*u0*X*Y*G*D = g1*(W*T+A*Y*H),
+which is exactly R28-PF TC1.
+Thus TC1_CONDITIONED_DENOMINATOR_RATIO_INFORMATION_GAIN = 0 on the post-support/master locus.
+
+4. R29 exact counterexample
+P=(640,1420,4727), Q0=4977; A=1,W=20,u0=1,g1=80; n=4,m=1,k=1,g=0.
+T=250,H=3557,D=1423,C2=71,C3=4727,g0=20,mu=4,a0=1,ell=10020,Xi=35575000,r=5.
+TC1 LHS = 2846000000
+TC1 RHS = 2846000000
+mu-core LHS = 142300000
+mu-core RHS = 142300000
+gcd(mu,C2*C3)=1.
+Xi/10^r = 1423/4.
+Theta = 1/50.
